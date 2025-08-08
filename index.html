@@ -853,7 +853,7 @@
 
   <div class="checkout-payment">
     <div class="container-fluid">
-      <div class="row flex-column-reverse flex-lg-row">
+      <div id="checkout-container" class="row flex-column-reverse flex-lg-row hide">
         <div class="col-md-7">
           <div class="payment-form">
             <h3>Select Your Payment Method</h3>
@@ -1002,65 +1002,64 @@
           </div>
         </div>
 
-        <!-- Product Cart Section -->
         <div class="col-md-5 cart-summnery-1">
-          <div class="cart-summnery">
-            <div class="products-box row align-items-center">
-              <div class="bl-l productsimage col-3">
-                <img src="images/desktop-bag-3.png">
-              </div>
-              <div class="bl-l productdescription col-6">
-                <h4>3 PEOPLE</h4>
-                <p>30 Day Supply Each</p>
-              </div>
-              <div class="bl-l productprice col-3">
-                <p>$47.99</p>
-              </div>
-            </div>
+          <!-- Product Cart Section -->
+          <div id="cart-section" class="cart-summnery">
 
-            <div class="clearfix checkout-items">
-              <div class="row clearfix">
-                <div class="col-md-10 col-sm-10 col-9">
-                  <p>
-                    Regular Price
-                  </p>
+            <!-- <div id="inner-cart-section">
+              <div class="products-box row align-items-center">
+                <div class="bl-l productsimage col-3">
+                  <img src="images/desktop-bag-3.png">
                 </div>
-                <div class="col-md-2 col-sm-2 col-3">
-                  <p class="text-end">$79.99</p>
+                <div class="bl-l productdescription col-6">
+                  <h4>3 PEOPLE</h4>
+                  <p>30 Day Supply Each</p>
+                </div>
+                <div class="bl-l productprice col-3">
+                  <p>$47.99</p>
+                </div>
+              </div>
+
+              <div class="clearfix checkout-items">
+                <div class="row clearfix">
+                  <div class="col-md-10 col-sm-10 col-9">
+                    <p>Regular Price</p>
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-3">
+                    <p class="text-end">$79.99</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10 col-sm-10 col-9">
+                    <p>Coupon Applied: <b>SAVE40</b></p>
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-3">
+                    <p class="text-end">-$32.00</p>
+                  </div>
+                </div>
+
+                <div class="row clearfix">
+                  <div class="col-md-10 col-9">
+                    <p>Shipping and tax will be settled upon checkout confirmation</p>
+                  </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-10 col-sm-10 col-9">
-                  <p>
-                    Coupon Applied: <b>SAVE50 </b> <b class="discount-off"></b></p>
+                <div class="col-md-10 col-9 my-auto">
+                  <h4><b>Total:</b></h4>
                 </div>
-                <div class="col-md-2 col-sm-2 col-3">
-                  <p class="text-end">-$47.99</p>
+                <div class="col-md-2 col-3 my-auto">
+                  <h4 class="text-right">
+                    <b>$47.99</b>
+                  </h4>
                 </div>
               </div>
-
-              <div class="row clearfix">
-                <div class="col-md-10 col-9">
-                  <p>
-                    Shipping and tax will be settled upon checkout confirmation
-                  </p>
-                </div>
-                <div class="col-md-2 col-3"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-10 col-9 my-auto">
-                <h4><b>
-                    Total:
-                  </b></h4>
-              </div>
-              <div class="col-md-2 col-3 my-auto">
-                <h4 class="text-right"><b class="totalPriceMain">$47.99</b></h4>
-              </div>
-            </div>
+            </div> -->
 
           </div>
         </div>
+        <!-- Product Cart Section -->
+
       </div>
     </div>
   </div>
