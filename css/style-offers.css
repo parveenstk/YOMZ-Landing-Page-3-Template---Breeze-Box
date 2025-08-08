@@ -1,0 +1,328 @@
+@font-face {
+    font-family: "Super Caramel";
+    src: url("../font/SuperCaramel.woff2") format("woff2"), url("../font/SuperCaramel.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../font/CenturyGothic-Bold.woff2') format('woff2'), url('../font/CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../font/CenturyGothic-Bold.woff2') format('woff2'), url('../font/CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropeanRg';
+    src: url('../font/centurygothicpaneuropeanregular-webfont.woff2') format('woff2'), url('../font/centurygothicpaneuropeanregular-webfont.woff') format('woff'), url('../font/centurygothicpaneuropeanregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropeanLt';
+    src: url('../font/centurygothicpaneuropeanlight-webfont.woff2') format('woff2'), url('../font/centurygothicpaneuropeanlight-webfont.woff') format('woff'), url('../font/centurygothicpaneuropeanlight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropeanXBd';
+    src: url('../font/centurygothicpaneuropeanextrabold-webfont.woff2') format('woff2'), url('../font/centurygothicpaneuropeanextrabold-webfont.woff') format('woff'), url('../font/centurygothicpaneuropeanextrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropean_Rg';
+    src: url('../font/centurygothicpaneuropeansemibold-webfont.woff2') format('woff2'),
+        url('../font/centurygothicpaneuropeansemibold-webfont.woff') format('woff'),
+        url('../font/centurygothicpaneuropeansemibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    /* turns white to black */
+}
+
+.exblod {
+    font-family: 'century_gothic_paneuropeanXBd';
+}
+
+h1,
+h2 {
+    /* font-family: 'Super Caramel';*/
+    font-family: "Super Caramel";
+}
+
+body {
+    font-family: 'century_gothic_paneuropean_Rg';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-header img{width: 10%; display: block; margin: 0px auto;}
+
+.top-header {
+    box-shadow: 0 -4px 1px 2px #e9e4dd inset;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.inner-ofr-content h3 {
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px 0 20px;
+}
+.inner-ofr-content {
+    background: #fff;
+    padding: 20px;
+}
+
+.step-pd .col-4 {
+    text-align: center;
+    font-size: 18px;  
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.step-pd .col-4 p{margin-bottom: 0px;}
+
+.comman-color{background-color: #dcdcdc;
+    color: #a7a7a7 !important;}
+.comman-color-1{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255) !important;
+    background-color: #b4b4b4;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+.head-1 {
+    font-size: 24px !important;
+    margin-bottom: 0px !important;
+    color: #E6193C;
+}
+h3.head-2 {
+    font-size: 42px !important;
+    margin-bottom: 0px !important;
+}
+.head-3{text-align: center;}
+
+.ssl img {
+    width: 28%;
+    margin-bottom: 10px;}
+
+.ssl{text-align: center; margin: 20px 0;}
+
+.manage-footersec{text-align: center;}
+.manage-footersec p{font-size: 12px;}
+.copyright-text{font-size: 12px; text-align: center;}
+
+    .inner-offer-content{background: #f1f4f8;     padding-top: 20px;}
+
+.mange-content {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.red-color{color: #e74c3c; font-weight: 700;}
+
+.inner-ofr-content .form-select{height: 55px;}
+
+.pulse {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.95);
+    }
+}
+
+.checkout-btn .btn{
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 47px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #FFEB00;
+    border-style: solid;
+    border-color: #FFEB00;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    padding: 19px 30px;
+    }
+
+.oder-wd{width: 40%; margin: 30px auto; display: block;}
+.expedit{width: 60%; margin: 30px auto; display: block;}
+
+.trust {
+    color: black !important;
+    width: 320px !important;
+    margin-top: 20px;
+    margin: 30px auto;
+}
+
+.tagview{color: #000;}
+
+.footer {
+    background: #f1f4f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.heading-information {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.heading-information p {
+    margin-bottom: 2px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer p{font-weight: 500;}
+.step-pd {
+    display: flex;
+}
+
+.inner-offer-content-2{background: #fff;}
+
+.gray-pd{background-color: #e8e8e8; padding: 15px 20px; border-radius: 5px;}
+.gray-pd p{font-size: 18px; font-weight: 600; margin-bottom: 0px;}
+.gray-pd p i{margin-right: 10px;}
+
+.last-mail-formating{margin: 20px 0;}
+.last-mail-formating img{width: 70px; margin-right: 30px}
+.last-mail-formating p{margin-bottom: 0px; font-size: 18px; font-weight: 600;}
+
+  @media (max-width: 767px) {
+
+    .last-mail-formating img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+    .expedit {
+    width: 100%;
+    margin: 0px auto;
+    display: block;
+}
+
+.oder-wd {
+    width: 80%;
+    margin: 30px auto;
+    display: block;
+}
+
+    .inner-ofr-content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px 0 20px;
+}
+
+.footer {
+    background: #f1f4f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.mange-content {
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.inner-offer-content {
+    background: #f1f4f8;
+    padding-top: 0px;
+}
+
+    .top-header img {
+    width: 50%;
+    display: block;
+    margin: 0px auto;
+}
+
+.top-header {
+    box-shadow: 0 -4px 1px 2px #e9e4dd inset;
+    background-color: #fff;
+    padding: 10px 0 15px;
+}
+.step-pd {
+    display: none;
+}
+  }
