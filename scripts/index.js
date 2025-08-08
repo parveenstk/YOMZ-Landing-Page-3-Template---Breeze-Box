@@ -44,7 +44,7 @@ const selectedPackContent = {
         title: "2 PEOPLE",
         regularPrice: 159.98,
         couponApplied: "SAVE43",
-        totalPrice: "91.20",
+        totalPrice: 91.20,
         savedAmount: 68.78
     },
 
@@ -77,7 +77,7 @@ const updateCart = (packId) => {
                     <p>30 Day Supply Each</p>
                 </div>
                 <div class="bl-l productprice col-3">
-                    <p>$${packData.totalPrice}</p>
+                    <p>$${packData.totalPrice.toFixed(2)}</p>
                 </div>
             </div>
 
@@ -111,7 +111,7 @@ const updateCart = (packId) => {
                 </div>
                 <div class="col-md-2 col-3 my-auto">
                     <h4 class="text-right">
-                        <b>$${packData.totalPrice}</b>
+                        <b>$${packData.totalPrice.toFixed(2)}</b>
                     </h4>
                 </div>
             </div>
