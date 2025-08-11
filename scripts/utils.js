@@ -8,20 +8,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// forms hide & show functions
-document.addEventListener("DOMContentLoaded", function () {
-    // Initial visibility
-    document.querySelector(".form1").style.display = "block";
-    document.querySelector(".form2").style.display = "none";
-    document.querySelector(".form3").style.display = "none";
-
-    // When "Next" is clicked on Form1
-    document.getElementById("nextFromForm1").addEventListener("click", function () {
-        document.querySelector(".form2").style.display = "block";
-        document.querySelector(".form3").style.display = "block";
-    });
-});
-
 // FAQs workig scripts
 document.addEventListener('DOMContentLoaded', function () {
     // Find all accordion elements

@@ -1,3 +1,11 @@
+.coupon {
+    color: #19af42;
+}
+
+.discounted-price {
+    color: #e44613;
+}
+
 .hide {
     display: none;
 }
@@ -868,8 +876,6 @@ span.price.pricea {
     font-size: 15px;
     margin-bottom: 0px;
     font-family: 'century_gothic_paneuropeanXBd';
-    margin-bottom: 10px;
-
 }
 
 .main-middle-sec .checkout-page-cart-product-title {

@@ -339,16 +339,21 @@
           <p class="mnybk-cont-p2">50% discount on YOMZ for first-time buyers</p>
           <div class="counter-box">
             <p class="exblod">Limited Time Offer!</p>
+
+            <!-- timer mobile -->
             <div id="clockdiv" class="exblod">
-              <div><span class="hours">07</span>
+              <div>
+                <span id="hours-mobile" class="hours">23</span>
                 <div class="smalltext">Hours</div>
               </div>
               <p>:</p>
-              <div><span class="minutes">51</span>
+              <div>
+                <span id="minutes-mobile" class="minutes">59</span>
                 <div class="smalltext">Mins</div>
               </div>
               <p>:</p>
-              <div><span class="seconds">35</span>
+              <div>
+                <span id="seconds-mobile" class="seconds">59</span>
                 <div class="smalltext">Secs</div>
               </div>
             </div>
@@ -362,16 +367,21 @@
             <p class="mnybk-cont-p2">50% discount on YOMZ for first-time buyers</p>
             <div class="counter-box">
               <p class="exblod">Limited Time Offer!</p>
+
+              <!-- timer desktop -->
               <div id="clockdiv2" class="exblod">
-                <div><span class="hours">20</span>
+                <div>
+                  <span id="hours-desktop" class="hours">23</span>
                   <div class="smalltext">Hours</div>
                 </div>
                 <p>:</p>
-                <div><span class="minutes">28</span>
+                <div>
+                  <span id="minutes-desktop" class="minutes">59</span>
                   <div class="smalltext">Mins</div>
                 </div>
                 <p>:</p>
-                <div><span class="seconds">30</span>
+                <div>
+                  <span id="seconds-desktop" class="seconds">59</span>
                   <div class="smalltext">Secs</div>
                 </div>
               </div>
@@ -850,9 +860,8 @@
   </section>
   <!-- Salect Products -->
 
-  <!-- Checkout -->
-
-  <div class="checkoutsection">
+  <!-- Checkout Section -->
+  <div id="checkout-container" class="checkoutsection hide">
     <div class="container">
       <div class="col-md-10 mx-auto">
         <div class="row">
@@ -985,7 +994,6 @@
                 </div>
               </div>
 
-
               <div class="heading">
                 <h3>Billing address</h3>
                 <small>Enter your billing details</small>
@@ -1040,101 +1048,32 @@
               </div>
             </div>
 
-
             <div class="mb-3 col-12 submit-btn">
               <button type="submit" class="btn btn-primary" id="nextFromForm1">Next</button>
             </div>
 
             <div class="ssl-safe-section">
-              <div class="inner-section"><img src="images/secure.png"
-                  alt="secure" class="img-fluid">
+              <div class="inner-section"><img src="images/secure.png" alt="secure" class="img-fluid">
                 <h5><span>SECURE</span><span>SSL ENCRYPTION</span></h5>
               </div>
-              <div class="inner-section"><img src="images/safe.png"
-                  
-                  alt="safe" class="img-fluid">
+              <div class="inner-section"><img src="images/safe.png" alt="safe" class="img-fluid">
                 <h5><span>GUARANTEED</span><span>SAFE CHECKOUT</span></h5>
               </div>
             </div>
 
-            <div class="bundle-of-cards"><img src="images/bundle-cards.png"
-             
-                alt="bundle-of-cards" class="img-fluid"></div>
-
-          </div>
-
-
-
-          <div class="col-md-5 main-middle-sec">
-            <div class="right">
-              <div class="right-top">
-                <h4 class="your-cart">Your Cart</h4>
-                <p class="color-red">New & Improved 2025 Model</p>
-                <div class="star-happyCustomer"><img
-                    src="images/rating-star.png" alt="rating-star"
-                    class="img-fluid">
-                  <h5>Join 21,191+ Happy Customers </h5>
-                </div>
-                <p class="mt-1">Effortless Cooling for Every Space</p>
-                <div class="products-image">
-                  <img src="images/desktop-bag-1.png" class="img-fluid">
-                </div>
-
-                <div class="item-heading d-flex justify-content-between total-amount">
-                  <span>Item</span><span>Amount</span>
-                </div>
-                <div class="item-heading d-flex justify-content-between mb-2">
-                  <span class="exblod">3 PEOPLE</span><span>$49.99</span>
-                </div>
-                <p>Shipping and tax will be settled upon checkout confirmation</p>
-
-                <div class="checkout-items--subtotal-price d-flex justify-content-between w-100">
-                  <div class="checkout-items--subtotal-left">
-                    <p class="charge">
-                      Coupon Applied:
-                      <b>
-                        SAVE<span class="cb-product-discount-off">50</span></b>
-                    </p>
-                  </div>
-                  <div class="checkout-items--subtotal-right">
-                    <p class="price text-right"><span id="discount-amount" class="org discounted-price">-$49.99</span>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="total-price text-end">
-                  <p>Grand Total: <strong>$49.99</strong></p>
-                </div>
-
-
-
-
-              </div>
-
-              
-                <div class="col d-flex align-items-start days-section">
-                  <div class="icon-square flex-shrink-0 me-3">
-                    <img src="images/90days.png" class="img-fluid">
-                  </div>
-                  <div>
-
-                    <p>90 Day Money-Back Guarantee: Feel safe knowing you are protected with a 90 day guarantee. Simply
-                      send the item(s) back in the original packaging to receive a full refund or replacement, less S&H.
-
-                    </p>
-
-                  </div>
-                </div>
-
+            <div class="bundle-of-cards"><img src="images/bundle-cards.png" alt="bundle-of-cards" class="img-fluid">
             </div>
+
           </div>
+
+          <!-- cart section -->
+          <div id="cart-section" class="col-md-5 main-middle-sec"></div>
         </div>
       </div>
 
     </div>
   </div>
-
-  <!-- Checkout -->
+  <!-- Checkout Section -->
 
   <div class="footer">
     <div class="container"><img src="images/logo.png" class="ftr-logo" alt="" width="134" height="44"
@@ -1170,7 +1109,8 @@
 
   <!-- import function scripts -->
   <script src="./scripts/index.js"></script>
-  <!-- <script src="./scripts/utils.js"></script> -->
+  <script src="./scripts/utils.js"></script>
+  <script src="./scripts/timer.js"></script>
 
 </body>
 
