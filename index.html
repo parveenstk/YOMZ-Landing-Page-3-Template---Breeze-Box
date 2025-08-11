@@ -5,10 +5,8 @@
   <title>YOMZ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
@@ -854,216 +852,285 @@
 
   <!-- Checkout -->
 
-  <div class="checkout-payment">
-    <div class="container-fluid">
-      <div id="checkout-container" class="row flex-column-reverse flex-lg-row hide">
-        <div class="col-md-7">
-          <div class="payment-form">
-            <h3>Select Your Payment Method</h3>
+  <div class="checkoutsection">
+    <div class="container">
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-md-7">
 
-            <div class="action-button">
-              <button class="btn paypal"><img src="images/paypal.png"></button>
-              <button class="btn pay-card">Pay With Credit or Debit Card</button>
+            <div class="expresscheckout">
+              <p>Express Checkout</p>
+              <a href="#" class="paypal-button btn"><img src="images/paypal.png"></a>
             </div>
-            <div id="smallCards">
-              <div class="mx-auto d-block"><img src="images/card-1.png" alt=""> <img src="images/card-2.png" alt="">
-                <img src="images/card-3.png" alt=""> <img src="images/card-4.png" alt="">
-              </div>
+            <div class="payment-separator">
+              OR
             </div>
-
-            <!-- Shipping Information Form -->
-            <div class="form1 comman-format">
-              <div class="form-heading">
-                <h4><img src="images/shipping.png"> Shipping Information</h4>
+            <div class="payment-form controlform">
+              <div class="heading">
+                <h3>Shipping address</h3>
+                <small>Enter your shipping details</small>
               </div>
               <div class="row">
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="Example input placeholder">
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
+                    <label for="floatingInput">Email address</label>
+                  </div>
                 </div>
-                <div class="mb-3 col-6">
-                  <input type="text" class="form-control" placeholder="First Name">
+                <div class="col-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                    <label for="floatingInput">First Name</label>
+                  </div>
                 </div>
-                <div class="mb-3 col-6">
-                  <input type="text" class="form-control" placeholder="Last Name">
+                <div class="col-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Last Name">
+                    <label for="floatingInput">Last Name</label>
+                  </div>
                 </div>
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="Address 1">
+                <div class="col-12">
+                  <div class="form-floating mahesmall-font mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected="">United States</option>
+                    </select>
+                    <label for="floatingSelect">Country</label>
+                  </div>
                 </div>
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="City">
-                </div>
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="Zip Code">
-                </div>
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="Phone Number">
-                </div>
-                <div class="mb-3 col-12 submit-btn">
-                  <button type="submit" class="btn btn-primary" id="nextFromForm1">Next</button>
-                </div>
-              </div>
-            </div>
 
-            <div class="form2 comman-format">
-              <div class="form-heading">
-                <h4><img src="images/shipping.png"> Your Shipping Method</h4>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Address">
+                    <label for="floatingInput">Address</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput"
+                      placeholder="Apt, Suite, Unit, Building, Etc.">
+                    <label for="floatingInput">Apt, Suite, Unit, Building, Etc.</label>
+                  </div>
+                </div>
+
               </div>
+              <div class="heading">
+                <h3>Payment</h3>
+              </div>
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <p class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+
+                      <div class="form-check">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <div class="d-flex justify-content-between gap-manation">
+                            <span class="lebel-text">Credit Card</span>
+                            <span class="text-end">
+                              <img src="images/cards.png">
+
+                            </span>
+                          </div>
+
+                        </label>
+                      </div>
+
+                    </button>
+                    </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="payment-form controlform">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="floatingInput" placeholder="Card Number">
+                              <label for="floatingInput">Card Number</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="floatingInput" placeholder="Expiration Date">
+                              <label for="floatingInput">Expiration Date</label>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="floatingInput" placeholder="Security Code">
+                              <label for="floatingInput">Security Code</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="floatingInput" placeholder="Cardholder Name">
+                              <label for="floatingInput">Cardholder Name</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-check"><input type="checkbox" value="" id="sameShippingBilling"
+                            name="billShipSame" class="form-check-input" data-gtm-form-interact-field-id="0"> <label
+                            for="sameShippingBilling" class="form-check-label">
+                            Use shipping address as billing address
+                          </label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="heading">
+                <h3>Billing address</h3>
+                <small>Enter your billing details</small>
+              </div>
+
               <div class="row">
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control"
-                    placeholder="Shipping : UPS Ground (Estimate 2-5 Business Days)" disabled>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Name On Card">
+                    <label for="floatingInput">Name On Card</label>
+                  </div>
                 </div>
+                <div class="col-12">
+                  <div class="form-floating mahesmall-font mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected="">United States</option>
+                    </select>
+                    <label for="floatingSelect">Country</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Address">
+                    <label for="floatingInput">Address</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput"
+                      placeholder="Apt, Suite, Unit, Building, Etc.">
+                    <label for="floatingInput">Apt, Suite, Unit, Building, Etc.</label>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput"
+                      placeholder="Apt, Suite, Unit, Building, Etc.">
+                    <label for="floatingInput">City</label>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput"
+                      placeholder="Apt, Suite, Unit, Building, Etc.">
+                    <label for="floatingInput">Zip</label>
+                  </div>
+                </div>
+
               </div>
             </div>
 
-            <div class="form3 comman-format">
-              <div class="form-heading">
-                <div class="col d-flex align-items-start">
+
+            <div class="mb-3 col-12 submit-btn">
+              <button type="submit" class="btn btn-primary" id="nextFromForm1">Next</button>
+            </div>
+
+            <div class="ssl-safe-section">
+              <div class="inner-section"><img src="images/secure.png"
+                  alt="secure" class="img-fluid">
+                <h5><span>SECURE</span><span>SSL ENCRYPTION</span></h5>
+              </div>
+              <div class="inner-section"><img src="images/safe.png"
+                  
+                  alt="safe" class="img-fluid">
+                <h5><span>GUARANTEED</span><span>SAFE CHECKOUT</span></h5>
+              </div>
+            </div>
+
+            <div class="bundle-of-cards"><img src="images/bundle-cards.png"
+             
+                alt="bundle-of-cards" class="img-fluid"></div>
+
+          </div>
+
+
+
+          <div class="col-md-5 main-middle-sec">
+            <div class="right">
+              <div class="right-top">
+                <h4 class="your-cart">Your Cart</h4>
+                <p class="color-red">New & Improved 2025 Model</p>
+                <div class="star-happyCustomer"><img
+                    src="images/rating-star.png" alt="rating-star"
+                    class="img-fluid">
+                  <h5>Join 21,191+ Happy Customers </h5>
+                </div>
+                <p class="mt-1">Effortless Cooling for Every Space</p>
+                <div class="products-image">
+                  <img src="images/desktop-bag-1.png" class="img-fluid">
+                </div>
+
+                <div class="item-heading d-flex justify-content-between total-amount">
+                  <span>Item</span><span>Amount</span>
+                </div>
+                <div class="item-heading d-flex justify-content-between mb-2">
+                  <span class="exblod">3 PEOPLE</span><span>$49.99</span>
+                </div>
+                <p>Shipping and tax will be settled upon checkout confirmation</p>
+
+                <div class="checkout-items--subtotal-price d-flex justify-content-between w-100">
+                  <div class="checkout-items--subtotal-left">
+                    <p class="charge">
+                      Coupon Applied:
+                      <b>
+                        SAVE<span class="cb-product-discount-off">50</span></b>
+                    </p>
+                  </div>
+                  <div class="checkout-items--subtotal-right">
+                    <p class="price text-right"><span id="discount-amount" class="org discounted-price">-$49.99</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="total-price text-end">
+                  <p>Grand Total: <strong>$49.99</strong></p>
+                </div>
+
+
+
+
+              </div>
+
+              
+                <div class="col d-flex align-items-start days-section">
                   <div class="icon-square flex-shrink-0 me-3">
-                    <img src="images/credit-card.png">
+                    <img src="images/90days.png" class="img-fluid">
                   </div>
                   <div>
-                    <h4>Payment Information</h4>
-                    <p>All transactions are secured and encrypted</p>
+
+                    <p>90 Day Money-Back Guarantee: Feel safe knowing you are protected with a 90 day guarantee. Simply
+                      send the item(s) back in the original packaging to receive a full refund or replacement, less S&H.
+
+                    </p>
+
                   </div>
                 </div>
-              </div>
-              <div class="form-check py-4">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Billing Same as Shipping Address
-                </label>
-              </div>
-              <div class="form-heading">
-                <h4><img src="images/shipping.png"> Confirm Billing Address</h4>
-              </div>
-              <div class="row">
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="Name on card">
-                </div>
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="Address 1">
-                </div>
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="City">
-                </div>
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="Zip">
-                </div>
-                <div class="mb-3 col-12">
-                  <input type="text" class="form-control" placeholder="Card Number">
-                </div>
-                <div class="mb-3 col-4">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>Month</option>
-                    <option value="1">(01) January</option>
-                    <option value="2">(02) February</option>
-                    <option value="3">(03) March</option>
-                    <option value="4">(04) April</option>
-                    <option value="5">(05) May</option>
-                    <option value="6">(06) June</option>
-                    <option value="7">(07) July</option>
-                    <option value="8">(08) August</option>
-                    <option value="9">(09) September</option>
-                    <option value="10">(10) October</option>
-                    <option value="11">(11) November</option>
-                    <option value="12">(12) December</option>
-                  </select>
-                </div>
-                <div class="mb-3 col-4">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>Year</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                    <option value="2027">2027</option>
-                    <option value="2028">2028</option>
-                    <option value="2029">2029</option>
-                    <option value="2030">2030</option>
-                    <option value="2031">2031</option>
-                    <option value="2032">2032</option>
-                    <option value="2033">2033</option>
-                    <option value="2034">2034</option>
-                    <option value="2035">2035</option>
-                    <option value="2036">2036</option>
-                    <option value="2037">2037</option>
-                    <option value="2038">2038</option>
-                    <option value="2039">2039</option>
-                    <option value="2040">2040</option>
-                    <option value="2041">2041</option>
-                    <option value="2042">2042</option>
-                    <option value="2043">2043</option>
-                  </select>
-                </div>
-                <div class="mb-3 col-4">
-                  <input type="text" class="form-control" placeholder="CVV">
-                </div>
-                <div class="mb-3 col-12 submit-btn">
-                  <button type="submit" class="btn btn-primary">Complete Order</button>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
-
-        <div class="col-md-5 cart-summnery-1">
-          <!-- Product Cart Section -->
-          <div id="cart-section" class="cart-summnery">
-
-            <!-- <div id="inner-cart-section">
-              <div class="products-box row align-items-center">
-                <div class="bl-l productsimage col-3">
-                  <img src="images/desktop-bag-3.png">
-                </div>
-                <div class="bl-l productdescription col-6">
-                  <h4>3 PEOPLE</h4>
-                  <p>30 Day Supply Each</p>
-                </div>
-                <div class="bl-l productprice col-3">
-                  <p>$47.99</p>
-                </div>
-              </div>
-
-              <div class="clearfix checkout-items">
-                <div class="row clearfix">
-                  <div class="col-md-10 col-sm-10 col-9">
-                    <p>Regular Price</p>
-                  </div>
-                  <div class="col-md-2 col-sm-2 col-3">
-                    <p class="text-end">$79.99</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-10 col-sm-10 col-9">
-                    <p>Coupon Applied: <b>SAVE40</b></p>
-                  </div>
-                  <div class="col-md-2 col-sm-2 col-3">
-                    <p class="text-end">-$32.00</p>
-                  </div>
-                </div>
-
-                <div class="row clearfix">
-                  <div class="col-md-10 col-9">
-                    <p>Shipping and tax will be settled upon checkout confirmation</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-10 col-9 my-auto">
-                  <h4><b>Total:</b></h4>
-                </div>
-                <div class="col-md-2 col-3 my-auto">
-                  <h4 class="text-right">
-                    <b>$47.99</b>
-                  </h4>
-                </div>
-              </div>
-            </div> -->
-
-          </div>
-        </div>
-        <!-- Product Cart Section -->
-
       </div>
+
     </div>
   </div>
 
@@ -1103,7 +1170,7 @@
 
   <!-- import function scripts -->
   <script src="./scripts/index.js"></script>
-  <script src="./scripts/utils.js"></script>
+  <!-- <script src="./scripts/utils.js"></script> -->
 
 </body>
 

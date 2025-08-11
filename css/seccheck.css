@@ -426,7 +426,7 @@ span.price.pricea {
 
 /****************************** Products *****************************/
 /****************************** checkout *****************************/
-.action-button .btn {
+/* .action-button .btn {
     width: 100%;
     padding: 15px 0;
     margin-bottom: 20px;
@@ -535,7 +535,7 @@ span.price.pricea {
     padding: 30px 0;
     border-top: 1px dashed #bdbdbd;
     border-bottom: 1px dashed #bdbdbd;
-}
+} */
 
 /****************************** checkout *****************************/
 
@@ -699,3 +699,246 @@ span.price.pricea {
     }
 
 }
+
+/*************** NewCheckout Section **************/
+
+.checkoutsection {
+    padding: 60px 0 !important;
+    float: left;
+    width: 100%;
+}
+
+.main-middle-sec .products-image {
+    text-align: center;
+    display: inline;
+    position: relative;
+}
+
+.main-middle-sec .icon-square{width: 20%;}
+.total-amount {
+    font-family: 'century_gothic_paneuropeanXBd';
+    padding: 20px 0;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 20px;
+}
+.days-section{margin-top: 20px;}
+
+.checkout-items--subtotal-price {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;  margin-bottom: 20px;}
+
+.checkout-items--subtotal-price p{margin-bottom: 0px;}
+
+.color-red{color: rgb(183, 51, 57);}
+
+.heading {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: none;
+    box-shadow: none;
+}
+
+.payment-form.controlform .accordion
+ {
+    background-color: #f6f6f6;
+    color: #444;
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+}
+
+.payment-form .accordion:after{display: none;}
+
+.accordion-button::after {
+    display: none;
+}
+
+.form-check {
+    width: 100%;
+}
+
+.form-check-label {
+    width: 100%;
+}
+
+.form-check-input {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.payment-form .accordion-item{background-color: #f6f6f6;}
+.payment-form  .accordion-header {
+    margin-bottom: 0;
+       border: 1px solid #000;
+}
+
+.payment-form .accordion-body {
+    padding: 30px;
+}
+
+.submit-btn .btn {
+    background: #19af42;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px 1px #0003;
+    -webkit-box-shadow: 0 5px 5px 1px rgba(0, 0, 0, .2);
+    color: #fff;
+    display: block;
+    font-size: 26px;
+    letter-spacing: .3px;
+    line-height: 58px;
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.ssl-safe-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;}
+
+    .ssl-safe-section .inner-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ssl-safe-section .inner-section h5 {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #5c5c5e;
+}
+
+.ssl-safe-section .inner-section h5 span {
+    display: block;
+}
+
+.bundle-of-cards {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-middle-sec .right {
+    position: sticky;
+    top: 0;
+    padding-left: 10px;
+}
+
+.right {
+    float: right;
+}
+
+.main-middle-sec .right-top {
+    background-color: #f6f6f6;
+    padding: 23px 18px;
+}
+
+.main-middle-sec .right-top .your-cart {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.main-middle-sec .checkout-page-cart-product-title {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.main-middle-sec .right-top .star-happyCustomer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.star-happyCustomer h5 {
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-family: 'century_gothic_paneuropeanXBd';
+    margin-bottom: 10px;
+
+}
+
+.main-middle-sec .checkout-page-cart-product-title {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.main-middle-sec .checkout-page-cart-product-section {
+    text-align: left;
+}
+
+.checkout-page-cart-product-section {
+    padding: 10px 0;
+}
+
+.checkout-page-cart-product-section {
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+
+.main-middle-sec .checkout-page-cart-price-section {
+    margin-top: 24px;}
+
+    .payment-separator {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.payment-separator:before, .payment-separator:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #ccc;
+    margin: auto;
+}
+
+.payment-separator:after {
+    margin-left: 10px;
+}
+
+.payment-separator:before {
+    margin-right: 10px;}
+
+.expresscheckout{text-align: center; font-family: 'century_gothic_paneuropeanXBd';}
+
+a.paypal-button.btn{background: #ffc43a;}
+a.paypal-button.btn {
+    background: #ffc43a;
+    padding: 8px 80px;
+}
+
+.main-middle-sec .products-image img {
+    width: 30%;
+    margin: 0px 0 10px;
+}
+
+@media only screen and (max-width: 767px) {
+.payment-form .accordion-body {
+    padding: 10px;
+}
+
+.main-middle-sec .right {
+    position: sticky;
+    top: 0px;
+    padding-left: 0px;
+    margin-top: 30px;
+}
+}
+/*************** NewCheckout Section **************/
