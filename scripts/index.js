@@ -99,7 +99,7 @@ const updateCart = (packId) => {
                   </div>
                   <div class="checkout-items--subtotal-right">
                     <p class="price text-right">
-                      <span id="discount-amount" class="org discounted-price">-$${packData.savedAmount.toFixed(2)}</span>
+                      <span id="discount-amount" class="org discounted-price exblod">-$${packData.savedAmount.toFixed(2)}</span>
                     </p>
                   </div>
                 </div>
