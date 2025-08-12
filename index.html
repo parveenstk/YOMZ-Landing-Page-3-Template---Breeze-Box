@@ -867,203 +867,254 @@
         <div class="row">
           <div class="col-md-7">
 
-            <div class="expresscheckout">
-              <p>Express Checkout</p>
-              <a href="#" class="paypal-button btn"><img src="images/paypal.png"></a>
-            </div>
-            <div class="payment-separator">
-              OR
-            </div>
-            <div class="payment-form controlform">
-              <div class="heading">
-                <h3>Shipping address</h3>
-                <small>Enter your shipping details</small>
+            <form id="checkout-form">
+              <div class="expresscheckout">
+                <p>Express Checkout</p>
+                <a href="#" class="paypal-button btn"><img src="images/paypal.png"></a>
               </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
-                    <label for="floatingInput">First Name</label>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Last Name">
-                    <label for="floatingInput">Last Name</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating mahesmall-font mb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                      <option selected="">United States</option>
-                    </select>
-                    <label for="floatingSelect">Country</label>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Address">
-                    <label for="floatingInput">Address</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput"
-                      placeholder="Apt, Suite, Unit, Building, Etc.">
-                    <label for="floatingInput">Apt, Suite, Unit, Building, Etc.</label>
-                  </div>
-                </div>
-
+              <div class="payment-separator">
+                OR
               </div>
-              <div class="heading">
-                <h3>Payment</h3>
-              </div>
+              <div class="payment-form controlform">
+                <div class="heading">
+                  <h3>Shipping address</h3>
+                  <small>Enter your shipping details</small>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <!-- email address -->
+                      <input type="email" class="form-control" id="email-address" placeholder="Email address">
+                      <label for="email-address">Email address</label>
+                      <p id="email-address-error" class="error-message hide"></p>
+                    </div>
+                  </div>
 
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <p class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  <div class="col-6">
+                    <div class="form-floating mb-3">
+                      <!-- first name -->
+                      <input type="text" class="form-control" id="first-name" placeholder="First Name"
+                        autocomplete="first-name">
+                      <label for="first-name">First Name</label>
+                      <p id="first-name-error" class="error-message hide"></p>
+                    </div>
+                  </div>
 
-                      <div class="form-check">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          <div class="d-flex justify-content-between gap-manation">
-                            <span class="lebel-text">Credit Card</span>
-                            <span class="text-end">
-                              <img src="images/cards.png">
+                  <div class="col-6">
+                    <div class="form-floating mb-3">
+                      <!-- last name -->
+                      <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                      <label for="last-name">Last Name</label>
+                      <p id="last-name-error" class="error-message hide"></p>
+                    </div>
+                  </div>
 
-                            </span>
+                  <div class="col-12">
+                    <div class="form-floating mahesmall-font mb-3">
+                      <!-- country selection -->
+                      <select class="form-select" id="country-selector" aria-label="Floating label select example"
+                        disabled>
+                        <option selected>United States</option>
+                      </select>
+                      <label for="country-selector">Country</label>
+
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <!-- shipping address -->
+                      <input type="text" class="form-control" id="shipping-address" placeholder="Address">
+                      <label for="shipping-address">Address</label>
+                      <p id="shipping-address-error" class="error-message hide"></p>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <!-- optional addresss -->
+                      <input type="text" class="form-control" id="apt-suite-optional"
+                        placeholder="Apt, Suite, Unit, Building, Etc.">
+                      <label for="apt-suite-optional">Apt, Suite, Unit, Building, Etc.</label>
+                      <p id="apt-suite-optional-error" class="error-message hide"></p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Payment section -->
+                <div class="heading">
+                  <h3>Payment</h3>
+                </div>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <p class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <div class="form-check">
+                          <label class="form-check-label" for="credit-card-selector">
+                            <input class="form-check-input" type="radio" name="credit-card-selector"
+                              id="credit-card-selector" checked>
+                            <div class="d-flex justify-content-between gap-manation">
+                              <span class="lebel-text">Credit Card</span>
+                              <span class="text-end">
+                                <img src="images/cards.png">
+                              </span>
+                            </div>
+                          </label>
+                        </div>
+                      </button>
+                      </h2>
+
+                    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="payment-form controlform">
+
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-floating mb-3">
+                                <!-- card number -->
+                                <input type="text" class="form-control" id="card-number" placeholder="Card Number">
+                                <label for="card-number">Card Number</label>
+                                <p id="card-number-error" class="error-message hide"></p>
+                              </div>
+                            </div>
                           </div>
 
-                        </label>
-                      </div>
-
-                    </button>
-                    </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-
-                      <div class="payment-form controlform">
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="form-floating mb-3">
-                              <input type="text" class="form-control" id="floatingInput" placeholder="Card Number">
-                              <label for="floatingInput">Card Number</label>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="form-floating mb-3">
+                                <!-- card expiry -->
+                                <input type="text" class="form-control" id="card-expiry" placeholder="Expiration Date">
+                                <label for="card-expiry">Expiration Date</label>
+                                <p id="card-expiry-error" class="error-message hide"></p>
+                              </div>
                             </div>
+
+                            <div class="col-6">
+                              <div class="form-floating mb-3">
+                                <!-- card security code -->
+                                <input type="text" class="form-control" id="card-security-code"
+                                  placeholder="Security Code">
+                                <label for="card-security-code">Security Code</label>
+                                <p id="card-security-code-error" class="error-message hide"></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-floating mb-3">
+                                <!-- cardholder name -->
+                                <input type="text" class="form-control" id="cardholder-name"
+                                  placeholder="Cardholder Name">
+                                <label for="cardholder-name">Cardholder Name</label>
+                                <p id="cardholder-name-error" class="error-message hide"></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-check">
+                            <input type="checkbox" id="sameShippingBilling" class="form-check-input cursor
+                              data-gtm-form-interact-field-id=" 0" checked>
+                            <label for="sameShippingBilling" class="form-check-label cursor">
+                              Use shipping address as billing address
+                            </label>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <div class="form-floating mb-3">
-                              <input type="text" class="form-control" id="floatingInput" placeholder="Expiration Date">
-                              <label for="floatingInput">Expiration Date</label>
-                            </div>
-                          </div>
-                          <div class="col-6">
-                            <div class="form-floating mb-3">
-                              <input type="text" class="form-control" id="floatingInput" placeholder="Security Code">
-                              <label for="floatingInput">Security Code</label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="form-floating mb-3">
-                              <input type="text" class="form-control" id="floatingInput" placeholder="Cardholder Name">
-                              <label for="floatingInput">Cardholder Name</label>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="form-check"><input type="checkbox" value="" id="sameShippingBilling"
-                            name="billShipSame" class="form-check-input" data-gtm-form-interact-field-id="0"> <label
-                            for="sameShippingBilling" class="form-check-label">
-                            Use shipping address as billing address
-                          </label></div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <div id="billing-section" class="hide">
+                  <div class="heading">
+                    <h3>Billing address</h3>
+                    <small>Enter your billing details</small>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-floating mb-3">
+                        <!-- name on card -->
+                        <input type="text" class="form-control" id="name-on-card" placeholder="Name On Card">
+                        <label for="name-on-card">Name On Card</label>
+                        <p id="name-on-card-error" class="error-message hide"></p>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating mahesmall-font mb-3">
+                        <!-- billing country selector -->
+                        <select class="form-select" id="billing-country-selector"
+                          aria-label="Floating label select example" disabled>
+                          <option selected="">United States</option>
+                        </select>
+                        <label for="billing-country-selector">Country</label>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-floating mb-3">
+                        <!-- billing address -->
+                        <input type="text" class="form-control" id="billing-address" placeholder="Address">
+                        <label for="billing-address">Address</label>
+                        <p id="billing-address-error" class="error-message hide"></p>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating mb-3">
+                        <!-- optional address -->
+                        <input type="text" class="form-control" id="billing-apt-optional"
+                          placeholder="Apt, Suite, Unit, Building, Etc.">
+                        <label for="billing-apt-optional">Apt, Suite, Unit, Building, Etc.</label>
+                        <p id="billing-apt-optional-error" class="error-message hide"></p>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="form-floating mb-3">
+                        <!-- billing city -->
+                        <input type="text" class="form-control" id="billing-city"
+                          placeholder="Apt, Suite, Unit, Building, Etc.">
+                        <label for="billing-city">City</label>
+                        <p id="billing-city-error" class="error-message hide"></p>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="form-floating mb-3">
+                        <!-- billing zip code -->
+                        <input type="text" class="form-control" id="billing-zip-code"
+                          placeholder="Apt, Suite, Unit, Building, Etc.">
+                        <label for="billing-zip-code">Zip</label>
+                        <p id="billing-zip-code-error" class="error-message hide"></p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
               </div>
 
-              <div class="heading">
-                <h3>Billing address</h3>
-                <small>Enter your billing details</small>
+              <div class="mb-3 col-12 submit-btn">
+                <!-- submit button -->
+                <button type="submit" class="btn btn-primary" id="complete-purchase">
+                  Completet Your Secure Purchase
+                </button>
               </div>
 
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Name On Card">
-                    <label for="floatingInput">Name On Card</label>
-                  </div>
+              <div class="ssl-safe-section">
+                <div class="inner-section"><img src="images/secure.png" alt="secure" class="img-fluid">
+                  <h5><span>SECURE</span><span>SSL ENCRYPTION</span></h5>
                 </div>
-                <div class="col-12">
-                  <div class="form-floating mahesmall-font mb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                      <option selected="">United States</option>
-                    </select>
-                    <label for="floatingSelect">Country</label>
-                  </div>
+                <div class="inner-section"><img src="images/safe.png" alt="safe" class="img-fluid">
+                  <h5><span>GUARANTEED</span><span>SAFE CHECKOUT</span></h5>
                 </div>
-
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Address">
-                    <label for="floatingInput">Address</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput"
-                      placeholder="Apt, Suite, Unit, Building, Etc.">
-                    <label for="floatingInput">Apt, Suite, Unit, Building, Etc.</label>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput"
-                      placeholder="Apt, Suite, Unit, Building, Etc.">
-                    <label for="floatingInput">City</label>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput"
-                      placeholder="Apt, Suite, Unit, Building, Etc.">
-                    <label for="floatingInput">Zip</label>
-                  </div>
-                </div>
-
               </div>
-            </div>
 
-            <div class="mb-3 col-12 submit-btn">
-              <button type="submit" class="btn btn-primary" id="nextFromForm1">Next</button>
-            </div>
-
-            <div class="ssl-safe-section">
-              <div class="inner-section"><img src="images/secure.png" alt="secure" class="img-fluid">
-                <h5><span>SECURE</span><span>SSL ENCRYPTION</span></h5>
+              <div class="bundle-of-cards"><img src="images/bundle-cards.png" alt="bundle-of-cards" class="img-fluid">
               </div>
-              <div class="inner-section"><img src="images/safe.png" alt="safe" class="img-fluid">
-                <h5><span>GUARANTEED</span><span>SAFE CHECKOUT</span></h5>
-              </div>
-            </div>
 
-            <div class="bundle-of-cards"><img src="images/bundle-cards.png" alt="bundle-of-cards" class="img-fluid">
-            </div>
-
+            </form>
           </div>
 
           <!-- cart section -->
@@ -1111,6 +1162,7 @@
   <script src="./scripts/index.js"></script>
   <script src="./scripts/utils.js"></script>
   <script src="./scripts/timer.js"></script>
+  <script src="./scripts/form.js"></script>
 
 </body>
 

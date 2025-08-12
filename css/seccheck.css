@@ -1,3 +1,17 @@
+#complete-purchase {
+    margin-top: 25px;
+}
+
+.error-message {
+    font-size: 15px;
+    padding: 4px 0px 0px 10px;
+    color: #e6193b;
+}
+
+.cursor {
+    cursor: pointer !important;
+}
+
 .coupon {
     color: #19af42;
 }
@@ -440,38 +454,31 @@ span.price.pricea {
     margin-bottom: 20px;
     height: 60px;
 }
-
 .action-button .btn.paypal {
     background: rgb(255, 196, 57);
     border-radius: 4px;
 }
-
 .action-button .btn.pay-card {
     background: #19af42;
     border-radius: 4px;
     color: #fff;
 }
-
 .payment-form {
     padding: 80px 110px;
 }
-
 .payment-form h3 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 45px;
 }
-
 #smallCards div {
     width: 220px;
 }
-
 #smallCards img {
     max-height: 100%;
     height: 35px;
     margin: 0 0 20px;
 }
-
 .submit-btn .btn {
     background: #19af42;
     border-radius: 50px;
@@ -486,67 +493,52 @@ span.price.pricea {
     text-transform: uppercase;
     width: 100%;
 }
-
 .form-heading h4 img {
     width: 40px;
 }
-
 .form-heading img {
     width: 40px;
 }
-
 .form-heading .col h4 {
     margin-bottom: 0px !important;
 }
-
 .form-heading h4 {
     font-size: 28px;
     margin-bottom: 20px;
 }
-
 .comman-format input[type=text] {
     height: 65px;
 }
-
 .comman-format select {
     height: 65px;
 }
-
 .comman-format {
     display: none;
 }
-
 .cart-summnery-1 {
     background-color: #f4f2f2;
     padding: 120px 80px;
 }
-
 .productsimage img {
     width: 100%;
 }
-
 .bl-l.productdescription p {
     font-size: 16px;
 }
-
 .cart-summnery .products-box p {
     margin-bottom: 0px;
 }
-
 .bl-l.productprice p {
     font-size: 30px;
     margin-bottom: 0px;
 }
-
 .checkout-items {
     margin: 35px 0;
     padding: 30px 0;
     border-top: 1px dashed #bdbdbd;
     border-bottom: 1px dashed #bdbdbd;
 } */
-
 /****************************** checkout *****************************/
-
 @media only screen and (max-width:1200px) {
     .payment-form {
         padding: 50px 100px;
@@ -568,7 +560,6 @@ span.price.pricea {
 }
 
 @media only screen and (max-width: 767px) {
-
     .selected-box {
         border-width: 6px !important;
     }
@@ -691,11 +682,9 @@ span.price.pricea {
         padding-top: 5px;
         padding-bottom: 10px;
     }
-
 }
 
 @media only screen and (max-width: 350px) {
-
     .bag-heading h3 {
         font-size: calc(8.5vw - 0px) !important;
         line-height: calc(0.8em + 1vw) !important;
@@ -705,11 +694,9 @@ span.price.pricea {
         font-size: calc(4.5vw - 0px) !important;
         line-height: calc(1em + 1vw) !important;
     }
-
 }
 
 /*************** NewCheckout Section **************/
-
 .checkoutsection {
     padding: 60px 0 !important;
     float: left;
@@ -722,23 +709,35 @@ span.price.pricea {
     position: relative;
 }
 
-.main-middle-sec .icon-square{width: 20%;}
+.main-middle-sec .icon-square {
+    width: 20%;
+}
+
 .total-amount {
     font-family: 'century_gothic_paneuropeanXBd';
     padding: 20px 0;
     border-bottom: 2px solid #000000;
     margin-bottom: 20px;
 }
-.days-section{margin-top: 20px;}
+
+.days-section {
+    margin-top: 20px;
+}
 
 .checkout-items--subtotal-price {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding: 10px 0;  margin-bottom: 20px;}
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
 
-.checkout-items--subtotal-price p{margin-bottom: 0px;}
+.checkout-items--subtotal-price p {
+    margin-bottom: 0px;
+}
 
-.color-red{color: rgb(183, 51, 57);}
+.color-red {
+    color: rgb(183, 51, 57);
+}
 
 .heading {
     margin-bottom: 20px;
@@ -750,11 +749,9 @@ span.price.pricea {
     box-shadow: none;
 }
 
-.payment-form.controlform .accordion
- {
+.payment-form.controlform .accordion {
     background-color: #f6f6f6;
     color: #444;
-    cursor: pointer;
     padding: 0px;
     width: 100%;
     text-align: left;
@@ -764,7 +761,9 @@ span.price.pricea {
     position: relative;
 }
 
-.payment-form .accordion:after{display: none;}
+.payment-form .accordion:after {
+    display: none;
+}
 
 .accordion-button::after {
     display: none;
@@ -783,10 +782,13 @@ span.price.pricea {
     height: 1.1em;
 }
 
-.payment-form .accordion-item{background-color: #f6f6f6;}
-.payment-form  .accordion-header {
+.payment-form .accordion-item {
+    background-color: #f6f6f6;
+}
+
+.payment-form .accordion-header {
     margin-bottom: 0;
-       border: 1px solid #000;
+    border: 1px solid #000;
 }
 
 .payment-form .accordion-body {
@@ -811,9 +813,10 @@ span.price.pricea {
 .ssl-safe-section {
     display: flex;
     justify-content: center;
-    gap: 20px;}
+    gap: 20px;
+}
 
-    .ssl-safe-section .inner-section {
+.ssl-safe-section .inner-section {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -900,15 +903,18 @@ span.price.pricea {
 }
 
 .main-middle-sec .checkout-page-cart-price-section {
-    margin-top: 24px;}
+    margin-top: 24px;
+}
 
-    .payment-separator {
+.payment-separator {
     display: flex;
     flex-direction: row;
     margin: 1rem 0;
     font-weight: bold;
 }
-.payment-separator:before, .payment-separator:after {
+
+.payment-separator:before,
+.payment-separator:after {
     content: "";
     flex: 1 1;
     border-bottom: 1px solid #ccc;
@@ -920,11 +926,18 @@ span.price.pricea {
 }
 
 .payment-separator:before {
-    margin-right: 10px;}
+    margin-right: 10px;
+}
 
-.expresscheckout{text-align: center; font-family: 'century_gothic_paneuropeanXBd';}
+.expresscheckout {
+    text-align: center;
+    font-family: 'century_gothic_paneuropeanXBd';
+}
 
-a.paypal-button.btn{background: #ffc43a;}
+a.paypal-button.btn {
+    background: #ffc43a;
+}
+
 a.paypal-button.btn {
     background: #ffc43a;
     padding: 8px 80px;
@@ -936,15 +949,25 @@ a.paypal-button.btn {
 }
 
 @media only screen and (max-width: 767px) {
-.payment-form .accordion-body {
-    padding: 10px;
+
+    #complete-purchase {
+        margin-top: 0px !important;
+    }
+
+    #complete-purchase {
+        font-size: 17px !important;
+    }
+
+    .payment-form .accordion-body {
+        padding: 10px;
+    }
+
+    .main-middle-sec .right {
+        position: sticky;
+        top: 0px;
+        padding-left: 0px;
+        margin-top: 30px;
+    }
 }
 
-.main-middle-sec .right {
-    position: sticky;
-    top: 0px;
-    padding-left: 0px;
-    margin-top: 30px;
-}
-}
 /*************** NewCheckout Section **************/
