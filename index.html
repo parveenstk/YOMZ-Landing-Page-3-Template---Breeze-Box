@@ -861,8 +861,8 @@
   <!-- Salect Products -->
 
   <!-- Checkout Section -->
-  <!-- <div id="checkout-container" class="checkoutsection hide"> -->
-  <div id="checkout-container" class="checkoutsection">
+  <div id="checkout-container" class="checkoutsection hide">
+  <!-- <div id="checkout-container" class="checkoutsection"> -->
     <div class="container">
       <div class="col-md-10 mx-auto">
         <div class="row">
@@ -885,7 +885,8 @@
                   <div class="col-12">
                     <div class="form-floating mb-3">
                       <!-- email address -->
-                      <input type="email" class="form-control" id="email-address" placeholder="Email address">
+                      <input type="email" class="form-control" id="email-address" placeholder="Email address"
+                        maxlength="50">
                       <label for="email-address">Email address</label>
                       <p id="email-address-error" class="error-message hide"></p>
                     </div>
@@ -895,7 +896,7 @@
                     <div class="form-floating mb-3">
                       <!-- first name -->
                       <input type="text" class="form-control" id="first-name" placeholder="First Name"
-                        autocomplete="first-name">
+                        autocomplete="first-name" maxlength="15">
                       <label for="first-name">First Name</label>
                       <p id="first-name-error" class="error-message hide"></p>
                     </div>
@@ -904,7 +905,7 @@
                   <div class="col-6">
                     <div class="form-floating mb-3">
                       <!-- last name -->
-                      <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                      <input type="text" class="form-control" id="last-name" placeholder="Last Name" maxlength="15">
                       <label for="last-name">Last Name</label>
                       <p id="last-name-error" class="error-message hide"></p>
                     </div>
@@ -925,7 +926,8 @@
                   <div class="col-12">
                     <div class="form-floating mb-3">
                       <!-- shipping address -->
-                      <input type="text" class="form-control" id="shipping-address" placeholder="Address">
+                      <input type="text" class="form-control" id="shipping-address" placeholder="Address"
+                        maxlength="50">
                       <label for="shipping-address">Address</label>
                       <p id="shipping-address-error" class="error-message hide"></p>
                     </div>
@@ -935,7 +937,7 @@
                     <div class="form-floating mb-3">
                       <!-- optional addresss -->
                       <input type="text" class="form-control" id="apt-suite-optional"
-                        placeholder="Apt, Suite, Unit, Building, Etc.">
+                        placeholder="Apt, Suite, Unit, Building, Etc." maxlength="50">
                       <label for="apt-suite-optional">Apt, Suite, Unit, Building, Etc.</label>
                       <p id="apt-suite-optional-error" class="error-message hide"></p>
                     </div>
@@ -944,7 +946,7 @@
                   <div class="col-6">
                     <div class="form-floating mb-3">
                       <!-- shipping city -->
-                      <input type="text" class="form-control" id="city" placeholder="City">
+                      <input type="text" class="form-control" id="city" placeholder="City" maxlength="20">
                       <label for="city">City</label>
                       <p id="city-error" class="error-message hide"></p>
                     </div>
@@ -953,7 +955,7 @@
                   <div class="col-6">
                     <div class="form-floating mb-3">
                       <!-- shipping ZIP -->
-                      <input type="text" class="form-control" id="zip-code" placeholder="Zip">
+                      <input type="text" class="form-control" id="zip-code" placeholder="Zip" maxlength="9">
                       <label for="zip-code">Zip</label>
                       <p id="zip-code-error" class="error-message hide"></p>
                     </div>
@@ -962,7 +964,7 @@
                   <div class="col-12">
                     <div class="form-floating mb-3">
                       <!-- phone number -->
-                      <input type="text" class="form-control" id="phone-number" placeholder="Phone">
+                      <input type="text" class="form-control" id="phone-number" placeholder="Phone" maxlength="15">
                       <label for="phone-number">Phone</label>
                       <p id="phone-number-error" class="error-message hide"></p>
                     </div>
@@ -1002,7 +1004,8 @@
                             <div class="col-12">
                               <div class="form-floating mb-3">
                                 <!-- card number -->
-                                <input type="text" class="form-control" id="card-number" placeholder="Card Number">
+                                <input type="text" class="form-control" id="card-number" placeholder="Card Number"
+                                  maxlength="19">
                                 <label for="card-number">Card Number</label>
                                 <p id="card-number-error" class="error-message hide"></p>
                               </div>
@@ -1013,7 +1016,8 @@
                             <div class="col-6">
                               <div class="form-floating mb-3">
                                 <!-- card expiry -->
-                                <input type="text" class="form-control" id="card-expiry" placeholder="Expiration Date">
+                                <input type="text" class="form-control" id="card-expiry" placeholder="Expiration Date"
+                                  maxlength="5">
                                 <label for="card-expiry">Expiration Date</label>
                                 <p id="card-expiry-error" class="error-message hide"></p>
                               </div>
@@ -1023,7 +1027,7 @@
                               <div class="form-floating mb-3">
                                 <!-- card security code -->
                                 <input type="text" class="form-control" id="card-security-code"
-                                  placeholder="Security Code">
+                                  placeholder="Security Code" maxlength="4">
                                 <label for="card-security-code">Security Code</label>
                                 <p id="card-security-code-error" class="error-message hide"></p>
                               </div>
@@ -1035,7 +1039,7 @@
                               <div class="form-floating mb-3">
                                 <!-- cardholder name -->
                                 <input type="text" class="form-control" id="cardholder-name"
-                                  placeholder="Cardholder Name">
+                                  placeholder="Cardholder Name" maxlength="25">
                                 <label for="cardholder-name">Cardholder Name</label>
                                 <p id="cardholder-name-error" class="error-message hide"></p>
                               </div>
@@ -1065,7 +1069,8 @@
                     <div class="col-12">
                       <div class="form-floating mb-3">
                         <!-- name on card -->
-                        <input type="text" class="form-control" id="name-on-card" placeholder="Name On Card">
+                        <input type="text" class="form-control" id="name-on-card" placeholder="Name On Card"
+                          maxlength="25">
                         <label for="name-on-card">Name On Card</label>
                         <p id="name-on-card-error" class="error-message hide"></p>
                       </div>
@@ -1084,7 +1089,8 @@
                     <div class="col-12">
                       <div class="form-floating mb-3">
                         <!-- billing address -->
-                        <input type="text" class="form-control" id="billing-address" placeholder="Address">
+                        <input type="text" class="form-control" id="billing-address" placeholder="Address"
+                          maxlength="50">
                         <label for="billing-address">Address</label>
                         <p id="billing-address-error" class="error-message hide"></p>
                       </div>
@@ -1093,7 +1099,7 @@
                       <div class="form-floating mb-3">
                         <!-- optional address -->
                         <input type="text" class="form-control" id="billing-apt-optional"
-                          placeholder="Apt, Suite, Unit, Building, Etc.">
+                          placeholder="Apt, Suite, Unit, Building, Etc." maxlength="50">
                         <label for="billing-apt-optional">Apt, Suite, Unit, Building, Etc.</label>
                         <p id="billing-apt-optional-error" class="error-message hide"></p>
                       </div>
@@ -1103,7 +1109,7 @@
                       <div class="form-floating mb-3">
                         <!-- billing city -->
                         <input type="text" class="form-control" id="billing-city"
-                          placeholder="Apt, Suite, Unit, Building, Etc.">
+                          placeholder="Apt, Suite, Unit, Building, Etc." maxlength="20">
                         <label for="billing-city">City</label>
                         <p id="billing-city-error" class="error-message hide"></p>
                       </div>
@@ -1113,7 +1119,7 @@
                       <div class="form-floating mb-3">
                         <!-- billing zip code -->
                         <input type="text" class="form-control" id="billing-zip-code"
-                          placeholder="Apt, Suite, Unit, Building, Etc.">
+                          placeholder="Apt, Suite, Unit, Building, Etc." maxlength="9">
                         <label for="billing-zip-code">Zip</label>
                         <p id="billing-zip-code-error" class="error-message hide"></p>
                       </div>
