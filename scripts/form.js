@@ -13,6 +13,8 @@ const cardNumber = document.getElementById('card-number');
 const cardExpiry = document.getElementById('card-expiry');
 const securityCode = document.getElementById('card-security-code');
 const cardHolderName = document.getElementById('cardholder-name');
+
+// billing details
 const nameOnCard = document.getElementById('name-on-card');
 const billingAddress = document.getElementById('billing-address');
 const billingOptAddress = document.getElementById('billing-apt-optional');
