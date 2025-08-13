@@ -7,6 +7,9 @@ const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
 const address = document.getElementById('shipping-address');
 const optionalAddress = document.getElementById('apt-suite-optional');
+const city = document.getElementById('city');
+const zipCode = document.getElementById('zip-code');
+const phoneNumber = document.getElementById('phone-number');
 
 // credit card elements
 const cardNumber = document.getElementById('card-number');
@@ -25,7 +28,9 @@ const billingZipCode = document.getElementById('billing-zip-code');
 const sameShippingBilling = document.getElementById('sameShippingBilling');
 const billingSection = document.getElementById('billing-section');
 
-const fields = [email, firstName, lastName, address, optionalAddress, cardNumber, cardExpiry, securityCode, cardHolderName, nameOnCard, billingAddress, billingOptAddress, billingCity, billingZipCode];
+const fields = [email, firstName, lastName, address, optionalAddress, city, zipCode, phoneNumber,
+    cardNumber, cardExpiry, securityCode, cardHolderName,
+    nameOnCard, billingAddress, billingOptAddress, billingCity, billingZipCode];
 
 // form handling
 form.addEventListener('submit', function (event) {
@@ -66,7 +71,7 @@ fields.forEach(elem => {
     elem.addEventListener('input', () => checkValue(elem))
 })
 
-// manage billing section appearance
+// toggle billing section
 sameShippingBilling.addEventListener('change', function () {
     if (sameShippingBilling.checked) {
         billingSection.classList.add('hide');
