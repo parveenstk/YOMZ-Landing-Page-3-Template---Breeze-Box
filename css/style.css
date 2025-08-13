@@ -314,6 +314,9 @@ a.nav-btn {
 
 }
 
+    .cartitem .accordion-button{padding: 20px 20px !important;}
+    .checkmark{    width: fit-content !important;}
+
 .dl-active .bar1 {
     background: #000;
     transform: rotate(-45deg) translate(-6px, 5px)
@@ -474,7 +477,7 @@ div.bnr-list>ul li {
     max-width: 100%;
     text-align: center;
     vertical-align: middle;
-    width: 428px
+    /* width: 428px */
 }
 
 .banner .btn-box {

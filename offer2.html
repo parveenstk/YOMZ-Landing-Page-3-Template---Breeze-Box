@@ -70,7 +70,8 @@
                                 NOW</button>
                         </div>
 
-                        <a href="#" class="tagview">No thanks, I don't want this exclusive 1-time offer.
+                        <a href="#" class="tagview" data-bs-toggle="modal" data-bs-target="#exampleModal">No thanks, I
+                            don't want this exclusive 1-time offer.
                         </a>
                     </div>
 
@@ -98,6 +99,40 @@
                     </div>
 
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade offerpop" data-bs-backdrop='static' id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body downsell1 final-style-downcell">
+                    <div class="popTitle">WAIT! For the<br>
+                        NEXT 3 MINUTES <u>ONLY</u>,<br>
+                        GET 60% OFF A 3-Bag Supply!</div>
+                    <div class="popText">Special discount applied.
+                        Click below to get your 3 Bag Supply for only $95.99!
+                    </div>
+
+                    <!-- Timer -->
+                    <div id="timer-box">
+                        <p id="timer-display">03:00</p>
+                    </div>
+
+                    <div id="popButton">
+                        <div class="buttonRight">
+                            <div onclick="selectProduct(302)">
+                                <button type="button" id="productIdInput" value="COMPLETE MY CHECKOUT!"
+                                    class="btn pulse">Complete My Checkout</button>
+                            </div>
+                        </div>
+                        <div id="lastLink"> <a href="offer3.html" class="textLink">No thanks, I don’t want 60% off 3-bag
+                                supply.</a> </div>
+                    </div>
                 </div>
             </div>
         </div>

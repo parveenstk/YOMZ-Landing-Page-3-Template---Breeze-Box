@@ -87,7 +87,7 @@
                                 NOW</button>
                         </div>
 
-                        <a href="#" class="tagview">No thanks, I don't want this one time exclusive deal.
+                        <a href="#" class="tagview" data-bs-toggle="modal" data-bs-target="#exampleModal">No thanks, I don't want this one time exclusive deal.
 
 
                         </a>
@@ -121,6 +121,45 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade offerpop" data-bs-backdrop='static' id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body downsell1 final-style-downcell">
+                    <div class="popTitle">WAIT! For the<br>
+                        NEXT 3 MINUTES ONLY,<br>
+                        Get an extra bag FREE +<br>
+                        $5 OFF shipping!
+                    </div>
+                    <div class="popText">Your special discount applied. Click below to<br>
+                        get an extra bag FREE! Just pay $9.99 for<br>
+                        shipping and handling.
+                    </div>
+
+                    <!-- Timer -->
+                    <div id="timer-box">
+                        <p id="timer-display">03:00</p>
+                    </div>
+
+                    <div id="popButton">
+                        <div class="buttonRight">
+                            <div onclick="selectProduct(302)">
+                                <button type="button" id="productIdInput" value="COMPLETE MY CHECKOUT!"
+                                    class="btn pulse">Complete My Checkout!</button>
+                            </div>
+                        </div>
+                        <div id="lastLink"> <a href="#" class="textLink">No thanks, I don't want an extra
+                                bag for free.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 

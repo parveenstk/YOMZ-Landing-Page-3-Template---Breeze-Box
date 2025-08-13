@@ -375,7 +375,264 @@ h3.head-2 {
     font-weight: 600;
 }
 
+.offerpop .modal-content {
+    background: #fff;
+    border: 3px dashed #E6193C;
+    text-align: center;
+    width: 84%;
+    margin: 0px auto;
+}
+
+.buttonRight .btn {
+    color: #FFEB00;
+    padding: .6em 1.3em;
+    font-weight: bold;
+    font-size: 1.7em;
+    background-color: #E6193C;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.buttonRight .btn:hover {
+    background-color: #d61233;
+    color: #FFEB00;
+
+}
+
+.downsell1 {
+    padding: 30px 0 !important;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .selectBox,
+    #subscribebox {
+        width: 100%;
+        height: auto;
+        margin: 0 auto
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    #headInner {
+        width: 98%;
+        height: 46px
+    }
+
+    #headLogo {
+        height: 36px
+    }
+
+    .mainBox {
+        width: 97%
+    }
+
+    .mainBg {
+        width: 100%
+    }
+
+    .mainHeadbox {
+        font-size: 12px
+    }
+
+    .headText {
+        width: 95%;
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #exitLink,
+    #innerBar {
+        width: 100%
+    }
+
+    #innerBar {
+        margin: 0 auto
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .mainBox {
+        width: 97%;
+        padding: 10px
+    }
+
+    #leavePop2 {
+        width: 94%;
+        top: 10%;
+        left: calc(3% - 3px)
+    }
+
+    #popButton {
+        width: 95%
+    }
+
+    .buttonRight input#productIdInput {
+        width: 100% !important
+    }
+}
+
+#innerBar,
+.mainBox,
+.popText,
+.popTitle {
+    margin: 0 auto
+}
+
+#exitLink,
+.inputButton,
+.mainBg {
+    margin: 25px auto 0
+}
+
+.inputButton {
+    text-align: center;
+}
+
+.inputButton .btn {
+    border: thin outset black;
+    color: #FFEB00;
+    padding: .75em 3.5em;
+    font-weight: bold;
+    font-size: 1.6em;
+    background-color: #E6193C;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+}
+
+.inputButton .btn:hover {
+    background-color: #d61233;
+    color: #FFEB00;
+}
+
+#leaveFade,
+#leaveFade2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 950;
+    background: rgba(0, 0, 0, .7);
+    display: none
+}
+
+#leavePop2 {
+    width: 650px;
+    height: auto;
+    position: fixed;
+    top: 25%;
+    left: calc(50% - 325px);
+    z-index: 1000;
+    border: 3px dashed #f06522;
+    display: none;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    text-align: center
+}
+
+.popTitle {
+    font-size: 35px;
+    color: #1EB9F0;
+    line-height: normal;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.popText {
+    font-size: 20px;
+    color: #222;
+    line-height: normal;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#popButton {
+    width: 75%;
+    height: auto;
+    margin: 15px auto
+}
+
+a.textLink:link,
+a.textLink:visited {
+    text-decoration: underline;
+    color: #333
+}
+
+.shiptake {
+    text-align: center;
+    padding: 10px
+}
+
+#timer-box {
+
+    margin-top: 18px;
+
+    #timer-display {
+        text-align: center !important;
+        font-size: 38px !important;
+        color: #e6193c !important;
+        font-weight: 700 !important;
+
+        #timer-text {
+            color: black !important;
+            font-size: 18px;
+            display: block;
+        }
+    }
+}
+
 @media (max-width: 767px) {
+
+    .buttonRight .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 0px !important;
+        font-size: calc(7vw - 0px) !important;
+        line-height: calc(0.9em + 1vw) !important;
+        padding: .6em 0.3em;
+    }
+
+    #popButton {
+        width: 100%;
+    }
+
+    .offerpop .modal-content {
+        width: 100%;
+    }
+
+    .popTitle {
+        font-size: calc(6.2vw - 0px) !important;
+        line-height: calc(1em + 1vw) !important;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .popText {
+        font-size: calc(3.5vw - 0px) !important;
+        line-height: calc(1em + 1vw) !important;
+        color: #222;
+        line-height: normal;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        display: block;
+    }
+
+    #popButton {
+        margin: 15px auto 0px;
+    }
 
     .checkout-btn .btn {
         font-size: 19px;
@@ -514,4 +771,86 @@ h3.head-2 {
     .step-pd {
         display: none;
     }
+}
+
+@media screen and (max-width: 567px) {
+
+    .buttonRight .btn {
+
+        margin-bottom: 0px !important;
+        font-size: calc(7.5vw - 0px) !important;
+    }
+
+    .centerHead,
+    #innerBar,
+    .leftHead,
+    .pricingText,
+    #pricingText2,
+    .rightHead {
+        width: 100%
+    }
+
+    img.logo {
+        margin: 0 auto;
+        display: block
+    }
+
+    a.textLink {
+    font-size: 10px;
+}
+}
+
+.pulse {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(.9)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes pulse {
+
+    0%,
+    100% {
+        -webkit-transform: scale(.95)
+    }
+
+    50% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .mainHeadbox .col-4 {
+        font-size: 10px !important;
+        line-height: normal !important;
+        padding: 4px 2px;
+    }
+
+    .leftHead,
+    .rightHead,
+    .centerHead {
+        height: 35px;
+    }
+
+    .popText {
+        font-size: 13px;
+        color: #222;
+        line-height: normal;
+    }
+
 }
