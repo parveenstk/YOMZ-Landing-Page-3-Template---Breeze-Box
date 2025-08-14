@@ -307,15 +307,20 @@ a.nav-btn {
     margin: 6px 0
 }
 
- .section9 .accordion {
+.section9 .accordion {
     font-size: 24px;
     padding: 20px 30px 20px 15px;
     font-family: 'century_gothic_paneuropeanXBd';
 
 }
 
-    .cartitem .accordion-button{padding: 20px 20px !important;}
-    .checkmark{    width: fit-content !important;}
+.cartitem .accordion-button {
+    padding: 20px 20px !important;
+}
+
+.checkmark {
+    width: fit-content !important;
+}
 
 .dl-active .bar1 {
     background: #000;
@@ -1535,6 +1540,191 @@ ul.rev-bars li p {
     color: #fff
 }
 
+/* Contact Us */
+.pt-105pb-120 {
+    padding: 0px 0 0px;
+}
+
+.contact-form .btn {
+    background: #e6193c;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/*Start breadcumb css style 3*/
+.breadcumb-area {
+    background-color: #ffeb00;
+    padding: 200px 0 140px;
+}
+
+.banner-content h2 {
+    font-size: 58px;
+    line-height: 87px;
+    text-transform: uppercase;
+}
+
+.banner-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.banner-content ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.banner-content ul li a {
+    margin-right: 5px;
+}
+
+.banner-content ul li a:hover {
+    color: #FEAC01 !important;
+}
+
+.banner-content ul li i {
+    position: relative;
+    top: 1px;
+    padding: 0 5px;
+}
+
+.style-3 .hero-content-wrap-slide .single-hero-content {
+    margin-top: 22px;
+}
+
+.style-3 .hero-content-wrap-slide .single-hero-content a.starting {
+    top: -15px;
+}
+
+/*Feature css*/
+
+.contact-form .btn {
+    background: #e6193c;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.contact-address {
+    box-shadow: 0px 8px 17px rgba(70, 70, 70, 0.13);
+    padding: 30px 0 35px;
+    margin-bottom: 40px;
+}
+
+.contact-address img {
+    margin-bottom: 20px;
+    width: 70px;
+}
+
+.contact-address a {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #707070;
+    margin-bottom: 5px;
+}
+
+.contact-address p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.get-in-touch-area textarea {
+    border: 1px solid #ced4da;
+}
+
+.contact-g-map iframe {
+    line-height: 1 !important;
+    border: 0;
+    width: 100%;
+    height: 450px;
+}
+
+.pt-110pb-80 {
+    padding: 110px 0 80px;
+}
+
+.nastaybg {
+    background: url(../images/contact-girl.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+form#contactUs-form {
+    padding: 130px;
+}
+
+/* Contact Us */
+
+/****************************** faqs *****************************/
+.faqs h3 {
+    font-family: 'century_gothic_paneuropeanXBd' !important;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.faqs .accordion-item h3 .accordion-button {
+    font-size: 24px !important;
+    padding: 15px 20px;
+    color: #000 !important;
+}
+
+.faqs .accordion-item h3 .accordion-button {
+    font-size: 24px !important;
+}
+
+.faqs .accordion-button:not(.collapsed) {
+    background: #ffeb00;
+}
+
+.faqs {
+    padding: 70px 0;
+}
+
+.faqs .accordion {
+    background: none;
+    padding: 0px;
+}
+
+.faqs .accordion-button .arrow {
+    width: 1rem;
+    height: 1rem;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5l7 7-7 7'/%3E%3C/svg%3E") no-repeat center !important;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when expanded */
+.faqs .accordion-button:not(.collapsed) .arrow {
+    transform: rotate(90deg);
+}
+
+.faqs  .accordion:after{display: none;}
+
+/****************************** faqs *****************************/
+
+.privacy-policy{padding: 50px 0;}
+
+@media only screen and (max-width: 1400px) {
+    .breadcumb-area {
+        background-color: #ffeb00;
+        padding: 130px 0 40px;
+    }
+
+    form#contactUs-form {
+        padding: 60px 40px;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .container {
         width: 1004px
@@ -2066,6 +2256,48 @@ ul.rev-bars li p {
 }
 
 @media only screen and (max-width: 767px) {
+
+    .faqs {
+    padding: 40px 0;
+}
+
+.faqs .accordion-item h3 .accordion-button {
+    font-size: 16px !important;
+}
+
+.faqs .accordion-body p {
+    font-size: 14px;
+}
+
+    .breadcumb-area {
+        background-color: #ffeb00;
+        padding: 130px 0 40px;
+    }
+
+    .banner-content h2 {
+        font-size: 48px;
+        line-height: 47px;
+        text-transform: uppercase;
+    }
+
+    form#contactUs-form {
+        padding: 30px 0px;
+    }
+
+    .nastaybg {
+        background: url(../images/contact-girl.jpg);
+        background-size: cover;
+        background-position: top center;
+        height: 340px;
+    }
+
+    .pt-110pb-80 {
+        padding: 20px 0 30px;
+    }
+
+    .map-height iframe {
+        height: 350px;
+    }
 
     .s2-list-p1 {
         font-size: 22px;
