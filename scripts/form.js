@@ -154,11 +154,17 @@ form.addEventListener('submit', function (event) {
         return;
     }
 
-    // Collect form data into an object
-    const formData = {};
-    allFields.forEach(elem => {
-        formData[elem.id] = elem.value.trim();
-    });
+    // saved data on condition
+    let formData = {};
+    if (sameShippingBilling.checked) {
+        nonBillingFields.forEach(elem => {
+            formData[elem.id] = elem.value.trim();
+        });
+    } else {
+        allFields.forEach(elem => {
+            formData[elem.id] = elem.value.trim();
+        });
+    }
 
     // Save to localStorage
     console.log("Form submitted successfully!");
@@ -177,20 +183,10 @@ cardNumber.addEventListener('input', () => {
     checkValue(cardNumber);
 });
 
-// const notChar = [zipCode, securityCode];
-// notChar.forEach(field => {
-//     field.addEventListener('input', () => {
-//         field.value = replaceChar(field, /\D/g); // update the value in-place
-//     });
-// });
-
-const replaceChar = (elem, pattern) => {
-    return elem.value.replace(pattern, '');
-};
-
 // handle card expiry 
 cardExpiry.addEventListener('input', () => {
-    let value = replaceChar(cardExpiry, /\D/g);
+    // let value = replaceChar(cardExpiry, /\D/g);
+    let value = cardExpiry.value.replace(/\D/g, '');
     if (value.length > 4) value = value.slice(0, 4);
 
     if (value.length >= 3) {
@@ -227,6 +223,11 @@ sameShippingBilling.addEventListener('change', function () {
 
 // reset form
 const resetForm = () => {
+    const allFields = [
+        email, firstName, lastName, address, optionalAddress, city, zipCode, phoneNumber,
+        cardNumber, cardExpiry, securityCode, cardHolderName,
+        nameOnCard, billingAddress, billingOptAddress, billingCity, billingZipCode
+    ];
     allFields.forEach((elem) => {
         elem.value = '';
         elem.classList.remove('is-valid', 'is-invalid');
