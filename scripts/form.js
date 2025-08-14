@@ -38,46 +38,49 @@ const billingFields = [nameOnCard, billingAddress, billingOptAddress, billingCit
 const nonBillingFields = allFields.filter(feild => !billingFields.includes(feild));
 
 const validationRules = {
+
     'email-address': {
-        pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+        pattern: /^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/,
         message: 'Enter a valid email address (e.g. name@example.com)'
     },
+
     'first-name': {
-        pattern: /^[A-Za-z\s'-]{1,50}$/,
+        pattern: /^[A-Za-z\s'-]{2,15}$/,
         message: 'first name contain only letters'
     },
+
     'last-name': {
-        pattern: /^[A-Za-z\s'-]{1,50}$/,
+        pattern: /^[A-Za-z\s'-]{2,15}$/,
         message: 'last name contain only letters'
     },
+
     'shipping-address': {
-        pattern: /^[A-Za-z0-9\s.,#'-]{5,100}$/,
+        pattern: /^[A-Za-z0-9\s.,#'-]{5,50}$/,
         message: 'Enter a valid street address'
     },
+
     'apt-suite-optional': {
         pattern: /^[A-Za-z0-9\s.,#'-]{0,50}$/,
         message: 'Apt/Suite must be a valid optional address'
     },
+
     'city': {
         pattern: /^[A-Za-z\s'-]{2,50}$/,
         message: 'City name only contain letters'
     },
+
     'zip-code': {
         pattern: /^\d{5}(-\d{4})?$/,
-        message: 'Enter a valid 5-digit ZIP'
+        message: 'Enter a valid ZIP code (e.g. 12345 or 12345-6789)'
     },
+
     'phone-number': {
         pattern: /^\d{10,15}$/,
         message: 'phone number (10–15 digits)'
     },
 
-    // 'card-number': {
-    //     pattern: /^(\d{4} ?){3,5}$/,  // 13–19 digits with optional spaces
-    //     message: 'Card number must be 13–19 digits'
-    // },
-
     'card-number': {
-        pattern: /^(\d{4} ?){3,4}\d{3,4}$/,  // Ensures 15–19 digits with space every 4 digits
+        pattern: /^(\d{4} ?){3,4}\d{3,4}$/,
         message: 'Card number must be 15–19 digits with spaces every 4 digits'
     },
 
@@ -90,29 +93,35 @@ const validationRules = {
         pattern: /^\d{3,4}$/,
         message: 'Enter a 3 or 4-digit CVV'
     },
+
     'cardholder-name': {
-        pattern: /^[A-Za-z\s'-]{1,100}$/,
+        pattern: /^[A-Za-z\s'-]{2,25}$/,
         message: 'Cardholder name only contain letters'
     },
+
     'name-on-card': {
-        pattern: /^[A-Za-z\s'-]{1,100}$/,
+        pattern: /^[A-Za-z\s'-]{2,25}$/,
         message: 'Name on card contain only letters'
     },
+
     'billing-address': {
-        pattern: /^[A-Za-z0-9\s.,#'-]{5,100}$/,
+        pattern: /^[A-Za-z0-9\s.,#'-]{5,50}$/,
         message: 'Enter a valid billing street address'
     },
+
     'billing-apt-optional': {
         pattern: /^[A-Za-z0-9\s.,#'-]{0,50}$/,
         message: 'Enter a valid optional billing address'
     },
+
     'billing-city': {
         pattern: /^[A-Za-z\s'-]{2,50}$/,
         message: 'Billing city contain only letters'
     },
+
     'billing-zip-code': {
         pattern: /^\d{5}(-\d{4})?$/,
-        message: 'Enter a valid billing ZIP code.'
+        message: 'Enter a valid ZIP code (e.g. 12345 or 12345-6789)'
     }
 };
 
@@ -148,7 +157,7 @@ form.addEventListener('submit', function (event) {
     // Collect form data into an object
     const formData = {};
     allFields.forEach(elem => {
-        formData[elem.name || elem.id] = elem.value.trim();
+        formData[elem.id] = elem.value.trim();
     });
 
     // Save to localStorage
@@ -160,11 +169,36 @@ form.addEventListener('submit', function (event) {
     resetForm();
 });
 
+// handle card number
 cardNumber.addEventListener('input', () => {
     let value = cardNumber.value.replace(/\D/g, '').slice(0, 19); // digits only
     let formatted = value.match(/.{1,4}/g)?.join(' ') || '';
     cardNumber.value = formatted;
     checkValue(cardNumber);
+});
+
+// const notChar = [zipCode, securityCode];
+// notChar.forEach(field => {
+//     field.addEventListener('input', () => {
+//         field.value = replaceChar(field, /\D/g); // update the value in-place
+//     });
+// });
+
+const replaceChar = (elem, pattern) => {
+    return elem.value.replace(pattern, '');
+};
+
+// handle card expiry 
+cardExpiry.addEventListener('input', () => {
+    let value = replaceChar(cardExpiry, /\D/g);
+    if (value.length > 4) value = value.slice(0, 4);
+
+    if (value.length >= 3) {
+        value = value.slice(0, 2) + '/' + value.slice(2);
+    }
+
+    cardExpiry.value = value;
+    checkValue(cardExpiry);
 });
 
 // check values on input
@@ -209,55 +243,7 @@ const showError = (elem, errorSpan, message) => {
     }
 };
 
-// main: validate each field
-// const checkValue = (elem) => {
-//     const value = elem.value.trim();
-//     const errorSpan = document.getElementById(`${elem.id}-error`);
-//     const rule = validationRules[elem.id];
-
-//     if (!value) {
-//         showError(elem, errorSpan, 'This field is required');
-//         return false;
-//     }
-
-//     if (rule) {
-//         if (!rule.pattern.test(value)) {
-//             showError(elem, errorSpan, rule.message);
-//             return false;
-//         }
-
-//         // Card expiry validation
-//         if (elem.id === 'card-expiry') {
-//             const [monthStr, yearStr] = value.split('/');
-//             const inputMonth = parseInt(monthStr, 10);
-//             const inputYear = parseInt(yearStr, 10);
-
-//             const now = new Date();
-//             const currentMonth = now.getMonth() + 1;
-//             const currentYear = now.getFullYear() % 100;
-//             const maxYear = currentYear + 10;
-
-//             if (
-//                 isNaN(inputMonth) || isNaN(inputYear) ||
-//                 inputYear < currentYear ||
-//                 inputYear > maxYear ||
-//                 (inputYear === currentYear && inputMonth < currentMonth)
-//             ) {
-//                 showError(elem, errorSpan, `Expiry must be from ${String(currentMonth).padStart(2, '0')}/${currentYear} to 12/${maxYear}`);
-//                 return false;
-//             }
-//         }
-//     }
-
-//     elem.classList.add('is-valid');
-//     elem.classList.remove('is-invalid');
-//     if (errorSpan) {
-//         errorSpan.classList.add('hide');
-//         errorSpan.innerText = '';
-//     }
-//     return true;
-// };
-
+// check input values & regax
 const checkValue = (elem) => {
     const value = elem.value.trim();
     const errorSpan = document.getElementById(`${elem.id}-error`);
