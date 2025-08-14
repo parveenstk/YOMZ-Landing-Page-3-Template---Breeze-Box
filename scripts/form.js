@@ -29,7 +29,7 @@ const sameShippingBilling = document.getElementById('sameShippingBilling');
 const billingSection = document.getElementById('billing-section');
 
 const allFields = [
-    email, firstName, lastName, address, city, zipCode, phoneNumber,
+    email, firstName, lastName, address, city, zipCode, optionalAddress, phoneNumber,
     cardNumber, cardExpiry, securityCode, cardHolderName,
     nameOnCard, billingAddress, billingOptAddress, billingCity, billingZipCode
 ];
@@ -169,10 +169,11 @@ form.addEventListener('submit', function (event) {
     // Save to localStorage
     console.log("Form submitted successfully!");
     localStorage.setItem('checkoutFormData', JSON.stringify(formData));
-    const savedData = localStorage.getItem('checkoutFormData');
-    console.log("saved Data:", JSON.parse(savedData));
+    const savedData = JSON.parse(localStorage.getItem('checkoutFormData'));
+    console.log("saved Data:", savedData);
 
-    resetForm();
+    updateSheet(savedData);
+    // resetForm();
 });
 
 // handle card number
@@ -294,4 +295,36 @@ const checkValue = (elem) => {
         errorSpan.innerText = '';
     }
     return true;
+};
+
+// Call API to save data in excel sheet
+const updateSheet = async (formData) => {
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify({
+        formData: formData,
+        sheetName: "F.P - 3 checkout",
+        column: "!B4:S4"
+    });
+
+    const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow"
+    };
+
+    try {
+        const response = await fetch("https://yomz-pages-data.vercel.app/api/contactUs", requestOptions);
+        const result = await response.json(); // Now this works properly
+
+        if (result.status === 'SUCCESS') {
+            resetForm();
+        } else {
+            console.error("Server returned error:", result.message);
+        }
+    } catch (error) {
+        console.warn("Fetch failed:", error);
+    }
 };
