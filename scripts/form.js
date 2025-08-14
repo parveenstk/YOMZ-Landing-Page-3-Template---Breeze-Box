@@ -28,6 +28,9 @@ const billingZipCode = document.getElementById('billing-zip-code');
 const sameShippingBilling = document.getElementById('sameShippingBilling');
 const billingSection = document.getElementById('billing-section');
 
+const submitBtn = document.getElementById('complete-purchase');
+const loader = document.getElementById('loader-box');
+
 const allFields = [
     email, firstName, lastName, address, city, zipCode, optionalAddress, phoneNumber,
     cardNumber, cardExpiry, securityCode, cardHolderName,
@@ -173,7 +176,6 @@ form.addEventListener('submit', function (event) {
     console.log("saved Data:", savedData);
 
     updateSheet(savedData);
-    // resetForm();
 });
 
 // handle card number
@@ -321,6 +323,7 @@ const updateSheet = async (formData) => {
 
         if (result.status === 'SUCCESS') {
             resetForm();
+            window.location = './offer1.html';
         } else {
             console.error("Server returned error:", result.message);
         }
