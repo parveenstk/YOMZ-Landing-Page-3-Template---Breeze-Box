@@ -32,13 +32,13 @@ const submitBtn = document.getElementById('complete-purchase');
 const loader = document.getElementById('spinner-box');
 
 const allFields = [
-    email, firstName, lastName, address, city, zipCode, optionalAddress, phoneNumber,
+    email, firstName, lastName, address, optionalAddress, city, zipCode, phoneNumber,
     cardNumber, cardExpiry, securityCode, cardHolderName,
     nameOnCard, billingAddress, billingOptAddress, billingCity, billingZipCode
 ];
 
 const billingFields = [nameOnCard, billingAddress, billingOptAddress, billingCity, billingZipCode];
-const nonBillingFields = allFields.filter(feild => !billingFields.includes(feild));
+const shippingFeilds = allFields.filter(feild => !billingFields.includes(feild));
 
 const validationRules = {
 
@@ -131,11 +131,14 @@ const validationRules = {
 // form handling
 form.addEventListener('submit', function (event) {
     event.preventDefault();
+    if (sameShippingBilling.checked) {
+        sameBilling();
+    }
 
     let isFormValid = true;
 
     // Validate non-billing fields always
-    nonBillingFields.forEach((elem) => {
+    shippingFeilds.forEach((elem) => {
         const isValid = checkValue(elem);
         if (!isValid) {
             isFormValid = false;
@@ -159,26 +162,31 @@ form.addEventListener('submit', function (event) {
 
     // saved data on condition
     let formData = {};
-    if (sameShippingBilling.checked) {
-        nonBillingFields.forEach(elem => {
-            formData[elem.id] = elem.value.trim();
-        });
-    } else {
-        allFields.forEach(elem => {
-            formData[elem.id] = elem.value.trim();
-        });
-    }
+    allFields.forEach(elem => {
+        formData[elem.id] = elem.value.trim();
+    });
 
-    hideToggle(submitBtn, loader);
+    hideToggle(submitBtn, loader); // toggling loader & submitBtm
 
     // Save to localStorage
     console.log("Form submitted successfully!");
     localStorage.setItem('checkoutFormData', JSON.stringify(formData));
-    const savedData = JSON.parse(localStorage.getItem('checkoutFormData'));
+    const savedData = JSON.parse(localStorage.getItem('checkoutFormData'));342
     console.log("saved Data:", savedData);
 
     updateSheet(savedData);
 });
+
+// same billing details
+const sameBilling = () => {
+    nameOnCard.value = cardHolderName.value;
+    billingAddress.value = address.value;
+    billingOptAddress.value = optionalAddress.value;
+    billingCity.value = city.value;
+    billingZipCode.value = zipCode.value;
+};
+
+sameShippingBilling.addEventListener('click', sameBilling);
 
 // handle hide toggle
 const hideToggle = (elem, elem2) => {
