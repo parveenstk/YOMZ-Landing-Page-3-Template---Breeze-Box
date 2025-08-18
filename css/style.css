@@ -110,6 +110,16 @@ li {
     box-sizing: border-box
 }
 
+.hide {
+    display: none !important;
+}
+
+.error-message {
+    font-size: 15px;
+    padding: 4px 0px 0px 10px;
+    color: #e6193b;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #000;
@@ -1711,44 +1721,54 @@ form#contactUs-form {
     transform: rotate(90deg);
 }
 
-.faqs  .accordion:after{display: none;}
+.faqs .accordion:after {
+    display: none;
+}
 
 /****************************** faqs *****************************/
 
-.privacy-policy{padding: 50px 0;}
+.privacy-policy {
+    padding: 50px 0;
+}
 
 .form-set {
-  position: relative;
-  transition: box-shadow .25s, -webkit-box-shadow .25s;
-  border-radius: 2px;
-  padding: 40px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+    position: relative;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 2px;
+    padding: 40px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
 }
 
 .form-set p {
-  text-align: center;
+    text-align: center;
 }
 
 .form-set label {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .form-set .btn {
-  background: #e6193c;
-  color: #fff;
-  border: none;
-  font-size: 22px;
-  text-transform: uppercase;
-  padding: 10px 35px;
-  font-weight: 600;
+    background: #e6193c;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    font-weight: 600;
 }
 
 .form-set .btn:hover {
-  background: #cf1132;
+    background: #cf1132;
 }
 
-.thanks-heading{align-items: center; gap: 10px;}
-.thanks-heading img{width: 50px;}
+.thanks-heading {
+    align-items: center;
+    gap: 10px;
+}
+
+.thanks-heading img {
+    width: 50px;
+}
 
 .rw-1 {
     padding: 30px;
@@ -1761,7 +1781,10 @@ form#contactUs-form {
     margin-bottom: 20px;
 }
 
-.rw-1 p{font-size: 14px; height: 200px;}
+.rw-1 p {
+    font-size: 14px;
+    height: 200px;
+}
 
 .thankyou {
     padding: 180px 0 60px;
@@ -1773,6 +1796,7 @@ form#contactUs-form {
     background: #fff;
     max-width: 850px;
 }
+
 .thankyou .container {
     padding: 60px;
     background: #fff;
@@ -2666,11 +2690,11 @@ ul.slick-dots li.slick-active button {
 @media only screen and (max-width: 1024px) {
 
     .thankyou .container {
-    padding: 60px;
-    background: #fff;
-    max-width: 100%;
-    width: 92%;
-}
+        padding: 60px;
+        background: #fff;
+        max-width: 100%;
+        width: 92%;
+    }
 
     .bnr-testi-row .slick-prev {
         left: 0
@@ -2736,27 +2760,31 @@ ul.slick-dots li.slick-active button {
 }
 
 @media only screen and (max-width: 800px) {
-.rw-1 p {
-    font-size: 14px;
-    height: 250px;
-}}
+    .rw-1 p {
+        font-size: 14px;
+        height: 250px;
+    }
+}
 
 @media only screen and (max-width: 767px) {
 
     .thanks-heading img {
-    width: 43px;
-}
+        width: 43px;
+    }
 
-.rw-1{padding: 15px;}
+    .rw-1 {
+        padding: 15px;
+    }
 
     .rw-1 p {
-    font-size: 14px;
-    height: auto;}
+        font-size: 14px;
+        height: auto;
+    }
 
     .thankyou {
-    padding: 110px 0 50px;
-    background: #efeded;
-}
+        padding: 110px 0 50px;
+        background: #efeded;
+    }
 
     .thankyou .container {
         padding: 30px 20px;
@@ -2765,11 +2793,15 @@ ul.slick-dots li.slick-active button {
         width: 98%;
     }
 
-    .form-set{    padding: 40px 0px; box-shadow:none;}
+    .form-set {
+        padding: 40px 0px;
+        box-shadow: none;
+    }
 
     .subscription {
         padding: 0px !important;
     }
+
     .bnr-testi-row .slick-prev {
         left: 20px;
         top: 12%
@@ -2809,28 +2841,29 @@ ul.slick-dots li.slick-active button {
     }
 
     .faqs {
-    padding: 40px 0;
-}
+        padding: 40px 0;
+    }
 
-.faqs .accordion-item h3 .accordion-button {
-    font-size: 16px !important;
-}
+    .faqs .accordion-item h3 .accordion-button {
+        font-size: 16px !important;
+    }
 
-.faqs .accordion-body p {
-    font-size: 14px;
-}
+    .faqs .accordion-body p {
+        font-size: 14px;
+    }
 
     .breadcumb-area {
         background-color: #ffeb00;
         padding: 130px 0 40px;
     }
 
-        .banner-content h2 {
+    .banner-content h2 {
         font-size: 38px;
         line-height: 38px;
         text-transform: uppercase;
-    
-        }
+
+    }
+
     form#contactUs-form {
         padding: 30px 0px;
     }

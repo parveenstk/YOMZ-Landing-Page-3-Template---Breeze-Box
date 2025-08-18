@@ -99,12 +99,6 @@
                                         placeholder="name@example.com" aria-label="Email address" autocomplete="email"
                                         maxlength="30" />
                                     <label for="email-address">Email address</label>
-                                    <div data-lastpass-icon-root="" style="
-                        position: relative !important;
-                        height: 0px !important;
-                        width: 0px !important;
-                        float: left !important;
-                      "></div>
                                 </div>
                                 <span class="error-message hide" id="email-address-error"></span>
                             </div>
@@ -134,12 +128,12 @@
                             <!-- Comments -->
                             <div class="mb-3 box-align">
                                 <div class="form-floating">
-                                    <textarea class="form-control" id="comments-input" name="comments"
+                                    <textarea class="form-control" id="comments-box" name="comments"
                                         placeholder="Leave a comment here" style="height: 150px"
                                         aria-label="Comments"></textarea>
-                                    <label for="comments-input">Comments</label>
+                                    <label for="comments-box">Comments</label>
                                 </div>
-                                <span class="error-message hide" id="comments-input-error"></span>
+                                <span class="error-message hide" id="comments-box-error"></span>
                             </div>
 
                             <!-- Submit Button -->
@@ -201,8 +195,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- import function scripts -->
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/cancelSubscription.js"></script>
 </body>
 
 </html>
