@@ -1,289 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>YOMZ</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- CSS import -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/seccheck.css" rel="stylesheet" />
-  </head>
+<head>
+  <title>YOMZ</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- Top-Bar -->
-    <div class="topStrip">
-      <div class="container text-center mb-0">
-        <!-- <p><span>Order Today for 50% Off Your First Purchase!</span></p> -->
-        <p><span>Order Today for the best Offers!</span></p>
-      </div>
+  <!-- CSS import -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/seccheck.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Top-Bar -->
+  <div class="topStrip">
+    <div class="container text-center mb-0">
+      <!-- <p><span>Order Today for 50% Off Your First Purchase!</span></p> -->
+      <p><span>Order Today for the best Offers!</span></p>
     </div>
-    <!-- Top-Bar -->
+  </div>
+  <!-- Top-Bar -->
 
-    <!-- header -->
+  <!-- header -->
 
-    <div class="top-fix-bar" id="top">
-      <div class="header">
-        <div class="container">
-          <a href="index.html"
-            ><img
-              src="images/logo.png"
-              class="logo"
-              alt=""
-              height="44"
-              enter-class="img-fluid"
-          /></a>
-          <a
-            href="./index.html#products-section"
-            class="nav-btn ignore-scroll hide-mob"
-            >Order Now</a
-          >
-          <div class="show-desk">
-            <ul class="topMenu scroller show-desk">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="FAQs.html">Faqs</a></li>
-              <li><a href="contact-us.html">Contact</a></li>
-            </ul>
-          </div>
+  <div class="top-fix-bar" id="top">
+    <div class="header">
+      <div class="container">
+        <a href="index.html"><img src="images/logo.png" class="logo" alt="" height="44" enter-class="img-fluid" /></a>
+        <a href="./index.html#products-section" class="nav-btn ignore-scroll hide-mob">Order Now</a>
+        <div class="show-desk">
+          <ul class="topMenu scroller show-desk">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="FAQs.html">Faqs</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- header -->
+  </div>
+  <!-- header -->
 
-    <!-- Banner -->
-    <div class="banner">
-      <div class="container">
-        <img
-          src="images/bannerimage.png"
-          alt="img"
-          width=""
-          height=""
-          class="banner-prod hide-mob"
-        />
-        <div class="bnr-lft">
-          <p class="banr-rev-text">
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAAAPCAYAAACP3GNFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzUyREZDRjNGMzAxMTFFRDkwQTBBN0RDN0E3N0NBNjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzUyREZDRjRGMzAxMTFFRDkwQTBBN0RDN0E3N0NBNjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNTJERkNGMUYzMDExMUVEOTBBMEE3REM3QTc3Q0E2MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNTJERkNGMkYzMDExMUVEOTBBMEE3REM3QTc3Q0E2MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqZIh5sAAAOvSURBVHjarJhpSFVBFMffexXYKi0mWhJSYBstYiQW7dEqZVnaomBRka1UFCGRUUTQh0rTpA1LIS0I2hcIoag+tIBEBJIJZiUtapkVWL7+Y/8bw/TufXPfdODHnTf33vPOnDPLOdfrP+uxk+EgE2z3mMsqUA+uGOrpCLaCI+CHoa6poDc4b6Qlw+/xlHiFjy6i/TLQI14HJ2/kYIQhDYYD+gXugwmGekaDp2AceGCo6y4YAzob6ukKvoJsOPlYoAd8Di8v5DXN0Ij+/J9EEVRDXct5TTHU42WgwmifiVj+WWD3gJ2TY6RZl2VoRDavncBiQ8dkWovU0Ka50thXG+pay+s0bBtRbpy8RmqLJTXIwIiVUnu9gZ7ZoA/bkSDZQNc2qW3i5FiQEEyX2JP3cs/sAbpzCaVx5llSBe6BVtAEfoIacFp6ZiBYwnvCCV1AVABnlIJm8B28AeHgDHilHJSRtCGcdk3nCrPkLbhOmxpJg2LTALACfAYR0hjVlXAD1IIW8IkHbKli0xw61M9gh3HLGSo98wVc4NhaOM5W4WTRmRpCFMXBmK84+YUSHB2p4klfJ/XtBrkh2LQL7JN+R4M7YLBLPc08ZKuVvbcsBJvOie1iER2mK2LGjFIc7KFBYvZec6HrBIhTHCxkD5jFVaEj4rkZioOt2T4EHHVh003O+Gqlv9zGVidZh4xjqbUn5/N0bA7y0nNGuNJhsOJQKdIwIDfIfniTwawJokfk3/HgtsMzG8BODZtOMbhOq24EeKyxEpLh4MJAebLYPy87DCbKRRTLHbKJgy6KnGjOHq9N/h0XYNbZyQGww+beVZeHaa1yRsgyEw6+ZZddfHNQ6gsh5bKTJpdVntN/NLrQVR9kG/xf8sHJcYscXuzLE15HfEy57MRNMZHqEDBfCLrsZArooKkn0WEW/1NbqE5OktrFrLCqpL54TSMSWG56WHJmSUWJkJEs13VkmNS+zYlwVeqbpKkngimXXCQtAx/5ux8Y62J8llSyOi6Q+ibafbuIZV74nQYUS4EQe+gW8J75azA5zlz3UvsJ+ycftpxbwMGK+yc1dPl53QTypP7N4BDbYga2aXykEnY9ZLH1jP29QCFTtCKpgnOS1yzH92PvzfnbW+JNp66e7TM9w1+nzuTJoII5ZbHU38YvXyl0coSGEd2YTs2XHGxFfTydG6uhR1SbjxicPOXeYd5/wmswiWGAkyQHe1jApPNA1MnxxSR7B+aBHOWLXBkP4or2MpvyW4ABANPrys2C8o1eAAAAAElFTkSuQmCC"
-              alt=""
-              width="89"
-              height="15"
-            />
-            Rated 4.8 by 3200+ Verified Customers
+  <!-- Banner -->
+  <div class="banner">
+    <div class="container">
+      <img src="images/bannerimage.png" alt="img" width="" height="" class="banner-prod hide-mob" />
+      <div class="bnr-lft">
+        <p class="banr-rev-text">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAAAPCAYAAACP3GNFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzUyREZDRjNGMzAxMTFFRDkwQTBBN0RDN0E3N0NBNjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzUyREZDRjRGMzAxMTFFRDkwQTBBN0RDN0E3N0NBNjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNTJERkNGMUYzMDExMUVEOTBBMEE3REM3QTc3Q0E2MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNTJERkNGMkYzMDExMUVEOTBBMEE3REM3QTc3Q0E2MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqZIh5sAAAOvSURBVHjarJhpSFVBFMffexXYKi0mWhJSYBstYiQW7dEqZVnaomBRka1UFCGRUUTQh0rTpA1LIS0I2hcIoag+tIBEBJIJZiUtapkVWL7+Y/8bw/TufXPfdODHnTf33vPOnDPLOdfrP+uxk+EgE2z3mMsqUA+uGOrpCLaCI+CHoa6poDc4b6Qlw+/xlHiFjy6i/TLQI14HJ2/kYIQhDYYD+gXugwmGekaDp2AceGCo6y4YAzob6ukKvoJsOPlYoAd8Di8v5DXN0Ij+/J9EEVRDXct5TTHU42WgwmifiVj+WWD3gJ2TY6RZl2VoRDavncBiQ8dkWovU0Ka50thXG+pay+s0bBtRbpy8RmqLJTXIwIiVUnu9gZ7ZoA/bkSDZQNc2qW3i5FiQEEyX2JP3cs/sAbpzCaVx5llSBe6BVtAEfoIacFp6ZiBYwnvCCV1AVABnlIJm8B28AeHgDHilHJSRtCGcdk3nCrPkLbhOmxpJg2LTALACfAYR0hjVlXAD1IIW8IkHbKli0xw61M9gh3HLGSo98wVc4NhaOM5W4WTRmRpCFMXBmK84+YUSHB2p4klfJ/XtBrkh2LQL7JN+R4M7YLBLPc08ZKuVvbcsBJvOie1iER2mK2LGjFIc7KFBYvZec6HrBIhTHCxkD5jFVaEj4rkZioOt2T4EHHVh003O+Gqlv9zGVidZh4xjqbUn5/N0bA7y0nNGuNJhsOJQKdIwIDfIfniTwawJokfk3/HgtsMzG8BODZtOMbhOq24EeKyxEpLh4MJAebLYPy87DCbKRRTLHbKJgy6KnGjOHq9N/h0XYNbZyQGww+beVZeHaa1yRsgyEw6+ZZddfHNQ6gsh5bKTJpdVntN/NLrQVR9kG/xf8sHJcYscXuzLE15HfEy57MRNMZHqEDBfCLrsZArooKkn0WEW/1NbqE5OktrFrLCqpL54TSMSWG56WHJmSUWJkJEs13VkmNS+zYlwVeqbpKkngimXXCQtAx/5ux8Y62J8llSyOi6Q+ibafbuIZV74nQYUS4EQe+gW8J75azA5zlz3UvsJ+ycftpxbwMGK+yc1dPl53QTypP7N4BDbYga2aXykEnY9ZLH1jP29QCFTtCKpgnOS1yzH92PvzfnbW+JNp66e7TM9w1+nzuTJoII5ZbHU38YvXyl0coSGEd2YTs2XHGxFfTydG6uhR1SbjxicPOXeYd5/wmswiWGAkyQHe1jApPNA1MnxxSR7B+aBHOWLXBkP4or2MpvyW4ABANPrys2C8o1eAAAAAElFTkSuQmCC"
+            alt="" width="89" height="15" />
+          Rated 4.8 by 3200+ Verified Customers
+        </p>
+        <h1 class="banner-heading">Cool Down Any Room In Record Time</h1>
+        <img src="images/bannerimage.png" alt="img" width="169" height="716" class="bnr-prd-mob show-mob" />
+        <div class="bnr-strip">
+          <img src="images/rw-1.jpg" alt="" class="mik" width="50" height="76" />
+          <p class="bnr-strip-p1">Evaporative-Cooling Technology</p>
+          <p class="bnr-strip-p2">
+            Our unique technology cools your environment almost instantly.
+            Providing a breeze of cold, refreshing air without breaking the
+            bank.
           </p>
-          <h1 class="banner-heading">Cool Down Any Room In Record Time</h1>
-          <img
-            src="images/bannerimage.png"
-            alt="img"
-            width="169"
-            height="716"
-            class="bnr-prd-mob show-mob"
-          />
-          <div class="bnr-strip">
-            <img
-              src="images/rw-1.jpg"
-              alt=""
-              class="mik"
-              width="50"
-              height="76"
-            />
-            <p class="bnr-strip-p1">Evaporative-Cooling Technology</p>
-            <p class="bnr-strip-p2">
-              Our unique technology cools your environment almost instantly.
-              Providing a breeze of cold, refreshing air without breaking the
-              bank.
+        </div>
+        <div class="bnr-list">
+          <ul>
+            <li>Cools Any Room In Minutes</li>
+            <li>Ultra-Energy-Efficient</li>
+            <li>Air Purification Filter</li>
+            <li>100% Noise-Free Operation</li>
+          </ul>
+        </div>
+        <p class="clearall"></p>
+        <div class="btn-box">
+          <div class="btn-txt">
+            <p class="btn-text1">Sale: Live For 24 Hrs</p>
+            <p class="btn-text2">Stock: Only 50 Units Left!</p>
+          </div>
+          <a href="./index.html#products-section" class="packageBtn">
+            Order Now
+            <img src="./images/side-arrow.png" alt="" width="29" height="27" class="btn-arw" />
+          </a>
+          <p class="btn-rev">90 Days Money Back Guarantee</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Banner -->
+
+  <!-- Testimonial -->
+  <div class="section1">
+    <div class="container">
+      <div class="s1-reviw-bx">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTg4NUE1RTJGMzBFMTFFRDlGQjFCREUwQkU5NzRENjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTg4NUE1RTNGMzBFMTFFRDlGQjFCREUwQkU5NzRENjAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFODg1QTVFMEYzMEUxMUVEOUZCMUJERTBCRTk3NEQ2MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFODg1QTVFMUYzMEUxMUVEOUZCMUJERTBCRTk3NEQ2MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pkihfs4AAAM+SURBVHjaYuRJOcowVAATwxACLFTwrCkQOwKxCRCrAbE0EHND5b8C8VMgvgXEZ4B4PxCfBuJ/9HSsDBBnA3E0EMviUccOxEJArAvEwVCxx0C8FIinAvETWiYDYagld4G4goBDcQFZqN67ULOEaeHYMCC+AcRZQMxGhSTIBjULZGY4tRwLSirTgXglEIvQIN+AzFwBtYOFEsdyAfF6IM6gQ2bPgNrFRY5jQb5cDsQ+dCydfKB2spDq2ClA7DcAxakf1G6iHQtK8OkDWP6D7I4kxrHCuHxGZwBygyghx7bQKNeTCkCVSTM+x8oBcfIgag4kQd2EtbrNBGJWUkyzkeZgCLNARMT+Kx8Y1t/8glVtoDoPg6OOAJy/6sQbhiNPf+AznhXqpkp0x4JCOYZUr3fFKTPoKvFDWi0//jBM3P0Cp9rSIHm42lfvfzLkrSWqaQByUzWo8YOcDEyhDRSiQbKxANxycEgdeMZw99MfrGpbPCRQ1C7f95SURpMpepp1IjVUk92k4WxCoRrphFALCtWaHS9IscoR3bHGpOhGDyl8oTopWIZBTJCdnFCFARN0x6qTohs5pPCFqjIfC0OYgxQloQp3G7JjJYnViR5S+EI131WCgZuDhZJQhbsNuTTgJbphixRSIMDHxQL2ALbiCEMtN261eAAv2d0a5JACgWA7hIMuPviC4gB0tYkecjjVktL4/jyIO7af0R37fBA79jm6Y28OYsfeRHfs2UHs2DPojt0/iB27H700OAUddCDYPpi/4xHu+Hrxg2y1OMAT6CgOAyPawFw7dABiMIEOWBMRvfENGiH5NYgc+gvqJqw9BVCQzxlEjp3HgDQehq0PVgfEbweBQ0FuqCHUYQQpyhkEjs1DDzRc4wagsaeZA+jQWUC8jJQRGZDPNg2AQ0F25pI6fPQLOiqynY4O3Qq18xepjgWBb0DsT6ckAbIjEGonAzmOBYHfDJDhSJCP39DAkSAzo6B2/Ca2PUsIgDKdJhDPoFLF8QtqFsjM5aQ2vokNBdAIiTIQdzJAZmJIBU+hepWhZhEdW4wUTtrBppacoF15NWhDiAcq/wVaA92CNkH3MQzA1BIMgCw9CcU0BwABBgDWmtphYdAxqwAAAABJRU5ErkJggg=="
+          alt="" width="43" height="43" class="cot" />
+        <div class="reviw-mid">
+          <div class="reviw-lft">
+            <img src="images/r-11.jpg" alt="" width="212" height="199" class="t-img" />
+            <p class="t-name">Mark R.</p>
+          </div>
+          <div class="reviw-rgt">
+            <img src="images/download.png" alt="" width="103" height="16" class="t-star" />
+            <p class="reviw-rgt-p1">
+              "Winter Weather With The Push Of A Button"
             </p>
-          </div>
-          <div class="bnr-list">
-            <ul>
-              <li>Cools Any Room In Minutes</li>
-              <li>Ultra-Energy-Efficient</li>
-              <li>Air Purification Filter</li>
-              <li>100% Noise-Free Operation</li>
-            </ul>
-          </div>
-          <p class="clearall"></p>
-          <div class="btn-box">
-            <div class="btn-txt">
-              <p class="btn-text1">Sale: Live For 24 Hrs</p>
-              <p class="btn-text2">Stock: Only 50 Units Left!</p>
-            </div>
-            <a href="./index.html#products-section" class="packageBtn">
-              Order Now
-              <img
-                src="./images/side-arrow.png"
-                alt=""
-                width="29"
-                height="27"
-                class="btn-arw"
-              />
-            </a>
-            <p class="btn-rev">90 Days Money Back Guarantee</p>
+            <p class="reviw-rgt-p2">
+              "The technology is simple and impressive at the same time. It's
+              one of the most affordable ways to stay cool during summer. I
+              predict many households will also start using this instead of
+              their expensive AC. "
+            </p>
+            <p class="reviw-rgt-p3">
+              <span>Mark R. |</span> Cooling Engineer
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Banner -->
+  </div>
+  <!-- Testimonial -->
 
-    <!-- Testimonial -->
-    <div class="section1">
-      <div class="container">
-        <div class="s1-reviw-bx">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTg4NUE1RTJGMzBFMTFFRDlGQjFCREUwQkU5NzRENjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTg4NUE1RTNGMzBFMTFFRDlGQjFCREUwQkU5NzRENjAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFODg1QTVFMEYzMEUxMUVEOUZCMUJERTBCRTk3NEQ2MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFODg1QTVFMUYzMEUxMUVEOUZCMUJERTBCRTk3NEQ2MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pkihfs4AAAM+SURBVHjaYuRJOcowVAATwxACLFTwrCkQOwKxCRCrAbE0EHND5b8C8VMgvgXEZ4B4PxCfBuJ/9HSsDBBnA3E0EMviUccOxEJArAvEwVCxx0C8FIinAvETWiYDYagld4G4goBDcQFZqN67ULOEaeHYMCC+AcRZQMxGhSTIBjULZGY4tRwLSirTgXglEIvQIN+AzFwBtYOFEsdyAfF6IM6gQ2bPgNrFRY5jQb5cDsQ+dCydfKB2spDq2ClA7DcAxakf1G6iHQtK8OkDWP6D7I4kxrHCuHxGZwBygyghx7bQKNeTCkCVSTM+x8oBcfIgag4kQd2EtbrNBGJWUkyzkeZgCLNARMT+Kx8Y1t/8glVtoDoPg6OOAJy/6sQbhiNPf+AznhXqpkp0x4JCOYZUr3fFKTPoKvFDWi0//jBM3P0Cp9rSIHm42lfvfzLkrSWqaQByUzWo8YOcDEyhDRSiQbKxANxycEgdeMZw99MfrGpbPCRQ1C7f95SURpMpepp1IjVUk92k4WxCoRrphFALCtWaHS9IscoR3bHGpOhGDyl8oTopWIZBTJCdnFCFARN0x6qTohs5pPCFqjIfC0OYgxQloQp3G7JjJYnViR5S+EI131WCgZuDhZJQhbsNuTTgJbphixRSIMDHxQL2ALbiCEMtN261eAAv2d0a5JACgWA7hIMuPviC4gB0tYkecjjVktL4/jyIO7af0R37fBA79jm6Y28OYsfeRHfs2UHs2DPojt0/iB27H700OAUddCDYPpi/4xHu+Hrxg2y1OMAT6CgOAyPawFw7dABiMIEOWBMRvfENGiH5NYgc+gvqJqw9BVCQzxlEjp3HgDQehq0PVgfEbweBQ0FuqCHUYQQpyhkEjs1DDzRc4wagsaeZA+jQWUC8jJQRGZDPNg2AQ0F25pI6fPQLOiqynY4O3Qq18xepjgWBb0DsT6ckAbIjEGonAzmOBYHfDJDhSJCP39DAkSAzo6B2/Ca2PUsIgDKdJhDPoFLF8QtqFsjM5aQ2vokNBdAIiTIQdzJAZmJIBU+hepWhZhEdW4wUTtrBppacoF15NWhDiAcq/wVaA92CNkH3MQzA1BIMgCw9CcU0BwABBgDWmtphYdAxqwAAAABJRU5ErkJggg=="
-            alt=""
-            width="43"
-            height="43"
-            class="cot"
-          />
-          <div class="reviw-mid">
-            <div class="reviw-lft">
-              <img
-                src="images/r-11.jpg"
-                alt=""
-                width="212"
-                height="199"
-                class="t-img"
-              />
-              <p class="t-name">Mark R.</p>
-            </div>
-            <div class="reviw-rgt">
-              <img
-                src="images/download.png"
-                alt=""
-                width="103"
-                height="16"
-                class="t-star"
-              />
-              <p class="reviw-rgt-p1">
-                "Winter Weather With The Push Of A Button"
-              </p>
-              <p class="reviw-rgt-p2">
-                "The technology is simple and impressive at the same time. It's
-                one of the most affordable ways to stay cool during summer. I
-                predict many households will also start using this instead of
-                their expensive AC. "
-              </p>
-              <p class="reviw-rgt-p3">
-                <span>Mark R. |</span> Cooling Engineer
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonial -->
-
-    <div class="section2" id="overview">
-      <div class="container">
-        <div class="s2-rgt">
-          <h2 class="comn-hding">
-            Introducing YOMZ <br /><span
-              >Be prepared for those hot summer months!</span
-            >
-          </h2>
-          <div class="s2-lft show-mob">
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/sd-1.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/sd-2.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/sd-3.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          <p class="clearall show-mob"></p>
-          <div class="comntxt">
-            <p>
-              Tired of the scorching summer heat? Having trouble working or
-              sleeping in an environment that’s too hot?
-            </p>
-            <p>
-              YOMZ is
-              <strong
-                >the most affordable and effective solution to stay cool during
-                a heatwave</strong
-              >. Our unique technology can cool down any room in minutes while
-              still using less electricity than a traditional Bag unit.
-            </p>
-          </div>
-          <p class="clearall"></p>
-          <div class="btn-box">
-            <div class="btn-txt">
-              <p class="btn-text1">Sale: Live For 24 Hrs</p>
-              <p class="btn-text2">Stock: Only 50 Units Left!</p>
-            </div>
-            <a href="./index.html#products-section" class="packageBtn"
-              >Order Now<img
-                src="./images/side-arrow.png"
-                alt=""
-                width="29"
-                height="27"
-                class="btn-arw"
-            /></a>
-            <p class="btn-rev">90 Days Money Back Guarantee</p>
-          </div>
-        </div>
-        <div class="s2-lft hide-mob">
-          <div
-            id="carouselExampleControls1"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
+  <div class="section2" id="overview">
+    <div class="container">
+      <div class="s2-rgt">
+        <h2 class="comn-hding">
+          Introducing YOMZ <br /><span>Be prepared for those hot summer months!</span>
+        </h2>
+        <div class="s2-lft show-mob">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/sd-1.jpg" class="d-block w-100" alt="..." />
@@ -295,245 +148,280 @@
                 <img src="images/sd-3.jpg" class="d-block w-100" alt="..." />
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls1"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls1"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="s2-bottom">
-      <div class="container text-center">
-        <h2 class="comn-hding">
-          <span>Deal with the heat — the easy way</span>
-        </h2>
-        <p class="comntxt deal-pera">
-          Our unique features make YOMZ the most innovative Bag of the century.
-        </p>
-
-        <div class="row">
-          <div class="col-md-3 col-6 text-center">
-            <div class="s2-slide">
-              <img src="images/NatureKnit.jpg" alt="" class="img-fluid" />
-              <p class="s2-list-p1">NatureKnit™</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-6 text-center">
-            <div class="s2-slide">
-              <img src="images/PhytoServ.jpg" alt="" class="img-fluid" />
-              <p class="s2-list-p1">PhytoServ®</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-6 text-center">
-            <div class="s2-slide">
-              <img
-                src="images/fructooligosaccharides.jpg"
-                alt=""
-                class="img-fluid"
-              />
-              <p class="s2-list-p1">FOS</p>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-6 text-center">
-            <div class="s2-slide">
-              <img src="images/Vitamins-a.jpg" alt="" class="img-fluid" />
-              <p class="s2-list-p1">Vitamins A, C, D, K2</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="s3-bottom">
-      <div class="container">
-        <p class="s3-btm-p1">Quick and Efficient Cooling</p>
-        <!-- <p class="s3-btm-p2">Limited 50 Discount On Now</p> -->
-        <div class="btn-box">
-          <a href="./index.html#products-section" class="packageBtn"
-            >Order Now<img
-              src="./images/side-arrow.png"
-              alt=""
-              width="29"
-              height="27"
-              class="btn-arw"
-          /></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="section4" id="features">
-      <div class="container">
-        <h2 class="comn-hding"><span>Features of YOMZ</span></h2>
+        <p class="clearall show-mob"></p>
         <div class="comntxt">
-          <p class="deal-pera">
-            Stay Cool Without Skyrocketing Your Electricity Bills
+          <p>
+            Tired of the scorching summer heat? Having trouble working or
+            sleeping in an environment that’s too hot?
+          </p>
+          <p>
+            YOMZ is
+            <strong>the most affordable and effective solution to stay cool during
+              a heatwave</strong>. Our unique technology can cool down any room in minutes while
+            still using less electricity than a traditional Bag unit.
           </p>
         </div>
-        <div class="s4-mid">
-          <img
-            src="images/bannerimage.png"
-            alt=""
-            width="477"
-            height="511"
-            class="s4-prd hide-tab"
-          /><img
-            src="images/bannerimage.png"
-            alt=""
-            width="833"
-            height="830"
-            class="s4-prd show-tab"
-          />
-          <ul class="s4-list">
-            <!--[-->
-            <li>
-              <p class="s4-list-p1">Instant Cooling</p>
-              <div class="s4-list-p2">
-                <p>
-                  Whether you want a light breeze or full blown arctic weather -
-                  you can control the exact temperature that suits you.
-                </p>
-              </div>
-            </li>
-            <li>
-              <p class="s4-list-p1">Microclimate Area</p>
-              <div class="s4-list-p2">
-                <p>
-                  Set the fan speed, temperature, and cooling mode to your
-                  liking.
-                </p>
-              </div>
-            </li>
-            <li>
-              <p class="s4-list-p1">Portable Design</p>
-              <div class="s4-list-p2">
-                <p>
-                  The built-in rechargable battery can be powered by any USB
-                  charging device.
-                </p>
-              </div>
-            </li>
-            <!--]-->
-          </ul>
-          <ul class="s4-list2">
-            <!--[-->
-            <li>
-              <p class="s4-list-p1">Purifies and Humidifies</p>
-              <div class="s4-list-p2">
-                <p>
-                  Keep the air humidity at an optimal level so that it doesn’t
-                  dry out the air the way regular Bag does.
-                </p>
-              </div>
-            </li>
-            <li>
-              <p class="s4-list-p1">Eco-Friendly</p>
-              <div class="s4-list-p2">
-                <p>
-                  The low energy consumption keeps you cool without wasting
-                  energy.
-                </p>
-              </div>
-            </li>
-            <li>
-              <p class="s4-list-p1">Low Noise</p>
-              <div class="s4-list-p2">
-                <p>It’s so quiet you won’t even hear it at night.</p>
-              </div>
-            </li>
-            <!--]-->
-          </ul>
-          <p class="clearall"></p>
-          <div class="btn-box">
-            <div class="btn-txt">
-              <p class="btn-text1">Sale: Live For 24 Hrs</p>
-              <p class="btn-text2">Stock: Only 50 Units Left!</p>
+        <p class="clearall"></p>
+        <div class="btn-box">
+          <div class="btn-txt">
+            <p class="btn-text1">Sale: Live For 24 Hrs</p>
+            <p class="btn-text2">Stock: Only 50 Units Left!</p>
+          </div>
+          <a href="./index.html#products-section" class="packageBtn">Order Now<img src="./images/side-arrow.png" alt=""
+              width="29" height="27" class="btn-arw" /></a>
+          <p class="btn-rev">90 Days Money Back Guarantee</p>
+        </div>
+      </div>
+      <div class="s2-lft hide-mob">
+        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/sd-1.jpg" class="d-block w-100" alt="..." />
             </div>
-            <a href="./index.html#products-section" class="packageBtn"
-              >Order Now<img
-                src="./images/side-arrow.png"
-                alt=""
-                width="29"
-                height="27"
-                class="btn-arw"
-            /></a>
-            <p class="btn-rev">90 Days Money Back Guarantee</p>
+            <div class="carousel-item">
+              <img src="images/sd-2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/sd-3.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="s2-bottom">
+    <div class="container text-center">
+      <h2 class="comn-hding">
+        <span>Deal with the heat — the easy way</span>
+      </h2>
+      <p class="comntxt deal-pera">
+        Our unique features make YOMZ the most innovative Bag of the century.
+      </p>
+
+      <div class="row">
+        <div class="col-md-3 col-6 text-center">
+          <div class="s2-slide">
+            <img src="images/NatureKnit.jpg" alt="" class="img-fluid" />
+            <p class="s2-list-p1">NatureKnit™</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 text-center">
+          <div class="s2-slide">
+            <img src="images/PhytoServ.jpg" alt="" class="img-fluid" />
+            <p class="s2-list-p1">PhytoServ®</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 text-center">
+          <div class="s2-slide">
+            <img src="images/fructooligosaccharides.jpg" alt="" class="img-fluid" />
+            <p class="s2-list-p1">FOS</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 text-center">
+          <div class="s2-slide">
+            <img src="images/Vitamins-a.jpg" alt="" class="img-fluid" />
+            <p class="s2-list-p1">Vitamins A, C, D, K2</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section5">
-      <div class="container">
-        <div>
+  <div class="s3-bottom">
+    <div class="container">
+      <p class="s3-btm-p1">Quick and Efficient Cooling</p>
+      <!-- <p class="s3-btm-p2">Limited 50 Discount On Now</p> -->
+      <div class="btn-box">
+        <a href="./index.html#products-section" class="packageBtn">Order Now<img src="./images/side-arrow.png" alt=""
+            width="29" height="27" class="btn-arw" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section4" id="features">
+    <div class="container">
+      <h2 class="comn-hding"><span>Features of YOMZ</span></h2>
+      <div class="comntxt">
+        <p class="deal-pera">
+          Stay Cool Without Skyrocketing Your Electricity Bills
+        </p>
+      </div>
+      <div class="s4-mid">
+        <img src="images/bannerimage.png" alt="" width="477" height="511" class="s4-prd hide-tab" /><img
+          src="images/bannerimage.png" alt="" width="833" height="830" class="s4-prd show-tab" />
+        <ul class="s4-list">
           <!--[-->
-          <h2 class="comn-hding section5-head">How does YOMZ work?</h2>
-          <div class="row">
-            <div class="col-md-4 text-center">
-              <div class="s2-slide">
-                <img src="images/NatureKnit.jpg" alt="" class="img-fluid" />
-                <h4 class="s2-list-p1">NatureKnit™</h4>
-                <p>A fiber-fueled, gut- repairing power blend of superfoods.</p>
-              </div>
+          <li>
+            <p class="s4-list-p1">Instant Cooling</p>
+            <div class="s4-list-p2">
+              <p>
+                Whether you want a light breeze or full blown arctic weather -
+                you can control the exact temperature that suits you.
+              </p>
             </div>
-
-            <div class="col-md-4 text-center">
-              <div class="s2-slide">
-                <img src="images/PhytoServ.jpg" alt="" class="img-fluid" />
-                <h4 class="s2-list-p1">PhytoServ®</h4>
-                <p>A fiber-fueled, gut- repairing power blend of superfoods.</p>
-              </div>
+          </li>
+          <li>
+            <p class="s4-list-p1">Microclimate Area</p>
+            <div class="s4-list-p2">
+              <p>
+                Set the fan speed, temperature, and cooling mode to your
+                liking.
+              </p>
             </div>
-
-            <div class="col-md-4 text-center">
-              <div class="s2-slide">
-                <img
-                  src="images/fructooligosaccharides.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <h4 class="s2-list-p1">FOS</h4>
-                <p>A fiber-fueled, gut- repairing power blend of superfoods.</p>
-              </div>
+          </li>
+          <li>
+            <p class="s4-list-p1">Portable Design</p>
+            <div class="s4-list-p2">
+              <p>
+                The built-in rechargable battery can be powered by any USB
+                charging device.
+              </p>
             </div>
-          </div>
-          <div class="comntxt mnk-p">
-            <p>
-              Thanks to the 10-hour long cooling battery life &amp; noise-free
-              operation - you can use the YOMZ anytime, anywhere you want!
-            </p>
-          </div>
+          </li>
           <!--]-->
-        </div>
-        <div class="mnybkBox">
-          <div class="seal30day hide-mob">
-            <img src="images/pack.png"" width=" 464" height="585">
+        </ul>
+        <ul class="s4-list2">
+          <!--[-->
+          <li>
+            <p class="s4-list-p1">Purifies and Humidifies</p>
+            <div class="s4-list-p2">
+              <p>
+                Keep the air humidity at an optimal level so that it doesn’t
+                dry out the air the way regular Bag does.
+              </p>
+            </div>
+          </li>
+          <li>
+            <p class="s4-list-p1">Eco-Friendly</p>
+            <div class="s4-list-p2">
+              <p>
+                The low energy consumption keeps you cool without wasting
+                energy.
+              </p>
+            </div>
+          </li>
+          <li>
+            <p class="s4-list-p1">Low Noise</p>
+            <div class="s4-list-p2">
+              <p>It’s so quiet you won’t even hear it at night.</p>
+            </div>
+          </li>
+          <!--]-->
+        </ul>
+        <p class="clearall"></p>
+        <div class="btn-box">
+          <div class="btn-txt">
+            <p class="btn-text1">Sale: Live For 24 Hrs</p>
+            <p class="btn-text2">Stock: Only 50 Units Left!</p>
           </div>
-          <div class="mnybk-top show-mob">
+          <a href="./index.html#products-section" class="packageBtn">Order Now<img src="./images/side-arrow.png" alt=""
+              width="29" height="27" class="btn-arw" /></a>
+          <p class="btn-rev">90 Days Money Back Guarantee</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section5">
+    <div class="container">
+      <div>
+        <!--[-->
+        <h2 class="comn-hding section5-head">How does YOMZ work?</h2>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="s2-slide">
+              <img src="images/NatureKnit.jpg" alt="" class="img-fluid" />
+              <h4 class="s2-list-p1">NatureKnit™</h4>
+              <p>A fiber-fueled, gut- repairing power blend of superfoods.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="s2-slide">
+              <img src="images/PhytoServ.jpg" alt="" class="img-fluid" />
+              <h4 class="s2-list-p1">PhytoServ®</h4>
+              <p>A fiber-fueled, gut- repairing power blend of superfoods.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="s2-slide">
+              <img src="images/fructooligosaccharides.jpg" alt="" class="img-fluid" />
+              <h4 class="s2-list-p1">FOS</h4>
+              <p>A fiber-fueled, gut- repairing power blend of superfoods.</p>
+            </div>
+          </div>
+        </div>
+        <div class="comntxt mnk-p">
+          <p>
+            Thanks to the 10-hour long cooling battery life &amp; noise-free
+            operation - you can use the YOMZ anytime, anywhere you want!
+          </p>
+        </div>
+        <!--]-->
+      </div>
+      <div class="mnybkBox">
+        <div class="seal30day hide-mob">
+          <img src="images/pack.png"" width=" 464" height="585">
+        </div>
+        <div class="mnybk-top show-mob">
+          <p class="mnybk-cont-p1 exblod">Special Offer On Now</p>
+          <p class="mnybk-cont-p2">
+            50% discount on YOMZ for first-time buyers
+          </p>
+          <div class="counter-box">
+            <p class="exblod">Limited Time Offer!</p>
+
+            <!-- timer mobile -->
+            <div id="clockdiv" class="exblod">
+              <div>
+                <span id="hours-mobile" class="hours">23</span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <p>:</p>
+              <div>
+                <span id="minutes-mobile" class="minutes">59</span>
+                <div class="smalltext">Mins</div>
+              </div>
+              <p>:</p>
+              <div>
+                <span id="seconds-mobile" class="seconds">59</span>
+                <div class="smalltext">Secs</div>
+              </div>
+            </div>
+          </div>
+          <div class="seal30day show-mob">
+            <img src="images/pack.png" width="464" height="585" />
+          </div>
+        </div>
+        <div class="mnybk-btm">
+          <div class="hide-mob">
             <p class="mnybk-cont-p1 exblod">Special Offer On Now</p>
             <p class="mnybk-cont-p2">
               50% discount on YOMZ for first-time buyers
@@ -541,1565 +429,985 @@
             <div class="counter-box">
               <p class="exblod">Limited Time Offer!</p>
 
-              <!-- timer mobile -->
-              <div id="clockdiv" class="exblod">
+              <!-- timer desktop -->
+              <div id="clockdiv2" class="exblod">
                 <div>
-                  <span id="hours-mobile" class="hours">23</span>
+                  <span id="hours-desktop" class="hours">23</span>
                   <div class="smalltext">Hours</div>
                 </div>
                 <p>:</p>
                 <div>
-                  <span id="minutes-mobile" class="minutes">59</span>
+                  <span id="minutes-desktop" class="minutes">59</span>
                   <div class="smalltext">Mins</div>
                 </div>
                 <p>:</p>
                 <div>
-                  <span id="seconds-mobile" class="seconds">59</span>
+                  <span id="seconds-desktop" class="seconds">59</span>
                   <div class="smalltext">Secs</div>
                 </div>
               </div>
             </div>
-            <div class="seal30day show-mob">
-              <img src="images/pack.png" width="464" height="585" />
-            </div>
           </div>
-          <div class="mnybk-btm">
-            <div class="hide-mob">
-              <p class="mnybk-cont-p1 exblod">Special Offer On Now</p>
-              <p class="mnybk-cont-p2">
-                50% discount on YOMZ for first-time buyers
-              </p>
-              <div class="counter-box">
-                <p class="exblod">Limited Time Offer!</p>
-
-                <!-- timer desktop -->
-                <div id="clockdiv2" class="exblod">
-                  <div>
-                    <span id="hours-desktop" class="hours">23</span>
-                    <div class="smalltext">Hours</div>
-                  </div>
-                  <p>:</p>
-                  <div>
-                    <span id="minutes-desktop" class="minutes">59</span>
-                    <div class="smalltext">Mins</div>
-                  </div>
-                  <p>:</p>
-                  <div>
-                    <span id="seconds-desktop" class="seconds">59</span>
-                    <div class="smalltext">Secs</div>
-                  </div>
-                </div>
-              </div>
+          <p class="mnybk-btm-p1">
+            Special LIMITED TIME Offer:<span class="exblod"><br />Pay Only $47.99</span>
+          </p>
+          <div class="mny-list">
+            <ul>
+              <li>Fast USA-based shipping</li>
+              <li>30-Day 100% Money-Back Guarantee</li>
+              <li>Amazing Customer Support</li>
+              <li>
+                <strong>Extra discount when ordering more than one</strong>
+              </li>
+            </ul>
+          </div>
+          <p class="clearall"></p>
+          <div class="btn-box">
+            <div class="btn-txt">
+              <p class="btn-text1">Sale: Live For 24 Hrs</p>
+              <p class="btn-text2">Stock: Only 50 Units Left!</p>
             </div>
-            <p class="mnybk-btm-p1">
-              Special LIMITED TIME Offer:<span class="exblod"
-                ><br />Pay Only $47.99</span
-              >
-            </p>
-            <div class="mny-list">
-              <ul>
-                <li>Fast USA-based shipping</li>
-                <li>30-Day 100% Money-Back Guarantee</li>
-                <li>Amazing Customer Support</li>
-                <li>
-                  <strong>Extra discount when ordering more than one</strong>
-                </li>
-              </ul>
-            </div>
-            <p class="clearall"></p>
-            <div class="btn-box">
-              <div class="btn-txt">
-                <p class="btn-text1">Sale: Live For 24 Hrs</p>
-                <p class="btn-text2">Stock: Only 50 Units Left!</p>
-              </div>
-              <a href="./index.html#products-section" class="packageBtn"
-                >Order Now<img
-                  src="./images/side-arrow.png"
-                  alt=""
-                  width="29"
-                  height="27"
-                  class="btn-arw"
-              /></a>
-              <p class="btn-rev">90 Days Money Back Guarantee</p>
-            </div>
+            <a href="./index.html#products-section" class="packageBtn">Order Now<img src="./images/side-arrow.png"
+                alt="" width="29" height="27" class="btn-arw" /></a>
+            <p class="btn-rev">90 Days Money Back Guarantee</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section6" id="reviews">
-      <div class="container">
-        <h2 class="comn-hding">
-          <br /><span>What Our Customers Say About Us</span>
-        </h2>
-        <div class="star-review-row">
-          <div class="star-review-col-1">
-            <span>4.8</span
-            ><img src="images/download.png" alt="" width="118" height="20" />
-            Average Rating
-          </div>
-          <ul class="rev-bars">
-            <li>
-              <div><span style="width: 88%"></span></div>
-              <img src="images/download.png" alt="" width="118" height="20" />
-              <p>88%</p>
-            </li>
-            <li>
-              <div><span style="width: 12%"></span></div>
-              <img src="images/download23.png" alt="" width="118" height="20" />
-              <p>12%</p>
-            </li>
-            <li>
-              <div><span style="width: 0%"></span></div>
-              <img src="images/download3.png" alt="" width="118" height="20" />
-              <p>0%</p>
-            </li>
-            <li>
-              <div><span style="width: 0%"></span></div>
-              <img src="images/download2.png" alt="" width="118" height="20" />
-              <p>0%</p>
-            </li>
-            <li>
-              <div><span style="width: 0%"></span></div>
-              <img src="images/download1.png" alt="" width="118" height="20" />
-              <p>0%</p>
-            </li>
-          </ul>
+  <div class="section6" id="reviews">
+    <div class="container">
+      <h2 class="comn-hding">
+        <br /><span>What Our Customers Say About Us</span>
+      </h2>
+      <div class="star-review-row">
+        <div class="star-review-col-1">
+          <span>4.8</span><img src="images/download.png" alt="" width="118" height="20" />
+          Average Rating
         </div>
-        <div class="hide-mob">
-          <div class="s6-reviw">
+        <ul class="rev-bars">
+          <li>
+            <div><span style="width: 88%"></span></div>
+            <img src="images/download.png" alt="" width="118" height="20" />
+            <p>88%</p>
+          </li>
+          <li>
+            <div><span style="width: 12%"></span></div>
+            <img src="images/download23.png" alt="" width="118" height="20" />
+            <p>12%</p>
+          </li>
+          <li>
+            <div><span style="width: 0%"></span></div>
+            <img src="images/download3.png" alt="" width="118" height="20" />
+            <p>0%</p>
+          </li>
+          <li>
+            <div><span style="width: 0%"></span></div>
+            <img src="images/download2.png" alt="" width="118" height="20" />
+            <p>0%</p>
+          </li>
+          <li>
+            <div><span style="width: 0%"></span></div>
+            <img src="images/download1.png" alt="" width="118" height="20" />
+            <p>0%</p>
+          </li>
+        </ul>
+      </div>
+      <div class="hide-mob">
+        <div class="s6-reviw">
+          <!--[-->
+          <div class="s6-reviw-bx">
             <!--[-->
-            <div class="s6-reviw-bx">
-              <!--[-->
-              <div class="tsti-bx">
-                <img
-                  src="images/fc-1.jpg"
-                  alt=""
-                  width="272"
-                  height="239"
-                  class="t-img1"
-                />
-                <div class="tsti-bx-mid">
-                  <p class="vrfy-p">
-                    Izzy L.
-                    <img
-                      src="images/checkreviews.png"
-                      alt=""
-                      width="18"
-                      height="18"
-                      class="vrfy-tk"
-                    /><span>Verified Buyer</span>
-                  </p>
-                  <img
-                    src="images/download.png"
-                    alt=""
-                    width="103"
-                    height="16"
-                    class="tsti-star"
-                  />
-                  <p class="tsti-txt">
-                    I am surprised how this really small and portable device can
-                    cool air so rapidly. I just add cold water and power and can
-                    feel the difference in my study in just minutes. The great
-                    thing, it can be charged with a portable power bank and
-                    thanks to that and it's lightweight - I was able to take it
-                    with me on my last camping trip!
-                  </p>
-                </div>
+            <div class="tsti-bx">
+              <img src="images/fc-1.jpg" alt="" width="272" height="239" class="t-img1" />
+              <div class="tsti-bx-mid">
+                <p class="vrfy-p">
+                  Izzy L.
+                  <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                    Buyer</span>
+                </p>
+                <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                <p class="tsti-txt">
+                  I am surprised how this really small and portable device can
+                  cool air so rapidly. I just add cold water and power and can
+                  feel the difference in my study in just minutes. The great
+                  thing, it can be charged with a portable power bank and
+                  thanks to that and it's lightweight - I was able to take it
+                  with me on my last camping trip!
+                </p>
               </div>
-              <div class="tsti-bx">
-                <img
-                  src="images/fc-2.jpg"
-                  alt=""
-                  width="272"
-                  height="239"
-                  class="t-img1"
-                />
-                <div class="tsti-bx-mid">
-                  <p class="vrfy-p">
-                    Marty M.
-                    <img
-                      src="images/checkreviews.png"
-                      alt=""
-                      width="18"
-                      height="18"
-                      class="vrfy-tk"
-                    /><span>Verified Buyer</span>
-                  </p>
-                  <img
-                    src="images/download.png"
-                    alt=""
-                    width="103"
-                    height="16"
-                    class="tsti-star"
-                  />
-                  <p class="tsti-txt">
-                    I have been using this product for 2 months now and it's
-                    amazing how quickly it cools. I am able to charge this with
-                    my laptop &amp; power bank and it works for over 6 hours
-                    comfortably.
-                  </p>
-                </div>
-              </div>
-              <!--]-->
             </div>
-            <div class="s6-reviw-bx">
-              <!--[-->
-              <div class="tsti-bx">
-                <img
-                  src="images/fc-3.jpg"
-                  alt=""
-                  width="272"
-                  height="239"
-                  class="t-img1"
-                />
-                <div class="tsti-bx-mid">
-                  <p class="vrfy-p">
-                    Morgan Rose
-                    <img
-                      src="images/checkreviews.png"
-                      alt=""
-                      width="18"
-                      height="18"
-                      class="vrfy-tk"
-                    /><span>Verified Buyer</span>
-                  </p>
-                  <img
-                    src="images/download.png"
-                    alt=""
-                    width="103"
-                    height="16"
-                    class="tsti-star"
-                  />
-                  <p class="tsti-txt">
-                    I love how cute this thing looks on my desk while still
-                    doing the job! Just add water and its ready to start cooling
-                    in minutes - this is the first thing I switch one when I get
-                    back on a hot day! Unlike what I expected, it actually is
-                    100% noise-free, so you can sleep without any disturbance.
-                  </p>
-                </div>
+            <div class="tsti-bx">
+              <img src="images/fc-2.jpg" alt="" width="272" height="239" class="t-img1" />
+              <div class="tsti-bx-mid">
+                <p class="vrfy-p">
+                  Marty M.
+                  <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                    Buyer</span>
+                </p>
+                <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                <p class="tsti-txt">
+                  I have been using this product for 2 months now and it's
+                  amazing how quickly it cools. I am able to charge this with
+                  my laptop &amp; power bank and it works for over 6 hours
+                  comfortably.
+                </p>
               </div>
-              <div class="tsti-bx">
-                <img
-                  src="images/fc-4.jpg"
-                  alt=""
-                  width="272"
-                  height="239"
-                  class="t-img1"
-                />
-                <div class="tsti-bx-mid">
-                  <p class="vrfy-p">
-                    Courtney A.
-                    <img
-                      src="images/checkreviews.png"
-                      alt=""
-                      width="18"
-                      height="18"
-                      class="vrfy-tk"
-                    /><span>Verified Buyer</span>
-                  </p>
-                  <img
-                    src="images/download.png"
-                    alt=""
-                    width="103"
-                    height="16"
-                    class="tsti-star"
-                  />
-                  <p class="tsti-txt">
-                    We have no Bag at work, so I take it with me everyday. At
-                    first people gave me a funny look about it, but now they
-                    love how it cools down our little office space.
-                  </p>
-                </div>
-              </div>
-              <!--]-->
-            </div>
-            <div class="s6-reviw-bx">
-              <!--[-->
-              <div class="tsti-bx">
-                <img
-                  src="images/fc-5.jpg"
-                  alt=""
-                  width="272"
-                  height="239"
-                  class="t-img1"
-                />
-                <div class="tsti-bx-mid">
-                  <p class="vrfy-p">
-                    Ashley C.
-                    <img
-                      src="images/checkreviews.png"
-                      alt=""
-                      width="18"
-                      height="18"
-                      class="vrfy-tk"
-                    /><span>Verified Buyer</span>
-                  </p>
-                  <img
-                    src="images/download.png"
-                    alt=""
-                    width="103"
-                    height="16"
-                    class="tsti-star"
-                  />
-                  <p class="tsti-txt">
-                    Saves us so much money on expensive AC.
-                  </p>
-                </div>
-              </div>
-              <div class="tsti-bx">
-                <img
-                  src="images/fc-6.jpg"
-                  alt=""
-                  width="272"
-                  height="239"
-                  class="t-img1"
-                />
-                <div class="tsti-bx-mid">
-                  <p class="vrfy-p">
-                    Amanda P.
-                    <img
-                      src="images/checkreviews.png"
-                      alt=""
-                      width="18"
-                      height="18"
-                      class="vrfy-tk"
-                    /><span>Verified Buyer</span>
-                  </p>
-                  <img
-                    src="images/download.png"
-                    alt=""
-                    width="103"
-                    height="16"
-                    class="tsti-star"
-                  />
-                  <p class="tsti-txt">
-                    Works great. Fast shipping. I struggle from a bit of 'extra
-                    weight' and summer is always hell for me. This new invention
-                    finally brings me the heat relief I was looking for.
-                  </p>
-                </div>
-              </div>
-              <!--]-->
-            </div>
-            <div class="s6-reviw-bx">
-              <!--[-->
-              <div class="tsti-bx">
-                <img
-                  src="images/fc-7.jpg"
-                  alt=""
-                  width="272"
-                  height="239"
-                  class="t-img1"
-                />
-                <div class="tsti-bx-mid">
-                  <p class="vrfy-p">
-                    Britt C.
-                    <img
-                      src="images/checkreviews.png"
-                      alt=""
-                      width="18"
-                      height="18"
-                      class="vrfy-tk"
-                    /><span>Verified Buyer</span>
-                  </p>
-                  <img
-                    src="images/download.png"
-                    alt=""
-                    width="103"
-                    height="16"
-                    class="tsti-star"
-                  />
-                  <p class="tsti-txt">
-                    I ordered 5 devices, but 1 device was faulty. Customer
-                    support sorted it out with me however. I'm now enjoying cool
-                    air everywhere in our house, without spending a fortune on
-                    electricity.
-                  </p>
-                </div>
-              </div>
-              <div class="tsti-bx">
-                <img
-                  src="images/fc-8.jpg"
-                  alt=""
-                  width="272"
-                  height="239"
-                  class="t-img1"
-                />
-                <div class="tsti-bx-mid">
-                  <p class="vrfy-p">
-                    Cameron E.
-                    <img
-                      src="images/checkreviews.png"
-                      alt=""
-                      width="18"
-                      height="18"
-                      class="vrfy-tk"
-                    /><span>Verified Buyer</span>
-                  </p>
-                  <img
-                    src="images/download.png"
-                    alt=""
-                    width="103"
-                    height="16"
-                    class="tsti-star"
-                  />
-                  <p class="tsti-txt">
-                    My sister gave me one as a gift. She has been using hers for
-                    weeks now and is a huge fan. And now I understand why!
-                    Seeing is believing. This thing is powerful.
-                  </p>
-                </div>
-              </div>
-              <!--]-->
             </div>
             <!--]-->
           </div>
-        </div>
-        <div class="show-mob testimonials-custom-swiper">
-          <div class="s6-reviw">
-            <div class="swiper swiper-initialized swiper-horizontal">
-              <!--[--><!--]-->
-              <div class="swiper-wrapper" style="transition-duration: 300ms">
-                <!--[--><!--]--><!--[-->
-                <div
-                  class="swiper-slide swiper-slide-prev s6-revix-bx"
-                  data-swiper-slide-index="0"
-                >
-                  <!--[-->
-                  <div class="tsti-bx">
-                    <img
-                      src="images/fc-1.jpg"
-                      alt=""
-                      width="272"
-                      height="239"
-                      class="t-img1"
-                    />
-                    <div class="tsti-bx-mid">
-                      <p class="vrfy-p">
-                        Izzy L.
-                        <img
-                          src="images/checkreviews.png"
-                          alt=""
-                          width="18"
-                          height="18"
-                          class="vrfy-tk"
-                        /><span>Verified Buyer</span>
-                      </p>
-                      <img
-                        src="images/download.png"
-                        alt=""
-                        width="103"
-                        height="16"
-                        class="tsti-star"
-                      />
-                      <p class="tsti-txt">
-                        I am surprised how this really small and portable device
-                        can cool air so rapidly. I just add cold water and power
-                        and can feel the difference in my study in just minutes.
-                        The great thing, it can be charged with a portable power
-                        bank and thanks to that and it's lightweight - I was
-                        able to take it with me on my last camping trip!
-                      </p>
-                    </div>
-                  </div>
-                  <!--]--><!---->
-                </div>
-                <div
-                  class="swiper-slide swiper-slide-active s6-revix-bx"
-                  data-swiper-slide-index="1"
-                >
-                  <!--[-->
-                  <div class="tsti-bx">
-                    <img
-                      src="images/fc-2.jpg"
-                      alt=""
-                      width="272"
-                      height="239"
-                      class="t-img1"
-                    />
-                    <div class="tsti-bx-mid">
-                      <p class="vrfy-p">
-                        Marty M.
-                        <img
-                          src="images/checkreviews.png"
-                          alt=""
-                          width="18"
-                          height="18"
-                          class="vrfy-tk"
-                        /><span>Verified Buyer</span>
-                      </p>
-                      <img
-                        src="images/download.png"
-                        alt=""
-                        width="103"
-                        height="16"
-                        class="tsti-star"
-                      />
-                      <p class="tsti-txt">
-                        I have been using this product for 2 months now and it's
-                        amazing how quickly it cools. I am able to charge this
-                        with my laptop &amp; power bank and it works for over 6
-                        hours comfortably.
-                      </p>
-                    </div>
-                  </div>
-                  <!--]--><!---->
-                </div>
-                <div
-                  class="swiper-slide swiper-slide-next s6-revix-bx"
-                  data-swiper-slide-index="2"
-                >
-                  <!--[-->
-                  <div class="tsti-bx">
-                    <img
-                      src="images/fc-3.jpg"
-                      alt=""
-                      width="272"
-                      height="239"
-                      class="t-img1"
-                    />
-                    <div class="tsti-bx-mid">
-                      <p class="vrfy-p">
-                        Morgan Rose
-                        <img
-                          src="images/checkreviews.png"
-                          alt=""
-                          width="18"
-                          height="18"
-                          class="vrfy-tk"
-                        /><span>Verified Buyer</span>
-                      </p>
-                      <img
-                        src="images/download.png"
-                        alt=""
-                        width="103"
-                        height="16"
-                        class="tsti-star"
-                      />
-                      <p class="tsti-txt">
-                        I love how cute this thing looks on my desk while still
-                        doing the job! Just add water and its ready to start
-                        cooling in minutes - this is the first thing I switch
-                        one when I get back on a hot day! Unlike what I
-                        expected, it actually is 100% noise-free, so you can
-                        sleep without any disturbance.
-                      </p>
-                    </div>
-                  </div>
-                  <!--]--><!---->
-                </div>
-                <div
-                  class="swiper-slide s6-revix-bx"
-                  data-swiper-slide-index="3"
-                >
-                  <!--[-->
-                  <div class="tsti-bx">
-                    <img
-                      src="images/fc-4.jpg"
-                      alt=""
-                      width="272"
-                      height="239"
-                      class="t-img1"
-                    />
-                    <div class="tsti-bx-mid">
-                      <p class="vrfy-p">
-                        Courtney A.
-                        <img
-                          src="images/checkreviews.png"
-                          alt=""
-                          width="18"
-                          height="18"
-                          class="vrfy-tk"
-                        /><span>Verified Buyer</span>
-                      </p>
-                      <img
-                        src="images/download.png"
-                        alt=""
-                        width="103"
-                        height="16"
-                        class="tsti-star"
-                      />
-                      <p class="tsti-txt">
-                        We have no Bag at work, so I take it with me everyday.
-                        At first people gave me a funny look about it, but now
-                        they love how it cools down our little office space.
-                      </p>
-                    </div>
-                  </div>
-                  <!--]--><!---->
-                </div>
-                <div
-                  class="swiper-slide s6-revix-bx"
-                  data-swiper-slide-index="4"
-                >
-                  <!--[-->
-                  <div class="tsti-bx">
-                    <img
-                      src="images/fc-5.jpg"
-                      alt=""
-                      width="272"
-                      height="239"
-                      class="t-img1"
-                    />
-                    <div class="tsti-bx-mid">
-                      <p class="vrfy-p">
-                        Ashley C.
-                        <img
-                          src="images/checkreviews.png"
-                          alt=""
-                          width="18"
-                          height="18"
-                          class="vrfy-tk"
-                        /><span>Verified Buyer</span>
-                      </p>
-                      <img
-                        src="images/download.png"
-                        alt=""
-                        width="103"
-                        height="16"
-                        class="tsti-star"
-                      />
-                      <p class="tsti-txt">
-                        Saves us so much money on expensive AC.
-                      </p>
-                    </div>
-                  </div>
-                  <!--]--><!---->
-                </div>
-                <div
-                  class="swiper-slide s6-revix-bx"
-                  data-swiper-slide-index="5"
-                >
-                  <!--[-->
-                  <div class="tsti-bx">
-                    <img
-                      src="images/fc-6.jpg"
-                      alt=""
-                      width="272"
-                      height="239"
-                      class="t-img1"
-                    />
-                    <div class="tsti-bx-mid">
-                      <p class="vrfy-p">
-                        Amanda P.
-                        <img
-                          src="images/checkreviews.png"
-                          alt=""
-                          width="18"
-                          height="18"
-                          class="vrfy-tk"
-                        /><span>Verified Buyer</span>
-                      </p>
-                      <img
-                        src="images/download.png"
-                        alt=""
-                        width="103"
-                        height="16"
-                        class="tsti-star"
-                      />
-                      <p class="tsti-txt">
-                        Works great. Fast shipping. I struggle from a bit of
-                        'extra weight' and summer is always hell for me. This
-                        new invention finally brings me the heat relief I was
-                        looking for.
-                      </p>
-                    </div>
-                  </div>
-                  <!--]--><!---->
-                </div>
-                <div
-                  class="swiper-slide s6-revix-bx"
-                  data-swiper-slide-index="6"
-                >
-                  <!--[-->
-                  <div class="tsti-bx">
-                    <img
-                      src="images/fc-7.jpg"
-                      alt=""
-                      width="272"
-                      height="239"
-                      class="t-img1"
-                    />
-                    <div class="tsti-bx-mid">
-                      <p class="vrfy-p">
-                        Britt C.
-                        <img
-                          src="images/checkreviews.png"
-                          alt=""
-                          width="18"
-                          height="18"
-                          class="vrfy-tk"
-                        /><span>Verified Buyer</span>
-                      </p>
-                      <img
-                        src="images/download.png"
-                        alt=""
-                        width="103"
-                        height="16"
-                        class="tsti-star"
-                      />
-                      <p class="tsti-txt">
-                        I ordered 5 devices, but 1 device was faulty. Customer
-                        support sorted it out with me however. I'm now enjoying
-                        cool air everywhere in our house, without spending a
-                        fortune on electricity.
-                      </p>
-                    </div>
-                  </div>
-                  <!--]--><!---->
-                </div>
-                <div
-                  class="swiper-slide s6-revix-bx"
-                  data-swiper-slide-index="7"
-                >
-                  <!--[-->
-                  <div class="tsti-bx">
-                    <img
-                      src="images/fc-8.jpg"
-                      alt=""
-                      width="272"
-                      height="239"
-                      class="t-img1"
-                    />
-                    <div class="tsti-bx-mid">
-                      <p class="vrfy-p">
-                        Cameron E.
-                        <img
-                          src="images/checkreviews.png"
-                          alt=""
-                          width="18"
-                          height="18"
-                          class="vrfy-tk"
-                        /><span>Verified Buyer</span>
-                      </p>
-                      <img
-                        src="images/download.png"
-                        alt=""
-                        width="103"
-                        height="16"
-                        class="tsti-star"
-                      />
-                      <p class="tsti-txt">
-                        My sister gave me one as a gift. She has been using hers
-                        for weeks now and is a huge fan. And now I understand
-                        why! Seeing is believing. This thing is powerful.
-                      </p>
-                    </div>
-                  </div>
-                  <!--]--><!---->
-                </div>
-                <!--]--><!--[--><!--]-->
+          <div class="s6-reviw-bx">
+            <!--[-->
+            <div class="tsti-bx">
+              <img src="images/fc-3.jpg" alt="" width="272" height="239" class="t-img1" />
+              <div class="tsti-bx-mid">
+                <p class="vrfy-p">
+                  Morgan Rose
+                  <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                    Buyer</span>
+                </p>
+                <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                <p class="tsti-txt">
+                  I love how cute this thing looks on my desk while still
+                  doing the job! Just add water and its ready to start cooling
+                  in minutes - this is the first thing I switch one when I get
+                  back on a hot day! Unlike what I expected, it actually is
+                  100% noise-free, so you can sleep without any disturbance.
+                </p>
               </div>
-              <!--[-->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <!--]--><!----><!----><!--[--><!--]-->
             </div>
+            <div class="tsti-bx">
+              <img src="images/fc-4.jpg" alt="" width="272" height="239" class="t-img1" />
+              <div class="tsti-bx-mid">
+                <p class="vrfy-p">
+                  Courtney A.
+                  <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                    Buyer</span>
+                </p>
+                <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                <p class="tsti-txt">
+                  We have no Bag at work, so I take it with me everyday. At
+                  first people gave me a funny look about it, but now they
+                  love how it cools down our little office space.
+                </p>
+              </div>
+            </div>
+            <!--]-->
           </div>
-        </div>
-        <p class="clearall"></p>
-        <div class="btn-box">
-          <div class="btn-txt">
-            <p class="btn-text1">Sale: Live For 24 Hrs</p>
-            <p class="btn-text2">Stock: Only 50 Units Left!</p>
+          <div class="s6-reviw-bx">
+            <!--[-->
+            <div class="tsti-bx">
+              <img src="images/fc-5.jpg" alt="" width="272" height="239" class="t-img1" />
+              <div class="tsti-bx-mid">
+                <p class="vrfy-p">
+                  Ashley C.
+                  <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                    Buyer</span>
+                </p>
+                <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                <p class="tsti-txt">
+                  Saves us so much money on expensive AC.
+                </p>
+              </div>
+            </div>
+            <div class="tsti-bx">
+              <img src="images/fc-6.jpg" alt="" width="272" height="239" class="t-img1" />
+              <div class="tsti-bx-mid">
+                <p class="vrfy-p">
+                  Amanda P.
+                  <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                    Buyer</span>
+                </p>
+                <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                <p class="tsti-txt">
+                  Works great. Fast shipping. I struggle from a bit of 'extra
+                  weight' and summer is always hell for me. This new invention
+                  finally brings me the heat relief I was looking for.
+                </p>
+              </div>
+            </div>
+            <!--]-->
           </div>
-          <a href="./index.html#products-section" class="packageBtn"
-            >Order Now<img
-              src="./images/side-arrow.png"
-              alt=""
-              width="29"
-              height="27"
-              class="btn-arw"
-          /></a>
-          <p class="btn-rev">30 Days Money Back Guarantee</p>
+          <div class="s6-reviw-bx">
+            <!--[-->
+            <div class="tsti-bx">
+              <img src="images/fc-7.jpg" alt="" width="272" height="239" class="t-img1" />
+              <div class="tsti-bx-mid">
+                <p class="vrfy-p">
+                  Britt C.
+                  <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                    Buyer</span>
+                </p>
+                <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                <p class="tsti-txt">
+                  I ordered 5 devices, but 1 device was faulty. Customer
+                  support sorted it out with me however. I'm now enjoying cool
+                  air everywhere in our house, without spending a fortune on
+                  electricity.
+                </p>
+              </div>
+            </div>
+            <div class="tsti-bx">
+              <img src="images/fc-8.jpg" alt="" width="272" height="239" class="t-img1" />
+              <div class="tsti-bx-mid">
+                <p class="vrfy-p">
+                  Cameron E.
+                  <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                    Buyer</span>
+                </p>
+                <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                <p class="tsti-txt">
+                  My sister gave me one as a gift. She has been using hers for
+                  weeks now and is a huge fan. And now I understand why!
+                  Seeing is believing. This thing is powerful.
+                </p>
+              </div>
+            </div>
+            <!--]-->
+          </div>
+          <!--]-->
         </div>
       </div>
+      <div class="show-mob testimonials-custom-swiper">
+        <div class="s6-reviw">
+          <div class="swiper swiper-initialized swiper-horizontal">
+            <!--[--><!--]-->
+            <div class="swiper-wrapper" style="transition-duration: 300ms">
+              <!--[--><!--]--><!--[-->
+              <div class="swiper-slide swiper-slide-prev s6-revix-bx" data-swiper-slide-index="0">
+                <!--[-->
+                <div class="tsti-bx">
+                  <img src="images/fc-1.jpg" alt="" width="272" height="239" class="t-img1" />
+                  <div class="tsti-bx-mid">
+                    <p class="vrfy-p">
+                      Izzy L.
+                      <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                        Buyer</span>
+                    </p>
+                    <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                    <p class="tsti-txt">
+                      I am surprised how this really small and portable device
+                      can cool air so rapidly. I just add cold water and power
+                      and can feel the difference in my study in just minutes.
+                      The great thing, it can be charged with a portable power
+                      bank and thanks to that and it's lightweight - I was
+                      able to take it with me on my last camping trip!
+                    </p>
+                  </div>
+                </div>
+                <!--]--><!---->
+              </div>
+              <div class="swiper-slide swiper-slide-active s6-revix-bx" data-swiper-slide-index="1">
+                <!--[-->
+                <div class="tsti-bx">
+                  <img src="images/fc-2.jpg" alt="" width="272" height="239" class="t-img1" />
+                  <div class="tsti-bx-mid">
+                    <p class="vrfy-p">
+                      Marty M.
+                      <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                        Buyer</span>
+                    </p>
+                    <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                    <p class="tsti-txt">
+                      I have been using this product for 2 months now and it's
+                      amazing how quickly it cools. I am able to charge this
+                      with my laptop &amp; power bank and it works for over 6
+                      hours comfortably.
+                    </p>
+                  </div>
+                </div>
+                <!--]--><!---->
+              </div>
+              <div class="swiper-slide swiper-slide-next s6-revix-bx" data-swiper-slide-index="2">
+                <!--[-->
+                <div class="tsti-bx">
+                  <img src="images/fc-3.jpg" alt="" width="272" height="239" class="t-img1" />
+                  <div class="tsti-bx-mid">
+                    <p class="vrfy-p">
+                      Morgan Rose
+                      <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                        Buyer</span>
+                    </p>
+                    <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                    <p class="tsti-txt">
+                      I love how cute this thing looks on my desk while still
+                      doing the job! Just add water and its ready to start
+                      cooling in minutes - this is the first thing I switch
+                      one when I get back on a hot day! Unlike what I
+                      expected, it actually is 100% noise-free, so you can
+                      sleep without any disturbance.
+                    </p>
+                  </div>
+                </div>
+                <!--]--><!---->
+              </div>
+              <div class="swiper-slide s6-revix-bx" data-swiper-slide-index="3">
+                <!--[-->
+                <div class="tsti-bx">
+                  <img src="images/fc-4.jpg" alt="" width="272" height="239" class="t-img1" />
+                  <div class="tsti-bx-mid">
+                    <p class="vrfy-p">
+                      Courtney A.
+                      <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                        Buyer</span>
+                    </p>
+                    <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                    <p class="tsti-txt">
+                      We have no Bag at work, so I take it with me everyday.
+                      At first people gave me a funny look about it, but now
+                      they love how it cools down our little office space.
+                    </p>
+                  </div>
+                </div>
+                <!--]--><!---->
+              </div>
+              <div class="swiper-slide s6-revix-bx" data-swiper-slide-index="4">
+                <!--[-->
+                <div class="tsti-bx">
+                  <img src="images/fc-5.jpg" alt="" width="272" height="239" class="t-img1" />
+                  <div class="tsti-bx-mid">
+                    <p class="vrfy-p">
+                      Ashley C.
+                      <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                        Buyer</span>
+                    </p>
+                    <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                    <p class="tsti-txt">
+                      Saves us so much money on expensive AC.
+                    </p>
+                  </div>
+                </div>
+                <!--]--><!---->
+              </div>
+              <div class="swiper-slide s6-revix-bx" data-swiper-slide-index="5">
+                <!--[-->
+                <div class="tsti-bx">
+                  <img src="images/fc-6.jpg" alt="" width="272" height="239" class="t-img1" />
+                  <div class="tsti-bx-mid">
+                    <p class="vrfy-p">
+                      Amanda P.
+                      <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                        Buyer</span>
+                    </p>
+                    <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                    <p class="tsti-txt">
+                      Works great. Fast shipping. I struggle from a bit of
+                      'extra weight' and summer is always hell for me. This
+                      new invention finally brings me the heat relief I was
+                      looking for.
+                    </p>
+                  </div>
+                </div>
+                <!--]--><!---->
+              </div>
+              <div class="swiper-slide s6-revix-bx" data-swiper-slide-index="6">
+                <!--[-->
+                <div class="tsti-bx">
+                  <img src="images/fc-7.jpg" alt="" width="272" height="239" class="t-img1" />
+                  <div class="tsti-bx-mid">
+                    <p class="vrfy-p">
+                      Britt C.
+                      <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                        Buyer</span>
+                    </p>
+                    <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                    <p class="tsti-txt">
+                      I ordered 5 devices, but 1 device was faulty. Customer
+                      support sorted it out with me however. I'm now enjoying
+                      cool air everywhere in our house, without spending a
+                      fortune on electricity.
+                    </p>
+                  </div>
+                </div>
+                <!--]--><!---->
+              </div>
+              <div class="swiper-slide s6-revix-bx" data-swiper-slide-index="7">
+                <!--[-->
+                <div class="tsti-bx">
+                  <img src="images/fc-8.jpg" alt="" width="272" height="239" class="t-img1" />
+                  <div class="tsti-bx-mid">
+                    <p class="vrfy-p">
+                      Cameron E.
+                      <img src="images/checkreviews.png" alt="" width="18" height="18" class="vrfy-tk" /><span>Verified
+                        Buyer</span>
+                    </p>
+                    <img src="images/download.png" alt="" width="103" height="16" class="tsti-star" />
+                    <p class="tsti-txt">
+                      My sister gave me one as a gift. She has been using hers
+                      for weeks now and is a huge fan. And now I understand
+                      why! Seeing is believing. This thing is powerful.
+                    </p>
+                  </div>
+                </div>
+                <!--]--><!---->
+              </div>
+              <!--]--><!--[--><!--]-->
+            </div>
+            <!--[-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!--]--><!----><!----><!--[--><!--]-->
+          </div>
+        </div>
+      </div>
+      <p class="clearall"></p>
+      <div class="btn-box">
+        <div class="btn-txt">
+          <p class="btn-text1">Sale: Live For 24 Hrs</p>
+          <p class="btn-text2">Stock: Only 50 Units Left!</p>
+        </div>
+        <a href="./index.html#products-section" class="packageBtn">Order Now<img src="./images/side-arrow.png" alt=""
+            width="29" height="27" class="btn-arw" /></a>
+        <p class="btn-rev">30 Days Money Back Guarantee</p>
+      </div>
     </div>
+  </div>
 
-    <div class="section9">
-      <div class="container">
-        <h2 class="comn-hding">YOMZ YOMZ</h2>
-        <div class="faq-container" style="overflow: hidden">
-          <!--[-->
-          <div class="faq-accord">
-            <div class="accordion">
-              How long does it take to cool down a room?
-            </div>
-            <div class="panel">
-              <p>A regular sized room just takes a few minutes.</p>
-            </div>
+  <div class="section9">
+    <div class="container">
+      <h2 class="comn-hding">YOMZ YOMZ</h2>
+      <div class="faq-container" style="overflow: hidden">
+        <!--[-->
+        <div class="faq-accord">
+          <div class="accordion">
+            How long does it take to cool down a room?
           </div>
-          <div class="faq-accord">
-            <div class="accordion">Can I move it from room to room?</div>
-            <div class="panel">
-              <p>
-                Yes. Thanks to the portable design it's very easy to move from
-                room to room. And it's even USB-rechargable, so you can plug it
-                in any USB charger to power it (cable is included).
-              </p>
-            </div>
+          <div class="panel">
+            <p>A regular sized room just takes a few minutes.</p>
           </div>
-          <div class="faq-accord">
-            <div class="accordion">
-              Does it use less energy than a traditional Bag unit?
-            </div>
-            <div class="panel">
-              <p>
-                Yes, it's extremely energy efficient. It consumes less energy
-                than a traditional Bag unit.
-              </p>
-            </div>
+        </div>
+        <div class="faq-accord">
+          <div class="accordion">Can I move it from room to room?</div>
+          <div class="panel">
+            <p>
+              Yes. Thanks to the portable design it's very easy to move from
+              room to room. And it's even USB-rechargable, so you can plug it
+              in any USB charger to power it (cable is included).
+            </p>
           </div>
-          <div class="faq-accord">
-            <div class="accordion">How Long Will My Order Take To Arrive?</div>
-            <div class="panel">
-              <p>
-                Shipping times may vary depending on your location and shipping
-                method chosen during checkout. However, we strive to ensure that
-                all orders are shipped within 5 business days of purchase. You
-                will receive a confirmation email with shipping information once
-                your order has been shipped.
-              </p>
-            </div>
+        </div>
+        <div class="faq-accord">
+          <div class="accordion">
+            Does it use less energy than a traditional Bag unit?
+          </div>
+          <div class="panel">
+            <p>
+              Yes, it's extremely energy efficient. It consumes less energy
+              than a traditional Bag unit.
+            </p>
+          </div>
+        </div>
+        <div class="faq-accord">
+          <div class="accordion">How Long Will My Order Take To Arrive?</div>
+          <div class="panel">
+            <p>
+              Shipping times may vary depending on your location and shipping
+              method chosen during checkout. However, we strive to ensure that
+              all orders are shipped within 5 business days of purchase. You
+              will receive a confirmation email with shipping information once
+              your order has been shipped.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section10">
-      <div class="container">
-        <h3 class="s10-p1">
-          <img
-            src="./images/error.png"
-            alt="error-img"
-            width="42"
-            height="38"
-            class="wring"
-          />
-          Claim Your YOMZ Now
-        </h3>
-        <p class="s10-p2">or Risk Paying Full Price Tomorrow</p>
-        <div class="s10-p3">
-          <!-- <p>(Take advantage of our One-Time <span class="highlight">50% OFF</span> Sale - It’s ending soon!)</p> -->
+  <div class="section10">
+    <div class="container">
+      <h3 class="s10-p1">
+        <img src="./images/error.png" alt="error-img" width="42" height="38" class="wring" />
+        Claim Your YOMZ Now
+      </h3>
+      <p class="s10-p2">or Risk Paying Full Price Tomorrow</p>
+      <div class="s10-p3">
+        <!-- <p>(Take advantage of our One-Time <span class="highlight">50% OFF</span> Sale - It’s ending soon!)</p> -->
+      </div>
+      <p class="clearall"></p>
+      <div class="btn-box">
+        <div class="btn-txt">
+          <p class="btn-text1">Sale: Live For 24 Hrs</p>
+          <p class="btn-text2">Stock: Only 50 Units Left!</p>
         </div>
-        <p class="clearall"></p>
-        <div class="btn-box">
-          <div class="btn-txt">
-            <p class="btn-text1">Sale: Live For 24 Hrs</p>
-            <p class="btn-text2">Stock: Only 50 Units Left!</p>
+        <a href="./index.html#products-section" class="packageBtn">Order Now
+          <img src="./images/side-arrow.png" alt="" width="29" height="27" class="btn-arw" /></a>
+        <p class="btn-rev">30 Days Money Back Guarantee</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Salect Products -->
+  <section id="products-section" class="section off-white-background products-section">
+    <div class="products-heading">
+      <h3>Try YOMZ & Save BIG!</h3>
+      <p>The more you buy, the more you save</p>
+    </div>
+
+    <div class="container pt-1 container-limit">
+      <div class="row mx-auto justify-content-center product-container">
+        <div class="col-md-4 order-2 order-md-1">
+          <!-- 1st Basic Product -->
+          <div data-id="1-person" class="gumm-bag orl basic cursor">
+            <span class="top-basic bsred">BASIC</span>
+            <div class="row">
+              <div class="column leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">1 PERSON</h3>
+                  <h4 class="exblod">30 Day Supply</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bags/desktop-bag-1.png" class="img-fluid d-none d-sm-none d-lg-block" />
+                  <img src="images/bags/mobile-bag-1.png" class="img-fluid d-sm-block d-lg-none" />
+                </span>
+              </div>
+              <div class="column text-center col-md-12 col-6 padding-lft">
+                <del class="del-price exblod">$79.99</del>
+                <span class="price pricea exblod">$47.99</span>
+                <span class="text-center perday">$1.71 per day</span>
+                <div class="footer-tag">
+                  <a class="btn"><img src="images/buy-btn.png" class="img-fluid" /></a>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid" />
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="./index.html#products-section" class="packageBtn"
-            >Order Now
-            <img
-              src="./images/side-arrow.png"
-              alt=""
-              width="29"
-              height="27"
-              class="btn-arw"
-          /></a>
-          <p class="btn-rev">30 Days Money Back Guarantee</p>
+        </div>
+
+        <div class="col-md-4 order-1 order-md-2">
+          <!-- 1st Most Popular Product -->
+          <div data-id="3-people" class="gumm-bag orl popular cursor">
+            <span class="top-basic bsred">MOST POPULAR</span>
+            <div class="row">
+              <div class="column leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">3 PEOPLE</h3>
+                  <h4 class="exblod">30 Day Supply Each</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bags/desktop-bag-3.png" class="img-fluid d-none d-sm-none d-lg-block" />
+                  <img src="images/bags/mobile-bag-3.png" class="img-fluid d-sm-block d-lg-none" />
+                </span>
+              </div>
+              <div class="column text-center leftwd col-md-12 col-6 padding-lft">
+                <del class="del-price exblod">$239.97</del>
+                <span class="price pricea exblod">$129.58</span>
+                <span class="text-center perday">$1.54 per day</span>
+                <div class="text-center">
+                  <ul class="ullist">
+                    <li class="bounes">
+                      <i class="fas fa-check-circle"></i> 3 FREE BONUSES!
+                    </li>
+                    <li class="shippingus">
+                      <i class="fas fa-check-circle"></i> FREE US SHIPPING!
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-tag" style="position: relative">
+                  <a class="btn"><img src="images/buy-btn.png" class="img-fluid" /></a>
+                  <div>
+                    <div class="floating-hand fhc"></div>
+                  </div>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 order-1 order-md-3">
+          <!-- 1st Bundle Product -->
+          <div data-id="2-people" class="gumm-bag orl bundle cursor">
+            <span class="top-basic bsred">BUNDLE</span>
+            <div class="row">
+              <div class="column leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">2 PEOPLE</h3>
+                  <h4 class="exblod">30 Day Supply Each</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bags/desktop-bag-2.png" class="img-fluid d-none d-sm-none d-lg-block" />
+                  <img src="images/bags/mobile-bag-2.png" class="img-fluid d-sm-block d-lg-none" />
+                </span>
+              </div>
+              <div class="column text-center col-md-12 col-6 padding-lft">
+                <del class="del-price exblod">$159.98</del>
+                <span class="price pricea exblod">$91.20</span>
+                <span class="text-center perday">$1.63 per day</span>
+                <div class="text-center">
+                  <ul class="ullist">
+                    <li class="bounes">
+                      <i class="fas fa-check-circle"></i> 3 FREE BONUSES!
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-tag">
+                  <a class="btn"><img src="images/buy-btn.png" class="img-fluid" /></a>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+  <!-- Salect Products -->
 
-    <!-- New Salect Products -->
-    <section
-      id="products-section"
-      class="section off-white-background products-section"
-    >
-      <div class="products-heading">
-        <h3>Try YOMZ & Save BIG!</h3>
-        <p>The more you buy, the more you save</p>
-      </div>
-
-      <div class="container pt-1 container-limit">
-        <div class="row mx-auto justify-content-center product-container">
-          <div class="col-md-4 order-2 order-md-1">
-            <!-- 1st Basic Product -->
-            <div data-id="1-person" class="gumm-bag orl basic cursor">
-              <span class="top-basic bsred">BASIC</span>
-              <div class="row">
-                <div class="column leftwd col-md-12 col-6 padding-lft">
-                  <span class="bag-heading">
-                    <h3 class="exblod">1 PERSON</h3>
-                    <h4 class="exblod">30 Day Supply</h4>
-                  </span>
-                  <span class="products-image">
-                    <img
-                      src="images/bags/desktop-bag-1.png"
-                      class="img-fluid d-none d-sm-none d-lg-block"
-                    />
-                    <img
-                      src="images/bags/mobile-bag-1.png"
-                      class="img-fluid d-sm-block d-lg-none"
-                    />
-                  </span>
-                </div>
-                <div class="column text-center col-md-12 col-6 padding-lft">
-                  <del class="del-price exblod">$79.99</del>
-                  <span class="price pricea exblod">$47.99</span>
-                  <span class="text-center perday">$1.71 per day</span>
-                  <div class="footer-tag">
-                    <a class="btn"
-                      ><img src="images/buy-btn.png" class="img-fluid"
-                    /></a>
-                    <span class="payment-image">
-                      <img src="images/payment.png" class="img-fluid" />
-                    </span>
-                  </div>
-                </div>
+  <!-- Checkout Section -->
+  <div id="checkout-container" class="checkoutsection hide">
+    <!-- <div id="checkout-container" class="checkoutsection"> -->
+    <div class="container">
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-md-7">
+            <form id="checkout-form">
+              <div class="expresscheckout">
+                <p>Express Checkout</p>
+                <a href="#" class="paypal-button btn"><img src="images/paypal.png" /></a>
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 order-1 order-md-2">
-            <!-- 1st Most Popular Product -->
-            <div data-id="3-people" class="gumm-bag orl popular cursor">
-              <span class="top-basic bsred">MOST POPULAR</span>
-              <div class="row">
-                <div class="column leftwd col-md-12 col-6 padding-lft">
-                  <span class="bag-heading">
-                    <h3 class="exblod">3 PEOPLE</h3>
-                    <h4 class="exblod">30 Day Supply Each</h4>
-                  </span>
-                  <span class="products-image">
-                    <img
-                      src="images/bags/desktop-bag-3.png"
-                      class="img-fluid d-none d-sm-none d-lg-block"
-                    />
-                    <img
-                      src="images/bags/mobile-bag-3.png"
-                      class="img-fluid d-sm-block d-lg-none"
-                    />
-                  </span>
+              <div class="payment-separator">OR</div>
+              <div class="payment-form controlform">
+                <div class="heading">
+                  <h3>Shipping address</h3>
+                  <small>Enter your shipping details</small>
                 </div>
-                <div
-                  class="column text-center leftwd col-md-12 col-6 padding-lft"
-                >
-                  <del class="del-price exblod">$239.97</del>
-                  <span class="price pricea exblod">$129.58</span>
-                  <span class="text-center perday">$1.54 per day</span>
-                  <div class="text-center">
-                    <ul class="ullist">
-                      <li class="bounes">
-                        <i class="fas fa-check-circle"></i> 3 FREE BONUSES!
-                      </li>
-                      <li class="shippingus">
-                        <i class="fas fa-check-circle"></i> FREE US SHIPPING!
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="footer-tag" style="position: relative">
-                    <a class="btn"
-                      ><img src="images/buy-btn.png" class="img-fluid"
-                    /></a>
-                    <div>
-                      <div class="floating-hand fhc"></div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <!-- email address -->
+                      <input type="email" class="form-control" id="email-address" placeholder="Email address"
+                        maxlength="50" />
+                      <label for="email-address">Email address</label>
+                      <p id="email-address-error" class="error-message hide"></p>
                     </div>
-                    <span class="payment-image">
-                      <img src="images/payment.png" class="img-fluid" />
-                    </span>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-4 order-1 order-md-3">
-            <!-- 1st Bundle Product -->
-            <div data-id="2-people" class="gumm-bag orl bundle cursor">
-              <span class="top-basic bsred">BUNDLE</span>
-              <div class="row">
-                <div class="column leftwd col-md-12 col-6 padding-lft">
-                  <span class="bag-heading">
-                    <h3 class="exblod">2 PEOPLE</h3>
-                    <h4 class="exblod">30 Day Supply Each</h4>
-                  </span>
-                  <span class="products-image">
-                    <img
-                      src="images/bags/desktop-bag-2.png"
-                      class="img-fluid d-none d-sm-none d-lg-block"
-                    />
-                    <img
-                      src="images/bags/mobile-bag-2.png"
-                      class="img-fluid d-sm-block d-lg-none"
-                    />
-                  </span>
-                </div>
-                <div class="column text-center col-md-12 col-6 padding-lft">
-                  <del class="del-price exblod">$159.98</del>
-                  <span class="price pricea exblod">$91.20</span>
-                  <span class="text-center perday">$1.63 per day</span>
-                  <div class="text-center">
-                    <ul class="ullist">
-                      <li class="bounes">
-                        <i class="fas fa-check-circle"></i> 3 FREE BONUSES!
-                      </li>
-                    </ul>
+                  <div class="col-6">
+                    <div class="form-floating mb-3">
+                      <!-- first name -->
+                      <input type="text" class="form-control" id="first-name" placeholder="First Name"
+                        autocomplete="first-name" maxlength="15" />
+                      <label for="first-name">First Name</label>
+                      <p id="first-name-error" class="error-message hide"></p>
+                    </div>
                   </div>
-                  <div class="footer-tag">
-                    <a class="btn"
-                      ><img src="images/buy-btn.png" class="img-fluid"
-                    /></a>
-                    <span class="payment-image">
-                      <img src="images/payment.png" class="img-fluid" />
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Salect Products -->
 
-    <!-- Checkout Section -->
-    <div id="checkout-container" class="checkoutsection hide">
-      <!-- <div id="checkout-container" class="checkoutsection"> -->
-      <div class="container">
-        <div class="col-md-10 mx-auto">
-          <div class="row">
-            <div class="col-md-7">
-              <form id="checkout-form">
-                <div class="expresscheckout">
-                  <p>Express Checkout</p>
-                  <a href="#" class="paypal-button btn"
-                    ><img src="images/paypal.png"
-                  /></a>
+                  <div class="col-6">
+                    <div class="form-floating mb-3">
+                      <!-- last name -->
+                      <input type="text" class="form-control" id="last-name" placeholder="Last Name" maxlength="15" />
+                      <label for="last-name">Last Name</label>
+                      <p id="last-name-error" class="error-message hide"></p>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating mahesmall-font mb-3">
+                      <!-- country selection -->
+                      <select class="form-select" id="country-selector" aria-label="Floating label select example"
+                        disabled>
+                        <option selected>United States</option>
+                      </select>
+                      <label for="country-selector">Country</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <!-- shipping address -->
+                      <input type="text" class="form-control" id="shipping-address" placeholder="Address"
+                        maxlength="50" />
+                      <label for="shipping-address">Address</label>
+                      <p id="shipping-address-error" class="error-message hide"></p>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <!-- optional addresss -->
+                      <input type="text" class="form-control" id="apt-suite-optional"
+                        placeholder="Apt, Suite, Unit, Building, Etc." maxlength="50" />
+                      <label for="apt-suite-optional">Apt, Suite, Unit, Building, Etc.</label>
+                      <p id="apt-suite-optional-error" class="error-message hide"></p>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="form-floating mb-3">
+                      <!-- shipping city -->
+                      <input type="text" class="form-control" id="city" placeholder="City" maxlength="20" />
+                      <label for="city">City</label>
+                      <p id="city-error" class="error-message hide"></p>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="form-floating mb-3">
+                      <!-- shipping ZIP -->
+                      <input type="text" class="form-control" id="zip-code" placeholder="Zip" maxlength="9" />
+                      <label for="zip-code">Zip</label>
+                      <p id="zip-code-error" class="error-message hide"></p>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <!-- phone number -->
+                      <input type="text" class="form-control" id="phone-number" placeholder="Phone" maxlength="15" />
+                      <label for="phone-number">Phone</label>
+                      <p id="phone-number-error" class="error-message hide"></p>
+                    </div>
+                  </div>
                 </div>
-                <div class="payment-separator">OR</div>
-                <div class="payment-form controlform">
+
+                <!-- Payment section -->
+                <div class="heading">
+                  <h3>Payment</h3>
+                </div>
+                <div class="cartitem" id="accordionExample">
+                  <div class="accordion-item">
+                    <p class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <div class="form-check">
+                          <label class="form-check-label" for="credit-card-selector">
+                            <input class="form-check-input" type="radio" name="credit-card-selector"
+                              id="credit-card-selector" checked />
+                            <div class="d-flex justify-content-between gap-manation">
+                              <span class="lebel-text">Credit Card</span>
+                              <span class="text-end">
+                                <img src="images/cards.png" />
+                              </span>
+                            </div>
+                          </label>
+                        </div>
+                      </button>
+                      <!-- </h2> -->
+                    </p>
+
+                    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="payment-form controlform">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-floating mb-3">
+                                <!-- card number -->
+                                <input type="text" class="form-control" id="card-number" placeholder="Card Number"
+                                  maxlength="19" />
+                                <label for="card-number">Card Number</label>
+                                <p id="card-number-error" class="error-message hide"></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="form-floating mb-3">
+                                <!-- card expiry -->
+                                <input type="text" class="form-control" id="card-expiry" placeholder="Expiration Date"
+                                  maxlength="5" />
+                                <label for="card-expiry">Expiration Date</label>
+                                <p id="card-expiry-error" class="error-message hide"></p>
+                              </div>
+                            </div>
+
+                            <div class="col-6">
+                              <div class="form-floating mb-3">
+                                <!-- card security code -->
+                                <input type="text" class="form-control" id="card-security-code"
+                                  placeholder="Security Code" maxlength="4" />
+                                <label for="card-security-code">Security Code</label>
+                                <p id="card-security-code-error" class="error-message hide"></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-floating mb-3">
+                                <!-- cardholder name -->
+                                <input type="text" class="form-control" id="cardholder-name"
+                                  placeholder="Cardholder Name" maxlength="25" />
+                                <label for="cardholder-name">Cardholder Name</label>
+                                <p id="cardholder-name-error" class="error-message hide"></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-check checkmark">
+                            <input type="checkbox" id="sameShippingBilling" class="form-check-input cursor
+                              data-gtm-form-interact-field-id=" 0" checked>
+                            <label for="sameShippingBilling" class="form-check-label cursor">
+                              Use shipping address as billing address
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="billing-section" class="hide">
                   <div class="heading">
-                    <h3>Shipping address</h3>
-                    <small>Enter your shipping details</small>
+                    <h3>Billing address</h3>
+                    <small>Enter your billing details</small>
                   </div>
+
                   <div class="row">
                     <div class="col-12">
                       <div class="form-floating mb-3">
-                        <!-- email address -->
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email-address"
-                          placeholder="Email address"
-                          maxlength="50"
-                        />
-                        <label for="email-address">Email address</label>
-                        <p
-                          id="email-address-error"
-                          class="error-message hide"
-                        ></p>
+                        <!-- name on card -->
+                        <input type="text" class="form-control" id="name-on-card" placeholder="Name On Card"
+                          maxlength="25" />
+                        <label for="name-on-card">Name On Card</label>
+                        <p id="name-on-card-error" class="error-message hide"></p>
                       </div>
                     </div>
-
-                    <div class="col-6">
-                      <div class="form-floating mb-3">
-                        <!-- first name -->
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="first-name"
-                          placeholder="First Name"
-                          autocomplete="first-name"
-                          maxlength="15"
-                        />
-                        <label for="first-name">First Name</label>
-                        <p id="first-name-error" class="error-message hide"></p>
-                      </div>
-                    </div>
-
-                    <div class="col-6">
-                      <div class="form-floating mb-3">
-                        <!-- last name -->
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="last-name"
-                          placeholder="Last Name"
-                          maxlength="15"
-                        />
-                        <label for="last-name">Last Name</label>
-                        <p id="last-name-error" class="error-message hide"></p>
-                      </div>
-                    </div>
-
                     <div class="col-12">
                       <div class="form-floating mahesmall-font mb-3">
-                        <!-- country selection -->
-                        <select
-                          class="form-select"
-                          id="country-selector"
-                          aria-label="Floating label select example"
-                          disabled
-                        >
-                          <option selected>United States</option>
+                        <!-- billing country selector -->
+                        <select class="form-select" id="billing-country-selector"
+                          aria-label="Floating label select example" disabled>
+                          <option selected="">United States</option>
                         </select>
-                        <label for="country-selector">Country</label>
+                        <label for="billing-country-selector">Country</label>
                       </div>
                     </div>
 
                     <div class="col-12">
                       <div class="form-floating mb-3">
-                        <!-- shipping address -->
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="shipping-address"
-                          placeholder="Address"
-                          maxlength="50"
-                        />
-                        <label for="shipping-address">Address</label>
-                        <p
-                          id="shipping-address-error"
-                          class="error-message hide"
-                        ></p>
+                        <!-- billing address -->
+                        <input type="text" class="form-control" id="billing-address" placeholder="Address"
+                          maxlength="50" />
+                        <label for="billing-address">Address</label>
+                        <p id="billing-address-error" class="error-message hide"></p>
                       </div>
                     </div>
-
                     <div class="col-12">
                       <div class="form-floating mb-3">
-                        <!-- optional addresss -->
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="apt-suite-optional"
-                          placeholder="Apt, Suite, Unit, Building, Etc."
-                          maxlength="50"
-                        />
-                        <label for="apt-suite-optional"
-                          >Apt, Suite, Unit, Building, Etc.</label
-                        >
-                        <p
-                          id="apt-suite-optional-error"
-                          class="error-message hide"
-                        ></p>
+                        <!-- optional address -->
+                        <input type="text" class="form-control" id="billing-apt-optional"
+                          placeholder="Apt, Suite, Unit, Building, Etc." maxlength="50" />
+                        <label for="billing-apt-optional">Apt, Suite, Unit, Building, Etc.</label>
+                        <p id="billing-apt-optional-error" class="error-message hide"></p>
                       </div>
                     </div>
 
                     <div class="col-6">
                       <div class="form-floating mb-3">
-                        <!-- shipping city -->
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="city"
-                          placeholder="City"
-                          maxlength="20"
-                        />
-                        <label for="city">City</label>
-                        <p id="city-error" class="error-message hide"></p>
+                        <!-- billing city -->
+                        <input type="text" class="form-control" id="billing-city"
+                          placeholder="Apt, Suite, Unit, Building, Etc." maxlength="20" />
+                        <label for="billing-city">City</label>
+                        <p id="billing-city-error" class="error-message hide"></p>
                       </div>
                     </div>
 
                     <div class="col-6">
                       <div class="form-floating mb-3">
-                        <!-- shipping ZIP -->
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="zip-code"
-                          placeholder="Zip"
-                          maxlength="9"
-                        />
-                        <label for="zip-code">Zip</label>
-                        <p id="zip-code-error" class="error-message hide"></p>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="form-floating mb-3">
-                        <!-- phone number -->
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="phone-number"
-                          placeholder="Phone"
-                          maxlength="15"
-                        />
-                        <label for="phone-number">Phone</label>
-                        <p
-                          id="phone-number-error"
-                          class="error-message hide"
-                        ></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Payment section -->
-                  <div class="heading">
-                    <h3>Payment</h3>
-                  </div>
-                  <div class="cartitem" id="accordionExample">
-                    <div class="accordion-item">
-                      <p class="accordion-header">
-                        <button
-                          class="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="true"
-                          aria-controls="collapseTwo"
-                        >
-                          <div class="form-check">
-                            <label
-                              class="form-check-label"
-                              for="credit-card-selector"
-                            >
-                              <input
-                                class="form-check-input"
-                                type="radio"
-                                name="credit-card-selector"
-                                id="credit-card-selector"
-                                checked
-                              />
-                              <div
-                                class="d-flex justify-content-between gap-manation"
-                              >
-                                <span class="lebel-text">Credit Card</span>
-                                <span class="text-end">
-                                  <img src="images/cards.png" />
-                                </span>
-                              </div>
-                            </label>
-                          </div>
-                        </button>
-                        <!-- </h2> -->
-                      </p>
-
-                      <div
-                        id="collapseTwo"
-                        class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          <div class="payment-form controlform">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-floating mb-3">
-                                  <!-- card number -->
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="card-number"
-                                    placeholder="Card Number"
-                                    maxlength="19"
-                                  />
-                                  <label for="card-number">Card Number</label>
-                                  <p
-                                    id="card-number-error"
-                                    class="error-message hide"
-                                  ></p>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-6">
-                                <div class="form-floating mb-3">
-                                  <!-- card expiry -->
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="card-expiry"
-                                    placeholder="Expiration Date"
-                                    maxlength="5"
-                                  />
-                                  <label for="card-expiry"
-                                    >Expiration Date</label
-                                  >
-                                  <p
-                                    id="card-expiry-error"
-                                    class="error-message hide"
-                                  ></p>
-                                </div>
-                              </div>
-
-                              <div class="col-6">
-                                <div class="form-floating mb-3">
-                                  <!-- card security code -->
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="card-security-code"
-                                    placeholder="Security Code"
-                                    maxlength="4"
-                                  />
-                                  <label for="card-security-code"
-                                    >Security Code</label
-                                  >
-                                  <p
-                                    id="card-security-code-error"
-                                    class="error-message hide"
-                                  ></p>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-floating mb-3">
-                                  <!-- cardholder name -->
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="cardholder-name"
-                                    placeholder="Cardholder Name"
-                                    maxlength="25"
-                                  />
-                                  <label for="cardholder-name"
-                                    >Cardholder Name</label
-                                  >
-                                  <p
-                                    id="cardholder-name-error"
-                                    class="error-message hide"
-                                  ></p>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="form-check checkmark">
-                              <input type="checkbox" id="sameShippingBilling"
-                              class="form-check-input cursor
-                              data-gtm-form-interact-field-id=" 0" checked>
-                              <label
-                                for="sameShippingBilling"
-                                class="form-check-label cursor"
-                              >
-                                Use shipping address as billing address
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="billing-section" class="hide">
-                    <div class="heading">
-                      <h3>Billing address</h3>
-                      <small>Enter your billing details</small>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="form-floating mb-3">
-                          <!-- name on card -->
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name-on-card"
-                            placeholder="Name On Card"
-                            maxlength="25"
-                          />
-                          <label for="name-on-card">Name On Card</label>
-                          <p
-                            id="name-on-card-error"
-                            class="error-message hide"
-                          ></p>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-floating mahesmall-font mb-3">
-                          <!-- billing country selector -->
-                          <select
-                            class="form-select"
-                            id="billing-country-selector"
-                            aria-label="Floating label select example"
-                            disabled
-                          >
-                            <option selected="">United States</option>
-                          </select>
-                          <label for="billing-country-selector">Country</label>
-                        </div>
-                      </div>
-
-                      <div class="col-12">
-                        <div class="form-floating mb-3">
-                          <!-- billing address -->
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="billing-address"
-                            placeholder="Address"
-                            maxlength="50"
-                          />
-                          <label for="billing-address">Address</label>
-                          <p
-                            id="billing-address-error"
-                            class="error-message hide"
-                          ></p>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-floating mb-3">
-                          <!-- optional address -->
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="billing-apt-optional"
-                            placeholder="Apt, Suite, Unit, Building, Etc."
-                            maxlength="50"
-                          />
-                          <label for="billing-apt-optional"
-                            >Apt, Suite, Unit, Building, Etc.</label
-                          >
-                          <p
-                            id="billing-apt-optional-error"
-                            class="error-message hide"
-                          ></p>
-                        </div>
-                      </div>
-
-                      <div class="col-6">
-                        <div class="form-floating mb-3">
-                          <!-- billing city -->
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="billing-city"
-                            placeholder="Apt, Suite, Unit, Building, Etc."
-                            maxlength="20"
-                          />
-                          <label for="billing-city">City</label>
-                          <p
-                            id="billing-city-error"
-                            class="error-message hide"
-                          ></p>
-                        </div>
-                      </div>
-
-                      <div class="col-6">
-                        <div class="form-floating mb-3">
-                          <!-- billing zip code -->
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="billing-zip-code"
-                            placeholder="Apt, Suite, Unit, Building, Etc."
-                            maxlength="9"
-                          />
-                          <label for="billing-zip-code">Zip</label>
-                          <p
-                            id="billing-zip-code-error"
-                            class="error-message hide"
-                          ></p>
-                        </div>
+                        <!-- billing zip code -->
+                        <input type="text" class="form-control" id="billing-zip-code"
+                          placeholder="Apt, Suite, Unit, Building, Etc." maxlength="9" />
+                        <label for="billing-zip-code">Zip</label>
+                        <p id="billing-zip-code-error" class="error-message hide"></p>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="mb-3 col-12 submit-btn">
-                  <!-- submit button -->
-                  <button
-                    type="submit"
-                    class="btn btn-primary"
-                    id="complete-purchase"
-                  >
-                    Completet Your Secure Purchase
-                  </button>
+              <div class="mb-3 col-12 submit-btn">
+                <!-- submit button -->
+                <button type="submit" class="btn btn-primary" id="complete-purchase">
+                  Completet Your Secure Purchase
+                </button>
+              </div>
+
+              <div class="ssl-safe-section">
+                <div class="inner-section">
+                  <img src="images/secure.png" alt="secure" class="img-fluid" />
+                  <h5><span>SECURE</span><span>SSL ENCRYPTION</span></h5>
                 </div>
-
-                <div class="ssl-safe-section">
-                  <div class="inner-section">
-                    <img
-                      src="images/secure.png"
-                      alt="secure"
-                      class="img-fluid"
-                    />
-                    <h5><span>SECURE</span><span>SSL ENCRYPTION</span></h5>
-                  </div>
-                  <div class="inner-section">
-                    <img src="images/safe.png" alt="safe" class="img-fluid" />
-                    <h5><span>GUARANTEED</span><span>SAFE CHECKOUT</span></h5>
-                  </div>
+                <div class="inner-section">
+                  <img src="images/safe.png" alt="safe" class="img-fluid" />
+                  <h5><span>GUARANTEED</span><span>SAFE CHECKOUT</span></h5>
                 </div>
+              </div>
 
-                <div class="bundle-of-cards">
-                  <img
-                    src="images/bundle-cards.png"
-                    alt="bundle-of-cards"
-                    class="img-fluid"
-                  />
-                </div>
-              </form>
-            </div>
-
-            <!-- cart section -->
-            <div id="cart-section" class="col-md-5 main-middle-sec"></div>
+              <div class="bundle-of-cards">
+                <img src="images/bundle-cards.png" alt="bundle-of-cards" class="img-fluid" />
+              </div>
+            </form>
           </div>
+
+          <!-- cart section -->
+          <div id="cart-section" class="col-md-5 main-middle-sec"></div>
         </div>
       </div>
     </div>
-    <!-- Checkout Section -->
+  </div>
+  <!-- Checkout Section -->
 
-    <div class="footer">
-      <div class="container">
-        <img
-          src="images/logo.png"
-          class="ftr-logo"
-          alt=""
-          width="134"
-          height="44"
-        />
+  <div class="footer">
+    <div class="container">
+      <img src="images/logo.png" class="ftr-logo" alt="" width="134" height="44" />
 
-        <p class="ftr-txt">
-          <a href="terms-conditions.html">Terms &amp; Conditions</a> |
-          <a href="privacy-policy.html">Privacy Policy</a>|
-          <a href="refund-policy.html">Refund Policy</a>|
-          <a href="shipping-policy.html">Shipping Policy</a>|
-          <a href="cancel-subscription.html">Cancel Subscription</a>|
-          <a href="FAQs.html">FAQs</a>| <a href="contact-us.html">Contact</a>
-        </p>
-        <br />
+      <p class="ftr-txt">
+        <a href="terms-conditions.html">Terms &amp; Conditions</a> |
+        <a href="privacy-policy.html">Privacy Policy</a>|
+        <a href="refund-policy.html">Refund Policy</a>|
+        <a href="shipping-policy.html">Shipping Policy</a>|
+        <a href="cancel-subscription.html">Cancel Subscription</a>|
+        <a href="FAQs.html">FAQs</a>| <a href="contact-us.html">Contact</a>
+      </p>
+      <br />
 
-        <p class="ftr-txt">© YOMZ. All Rights Reserved.</p>
-        <div class="ftr-disclaimer">
-          This page contains affiliate links. While we are not the direct
-          sellers or manufacturers of these products, we do receive a commission
-          for any purchases made through these links. Our promotion of these
-          products is based on their quality and relevance to our audience, but
-          we are not responsible for the product manufacturing, delivery, or
-          customer service. Please direct any product-specific inquiries to the
-          respective sellers. The content of this advertorial landing page is
-          created by us and has not been reviewed, approved, or otherwise
-          endorsed by any entity mentioned within the post. All product names,
-          logos, and brands are property of their respective owners. All
-          company, product and service names used in this advertisement are for
-          identification purposes only. Use of these names, logos, and brands
-          does not imply endorsement.
-        </div>
-        <div class="ftr-disclaimer">
-          This website is an authorized reseller/retailer of YOMZ. You will be
-          redirected to an external website upon purchase.
-        </div>
-        <!---->
+      <p class="ftr-txt">© YOMZ. All Rights Reserved.</p>
+      <div class="ftr-disclaimer">
+        This page contains affiliate links. While we are not the direct
+        sellers or manufacturers of these products, we do receive a commission
+        for any purchases made through these links. Our promotion of these
+        products is based on their quality and relevance to our audience, but
+        we are not responsible for the product manufacturing, delivery, or
+        customer service. Please direct any product-specific inquiries to the
+        respective sellers. The content of this advertorial landing page is
+        created by us and has not been reviewed, approved, or otherwise
+        endorsed by any entity mentioned within the post. All product names,
+        logos, and brands are property of their respective owners. All
+        company, product and service names used in this advertisement are for
+        identification purposes only. Use of these names, logos, and brands
+        does not imply endorsement.
       </div>
+      <div class="ftr-disclaimer">
+        This website is an authorized reseller/retailer of YOMZ. You will be
+        redirected to an external website upon purchase.
+      </div>
+      <!---->
     </div>
+  </div>
 
-    <div id="floating_cta" class="floating-cta open">
-      <a href="./index.html#products-section" class="mobileCta-btn">
-        Order Now
-        <img
-          src="images/arrow-curl.png"
-          alt=""
-          width="29"
-          height="27"
-          class="btn-arw"
-        />
-      </a>
-    </div>
+  <div id="floating_cta" class="floating-cta open">
+    <a href="./index.html#products-section" class="mobileCta-btn">
+      Order Now
+      <img src="images/arrow-curl.png" alt="" width="29" height="27" class="btn-arw" />
+    </a>
+  </div>
 
-    <!-- import script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- import script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- import function scripts -->
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/utils.js"></script>
-    <script src="./scripts/timer.js"></script>
-    <script src="./scripts/form.js"></script>
-  </body>
+  <!-- import function scripts -->
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/utils.js"></script>
+  <script src="./scripts/timer.js"></script>
+  <script src="./scripts/form.js"></script>
+</body>
+
 </html>
