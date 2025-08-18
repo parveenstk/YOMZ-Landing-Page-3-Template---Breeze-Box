@@ -29,7 +29,7 @@ const sameShippingBilling = document.getElementById('sameShippingBilling');
 const billingSection = document.getElementById('billing-section');
 
 const submitBtn = document.getElementById('complete-purchase');
-const loader = document.getElementById('loader-box');
+const loader = document.getElementById('spinner-box');
 
 const allFields = [
     email, firstName, lastName, address, city, zipCode, optionalAddress, phoneNumber,
@@ -169,6 +169,8 @@ form.addEventListener('submit', function (event) {
         });
     }
 
+    hideToggle(submitBtn, loader);
+
     // Save to localStorage
     console.log("Form submitted successfully!");
     localStorage.setItem('checkoutFormData', JSON.stringify(formData));
@@ -177,6 +179,12 @@ form.addEventListener('submit', function (event) {
 
     updateSheet(savedData);
 });
+
+// handle hide toggle
+const hideToggle = (elem, elem2) => {
+    elem.classList.add('hide');
+    elem2.classList.remove('hide');
+};
 
 // handle card number
 cardNumber.addEventListener('input', () => {
@@ -323,6 +331,7 @@ const updateSheet = async (formData) => {
 
         if (result.status === 'SUCCESS') {
             resetForm();
+            hideToggle(loader, submitBtn);
             window.location = './offer1.html';
         } else {
             console.error("Server returned error:", result.message);

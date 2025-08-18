@@ -1,3 +1,22 @@
+.spinner-box {
+    background: #19af42;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px 1px #0003;
+    -webkit-box-shadow: 0 5px 5px 1px rgba(0, 0, 0, .2);
+    color: #fff;
+    display: block;
+    font-size: 26px;
+    letter-spacing: .3px;
+    line-height: 58px;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+
+    #spinner-svg {
+        width: 70px;
+    }
+}
+
 #complete-purchase {
     margin-top: 25px;
 }
@@ -21,7 +40,7 @@
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .selected-box {
@@ -949,6 +968,15 @@ a.paypal-button.btn {
 }
 
 @media only screen and (max-width: 767px) {
+
+    .spinner-box {
+        display: flex;
+        justify-content: center;
+
+        #spinner-svg {
+            width: 55px !important;
+        }
+    }
 
     #complete-purchase {
         margin-top: 0px !important;
