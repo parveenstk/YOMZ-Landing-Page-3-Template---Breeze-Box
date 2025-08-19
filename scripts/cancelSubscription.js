@@ -5,6 +5,9 @@ const emailAddress = document.getElementById('email-address');
 const phoneNumber = document.getElementById('phone-number');
 const orderId = document.getElementById('order-id');
 const commentBox = document.getElementById('comments-box');
+const loader = document.getElementById('loader-box');
+const submitBtn = document.getElementById('submit-button');
+const successMsg = document.getElementById('success-message');
 
 // Group all input fields
 const allFields = [fullName, emailAddress, phoneNumber, orderId, commentBox];
@@ -101,7 +104,10 @@ form.addEventListener('submit', (event) => {
     const submittedData = JSON.parse(localStorage.getItem('cancelSubscription'));
     console.log('submittedData:', submittedData);
 
-    resetForm();
+    submitBtn.classList.add('hide');
+    loader.classList.remove('hide');
+
+    updateSheet(submittedData);
 });
 
 // Validate single field
@@ -151,4 +157,48 @@ const resetForm = () => {
             errorSpan.innerText = '';
         }
     });
+};
+
+// hide message
+const hideMessage = () => {
+    setTimeout(() => {
+        successMsg.classList.add('hide');
+    }, 4000)
+};
+
+// Call API to save data in excel sheet
+const updateSheet = async (formData) => {
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify({
+        formData: formData,
+        sheetName: "Funnel Page - 3",
+        column: "!B4:G4"
+    });
+
+    const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow"
+    };
+
+    try {
+        const response = await fetch("https://yomz-pages-data.vercel.app/api/contactUs", requestOptions);
+        const result = await response.json(); // Now this works properly
+
+        if (result.status === 'SUCCESS') {
+            loader.classList.add('hide');
+            submitBtn.classList.remove('hide');
+            successMsg.classList.remove('hide');
+            hideMessage();
+            resetForm();
+            console.log("submitted response");
+        } else {
+            console.error("Server returned error:", result.message);
+        }
+    } catch (error) {
+        console.warn("Fetch failed:", error);
+    }
 };
