@@ -171,7 +171,7 @@ form.addEventListener('submit', function (event) {
     // Save to localStorage
     console.log("Form submitted successfully!");
     localStorage.setItem('checkoutFormData', JSON.stringify(formData));
-    const savedData = JSON.parse(localStorage.getItem('checkoutFormData'));342
+    const savedData = JSON.parse(localStorage.getItem('checkoutFormData'));
     console.log("saved Data:", savedData);
 
     updateSheet(savedData);
