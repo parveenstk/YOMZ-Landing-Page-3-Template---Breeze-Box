@@ -11,31 +11,26 @@ const allFields = [fullName, emailAddress, phoneNumber, orderId, commentBox];
 
 // Validation rules
 const regexPatterns = {
-
     'full-name': {
         regex: /^[A-Za-zÀ-ÿ\s'-]{2,50}$/,
         clean: /[^A-Za-zÀ-ÿ\s'-]/g,
         error: 'Name should contain only letters (2–50 characters)'
     },
-
     'email-address': {
         regex: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
         clean: /[^a-zA-Z0-9@._%+-]/g,
         error: 'Please enter a valid email address'
     },
-
     'phone-number': {
         regex: /^\d{10,15}$/,
         clean: /[^\d]/g,
         error: 'Phone number must be 10–15 digits'
     },
-
     'order-id': {
         regex: /^[A-Z0-9\-]{5,20}$/,
         clean: /[^A-Z0-9\-]/g,
         error: 'Order ID mentioned on the bill'
     },
-
     'comments-box': {
         regex: /^.{10,800}$/,
         clean: null,
@@ -43,13 +38,42 @@ const regexPatterns = {
     }
 };
 
-// Event listener: input validation
+// Validate on input change
+const handleChange = (e) => {
+    const field = e.target;
+    const { id, value } = field;
+    const pattern = regexPatterns[id];
+
+    if (pattern) {
+        let cleanedValue = value;
+        if (pattern.clean) {
+            cleanedValue = value.replace(pattern.clean, '');
+            field.value = cleanedValue;
+        }
+
+        const isValid = pattern.regex.test(cleanedValue);
+        const errorSpan = document.getElementById(`${id}-error`);
+
+        if (!isValid) {
+            showError(field, errorSpan, pattern.error);
+        } else {
+            field.classList.add('is-valid');
+            field.classList.remove('is-invalid');
+            if (errorSpan) {
+                errorSpan.classList.add('hide');
+                errorSpan.innerText = '';
+            }
+        }
+    }
+};
+
+// Input validation listener
 allFields.forEach((field) => {
-    field.addEventListener('input', handleChange)
+    field.addEventListener('input', handleChange);
 });
 
-// Event listener: form submission
-form.addEventListener('submit', function (event) {
+// Form submission
+form.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log("Form submit triggered.");
 
@@ -73,44 +97,15 @@ form.addEventListener('submit', function (event) {
     });
 
     console.log('✅ Details Submitted Successfully');
-    localStorage.setItem('cancelSubsctiption', JSON.stringify(formData));
-    const submitedData = JSON.parse(localStorage.getItem('cancelSubsctiption'));
-    console.log('submitedData:', submitedData);
+    localStorage.setItem('cancelSubscription', JSON.stringify(formData));
+    const submittedData = JSON.parse(localStorage.getItem('cancelSubscription'));
+    console.log('submittedData:', submittedData);
 
     resetForm();
 });
 
-// Validate on change
-function handleChange(e) {
-    const field = e.target;
-    const { id, value } = field;
-    const pattern = regexPatterns[id];
-
-    if (pattern) {
-        let cleanedValue = value;
-        if (pattern.clean) {
-            cleanedValue = value.replace(pattern.clean, '');
-            field.value = cleanedValue; // update field value
-        }
-
-        const isValid = pattern.regex.test(cleanedValue);
-        const errorSpan = document.getElementById(`${id}-error`);
-
-        if (!isValid) {
-            showError(field, errorSpan, pattern.error);
-        } else {
-            field.classList.add('is-valid');
-            field.classList.remove('is-invalid');
-            if (errorSpan) {
-                errorSpan.classList.add('hide');
-                errorSpan.innerText = '';
-            }
-        }
-    }
-}
-
 // Validate single field
-function checkValue(field) {
+const checkValue = (field) => {
     const value = field.value;
     const patternData = regexPatterns[field.id];
     const errorSpan = document.getElementById(`${field.id}-error`);
@@ -133,20 +128,20 @@ function checkValue(field) {
     }
 
     return true;
-}
+};
 
 // Show error on field
-function showError(elem, errorSpan, message) {
+const showError = (elem, errorSpan, message) => {
     elem.classList.add('is-invalid');
     elem.classList.remove('is-valid');
     if (errorSpan) {
         errorSpan.classList.remove('hide');
         errorSpan.innerText = message;
     }
-}
+};
 
-// Reset form and styles
-function resetForm() {
+// Reset form
+const resetForm = () => {
     allFields.forEach((field) => {
         field.value = '';
         field.classList.remove('is-valid', 'is-invalid');
@@ -156,4 +151,4 @@ function resetForm() {
             errorSpan.innerText = '';
         }
     });
-}
+};
