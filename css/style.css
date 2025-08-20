@@ -1699,6 +1699,152 @@ form#contactUs-form {
 
 /* Contact Us */
 
+
+/****************************** About *****************************/
+
+.banner {
+    padding: 48px 0px 48px 0px;
+}
+
+.banner .star {
+    margin-bottom: -2px;
+}
+
+.banner .star {
+    margin-bottom: -2px;
+}
+
+.banner .star i {
+    font-size: 14px;
+}
+
+.main-head {
+    font-size: 18px;
+    margin: 7px 0px 0px 9px;
+}
+
+.main-head b {
+    color: #000;
+}
+
+.mainsec h2 {
+    font-size: 48px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.about-story {
+    padding: 60px 0;
+    float: left;
+    width: 100%;
+}
+
+.sugary {
+    padding: 0px 0px 80px;
+    float: left;
+    width: 100%;
+}
+
+.section_heading {
+    margin: 0 auto 20px;
+
+}
+
+.section_heading h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 52px;
+    line-height: normal;
+    font-family: 'Super Caramel';
+    margin-top: 10px;
+}
+
+.title-h1 {
+    margin-top: 15px !important;
+    text-transform: none !important;
+}
+
+.list-drinks-details {
+    margin-top: 20px;
+}
+
+.list-drinks-details {
+    gap: 1px;
+}
+
+.sugary-list .div-1 {
+    background: #FFEB00;
+    padding: 20px 20px;
+    border-radius: 12px;
+    border: 2px solid #111111;
+    height: 250px;
+    text-align: center;
+
+}
+
+.sugary-list .div-1 img {
+    width: 80px;
+    border: 0px solid #000 !important;
+    border-radius: 0px !important;
+    padding: 0px !important;
+    margin-bottom: 10px;
+}
+
+.sugary-list .div-1 p {
+    font-weight: unset;
+    text-transform: none;
+    line-height: 20px;
+}
+
+.sugary-list .div-1 strong {
+    -webkit-text-stroke: 0.5px black;
+    margin-bottom: 10px !important;
+    display: inline-block;
+}
+
+.hidden-hunger .left-heading {
+    font-size: 52px;
+}
+
+.featured-image-with-text__text ul {
+    list-style: none;
+}
+
+.featured-image-with-text__text ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    width: 100%;
+    flex-direction: row;
+}
+
+.list-done.featured-image-with-text__text li {
+    font-weight: 800;
+}
+
+.featured-image-with-text__text ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.featured-image-with-text__text ul li:before {
+    content: "";
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #ffeb00;
+    background-image: url(../images/icon-checkbox-black.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/****************************** About *****************************/
+
 /****************************** faqs *****************************/
 .faqs h3 {
     font-family: 'century_gothic_paneuropeanXBd' !important;
@@ -2788,6 +2934,61 @@ ul.slick-dots li.slick-active button {
 }
 
 @media only screen and (max-width: 767px) {
+
+    .col-md-6.mainsec ul {
+        display: block !important;
+    }
+
+    li.list-unstyled.star {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .main-head {
+        font-size: 18px;
+        margin: 7px 0px 0px 9px;
+        text-align: center;
+
+    }
+
+    .section_heading h2 {
+        font-size: 29px;
+    }
+
+    .about-story {
+        padding: 30px 0 20px;
+
+    }
+
+    .sugary-list .div-1 {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .list-drinks-details {
+        margin-top: 0px;
+    }
+
+    .sec-content {
+        margin-top: 30px;
+    }
+
+    .banner.hidden-hunger {
+        padding: 50px 0px;
+    }
+
+    .sugary {
+        padding: 0px 0px 20px;
+    }
+
+    .mainsec h2 {
+        font-size: 29px;
+        letter-spacing: 0px;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 10px;
+    }
 
     .thanks-heading img {
         width: 43px;

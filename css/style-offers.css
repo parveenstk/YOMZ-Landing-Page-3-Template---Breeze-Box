@@ -251,6 +251,7 @@ h3.head-2 {
     margin-right: auto;
     font-weight: 600;
     padding: 19px 30px;
+    font-family: 'century_gothic_paneuropeanXBd';
 }
 
 .oder-wd {
@@ -355,6 +356,7 @@ h3.head-2 {
     font-size: 26px;
     color: #000000;
     font-weight: 700;
+    font-family: 'century_gothic_paneuropeanXBd';
 }
 
 .offerpop p {
@@ -436,6 +438,8 @@ h3.head-2 {
     padding: 8px;
     font-size: 49px;
     margin-bottom: 10px !important;
+    font-family: 'century_gothic_paneuropeanXBd';
+
 }
 
 .mideel-text {
@@ -507,6 +511,8 @@ h3.head-2 {
 }
 
 @media (max-width: 767px) {
+    
+    .offerpop h4{    font-size: 22px;}
 
     .othanks {
     font-size: 12px;

@@ -289,6 +289,7 @@ h3.head-2 {
     margin-right: auto;
     font-weight: 600;
     padding: 19px 30px;
+    font-family: 'century_gothic_paneuropeanXBd';
 }
 
 .oder-wd {
@@ -771,6 +772,10 @@ a.textLink:visited {
     .step-pd {
         display: none;
     }
+
+   .inner-ofr-content .mobile-title{        font-size: 23px !important;
+        margin-bottom: 20px !important;
+        margin-top: 5px !important;}
 }
 
 @media screen and (max-width: 567px) {
