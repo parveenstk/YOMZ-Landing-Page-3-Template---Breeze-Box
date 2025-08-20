@@ -85,10 +85,10 @@
                             </p>
                         </div>
                         <div class="row ">
-                            <!-- First Name -->
-                            <div class="col-md-6">
 
+                            <div class="col-md-6">
                                 <div class="form-floating mb-3 ">
+                                    <!-- First Name -->
                                     <input type="text" class="form-control text-height" id="first-name"
                                         placeholder="Your First Name" autocomplete="first-name" maxlength="10"
                                         name="first-name">
@@ -96,19 +96,19 @@
                                     <div data-lastpass-icon-root=""
                                         style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
                                     </div>
-                                    <div class="error-message-box">
+                                    <div class="error-message">
                                         <span id="first-name-error" class="hide"></span>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <!-- Last Name -->
                                 <div class="form-floating mb-3">
+                                    <!-- Last Name -->
                                     <input type="text" class="form-control text-height" id="last-name"
                                         placeholder="Your Last Name" maxlength="10" name="last-name">
                                     <label for="last-name">Your Last Name</label>
-                                    <div class="error-message-box">
+                                    <div class="error-message">
                                         <span id="last-name-error" class="hide"></span>
                                     </div>
                                 </div>
@@ -117,46 +117,46 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <!-- Phone Number -->
                                 <div class="form-floating mb-3">
+                                    <!-- Phone Number -->
                                     <input type="text" class="form-control text-height" id="phone-number"
                                         placeholder="Your Phone Number" maxlength="15" name="phone-number">
                                     <label for="phone-number">Your Phone Number</label>
-                                    <div class="error-message-box">
+                                    <div class="error-message">
                                         <span id="phone-number-error" class="hide"></span>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <!-- Email Address -->
                                 <div class="form-floating mb-3">
+                                    <!-- Email Address -->
                                     <input type="text" class="form-control text-height" id="email-address"
                                         placeholder="Your Email Address" maxlength="30" name="email-address">
                                     <label for="email-address">Your Email Address</label>
-                                    <div class="error-message-box">
+                                    <div class="error-message">
                                         <span id="email-address-error" class="hide"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Subjects -->
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control text-height" id="subjects" placeholder="Subjects"
-                                maxlength="50" name="subjects">
-                            <label for="subjects">Subjects</label>
-                            <div class="error-message-box">
+                            <!-- Subjects -->
+                            <input type="text" class="form-control text-height" id="subject" placeholder="Subjects"
+                                maxlength="50" name="subject">
+                            <label for="subject">Subject</label>
+                            <div class="error-message">
                                 <span id="subjects-error" class="hide"></span>
                             </div>
                         </div>
 
-                        <!-- Comment Box -->
                         <div class="form-floating mb-3">
+                            <!-- Comment Box -->
                             <textarea class="form-control" placeholder="Leave a comment here" id="comments-box"
                                 style="height: 150px" maxlength="1100" name="comments-box"></textarea>
                             <label for="comments-box">Comments</label>
-                            <div class="error-message-box">
+                            <div class="error-message">
                                 <span id="comments-box-error" class="hide"></span>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                         <!-- Submit Button -->
                         <div class="form-floating text-center contact-form">
                             <button id="submit-button" class="btn btn-primary" type="submit">Submit</button>
-                            <img id="spinner-loader" class="spinner hide" src="./images/tube-spinner.svg" alt="spinner">
+                            <!-- <img id="spinner-loader" class="spinner hide" src="./images/tube-spinner.svg" alt="spinner"> -->
                             <p id="contactUs-success" class="contactUs-success hide">Thank you for contacting us. We’ll
                                 respond
                                 within 1–2 business days.</p>
@@ -262,10 +262,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- import function scripts -->
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/utils.js"></script>
-    <script src="./scripts/timer.js"></script>
-    <script src="./scripts/form.js"></script>
+    <script src="./scripts/contactUs.js"></script>
 
 </body>
 
