@@ -110,6 +110,11 @@ li {
     box-sizing: border-box
 }
 
+#contactUs-success {
+    display: flex;
+    justify-content: center;
+}
+
 .success-message {
     padding: 10px;
     margin: 12px 0px 0px 0px;
@@ -1579,17 +1584,6 @@ ul.rev-bars li p {
     padding: 0px 0 0px;
 }
 
-.contact-form .btn {
-    background: #e6193c;
-    color: #fff;
-    border: none;
-    font-size: 22px;
-    text-transform: uppercase;
-    padding: 10px 35px;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
 /*Start breadcumb css style 3*/
 .breadcumb-area {
     background-color: #ffeb00;
@@ -1645,7 +1639,7 @@ ul.rev-bars li p {
     text-transform: uppercase;
     padding: 10px 35px;
     font-weight: 600;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .contact-address {
@@ -1698,7 +1692,6 @@ form#contactUs-form {
 }
 
 /* Contact Us */
-
 
 /****************************** About *****************************/
 

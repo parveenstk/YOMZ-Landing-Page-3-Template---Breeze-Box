@@ -9,6 +9,9 @@ const comments = document.getElementById('comments-box');
 
 const allFields = [firstName, lastName, phoneNumber, email, subject, comments];
 const requiredFields = [firstName, phoneNumber, email, comments];
+const submitBtn = document.getElementById('submit-button');
+const loader = document.getElementById('loader-box');
+const successMsg = document.getElementById('contactUs-success');
 
 const regexPatters = {
 
@@ -36,7 +39,7 @@ const regexPatters = {
 // form handling
 form.addEventListener('submit', function (event) {
     event.preventDefault();
-    console.log("form submit triggered.");
+    // console.log("form submit triggered.");
 
     let isValid = true;
     requiredFields.forEach((field) => {
@@ -60,7 +63,8 @@ form.addEventListener('submit', function (event) {
     const submittedData = JSON.parse(localStorage.getItem('contactUsData'));
     console.log('submittedData:', submittedData);
 
-    formReset(); // reset all fields
+    toggleClass({ elem1: submitBtn, addCls1: 'hide', elem2: loader, removeCls2: 'hide' });
+    updateSheet(submittedData); // sending data to API
 });
 
 // checking while input
@@ -109,4 +113,51 @@ const checkValue = (elem) => {
     errorSpan.classList.add('hide');
     errorSpan.innerText = '';
     return true;
+};
+
+// hide message funtion
+const hideMessage = () => {
+    setTimeout(() => {
+        successMsg.classList.add('hide');
+    }, 4000)
+};
+
+const toggleClass = ({ elem1, addCls1, elem2, removeCls2 }) => {
+    elem1 && addCls1 && elem1.classList.add(addCls1);
+    elem2 && removeCls2 && elem2.classList.remove(removeCls2);
+};
+
+// Call API to save data in excel sheet
+const updateSheet = async (formData) => {
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify({
+        formData: formData,
+        sheetName: "Funnel Page - 3",
+        column: "!I4:O4"
+    });
+
+    const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow"
+    };
+
+    try {
+        const response = await fetch("https://yomz-pages-data.vercel.app/api/contactUs", requestOptions);
+        const result = await response.json(); // Now this works properly
+
+        if (result.status === 'SUCCESS') {
+            toggleClass({ elem1: loader, addCls1: 'hide', elem2: submitBtn, removeCls2: 'hide' });
+            successMsg.classList.remove('hide');
+            hideMessage();
+            formReset();
+        } else {
+            console.error("Server returned error:", result.message);
+        }
+    } catch (error) {
+        console.warn("Fetch failed:", error);
+    }
 };
