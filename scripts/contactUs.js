@@ -11,7 +11,9 @@ const allFields = [firstName, lastName, phoneNumber, email, subject, comments];
 const requiredFields = [firstName, phoneNumber, email, comments];
 const submitBtn = document.getElementById('submit-button');
 const loader = document.getElementById('loader-box');
-const successMsg = document.getElementById('contactUs-success');
+
+const messageBox = document.getElementById('status-message-box');
+const innerMsg = document.getElementById('status-message');
 
 const regexPatters = {
 
@@ -118,16 +120,47 @@ const checkValue = (elem) => {
 // hide message funtion
 const hideMessage = () => {
     setTimeout(() => {
-        successMsg.classList.add('hide');
+        innerMsg.classList.add('hide');
     }, 4000)
 };
 
+// handle classes
 const toggleClass = ({ elem1, addCls1, elem2, removeCls2 }) => {
     elem1 && addCls1 && elem1.classList.add(addCls1);
     elem2 && removeCls2 && elem2.classList.remove(removeCls2);
 };
 
-// Call API to save data in excel sheet
+// according to status content
+const messageContent = {
+    success: {
+        backgroundColor: '#d1f4da',
+        color: '#4d7e40',
+        innerText: 'Thank you for contacting us. We’ll respond within 1–2 business days.'
+    },
+    error: {
+        backgroundColor: '#f9eded',
+        color: '#db4c6b',
+        innerText: 'Something went wrong, please try again later.'
+    }
+};
+
+// dynamic update message
+const updatedMessage = (status) => {
+    const content = messageContent[status];
+
+    if (!content) {
+        console.warn(`Message content not found for status: "${status}"`);
+        return; // Exit if invalid status provided
+    }
+
+    messageBox.classList.remove('hide');
+
+    innerMsg.innerText = content.innerText;
+    innerMsg.style.color = content.color;
+    innerMsg.style.backgroundColor = content.backgroundColor;
+};
+
+// API implemented
 const updateSheet = async (formData) => {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -138,26 +171,41 @@ const updateSheet = async (formData) => {
         column: "!I4:O4"
     });
 
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => {
+        controller.abort(); // Cancel the fetch request after 30 seconds
+    }, 30000); // 30000 ms = 30 seconds
+
     const requestOptions = {
         method: "POST",
         headers: myHeaders,
         body: raw,
-        redirect: "follow"
+        redirect: "follow",
+        signal: controller.signal  // attach abort signal here
     };
 
     try {
         const response = await fetch("https://yomz-pages-data.vercel.app/api/contactUs", requestOptions);
-        const result = await response.json(); // Now this works properly
+        clearTimeout(timeoutId);  // Clear the timeout if fetch completes on time
 
+        const result = await response.json();
         if (result.status === 'SUCCESS') {
             toggleClass({ elem1: loader, addCls1: 'hide', elem2: submitBtn, removeCls2: 'hide' });
-            successMsg.classList.remove('hide');
+            updatedMessage('success');
             hideMessage();
             formReset();
         } else {
             console.error("Server returned error:", result.message);
         }
     } catch (error) {
-        console.warn("Fetch failed:", error);
+        if (error.name === 'AbortError') {
+            toggleClass({ elem1: loader, addCls1: 'hide', elem2: submitBtn, removeCls2: 'hide' });
+            formReset();
+            hideMessage();
+            updatedMessage('error');
+            console.warn("Request timed out after 30 seconds and was cancelled.");
+        } else {
+            console.warn("Fetch failed:", error);
+        }
     }
 };
